@@ -155,4 +155,22 @@ document.addEventListener('DOMContentLoaded', () => {
             contactForm.reset();
         });
     }
+
+    // hero 이미지 슬라이더
+    const heroImages = [
+        'https://via.placeholder.com/1920x600?text=Image+1',
+        'https://via.placeholder.com/1920x600?text=Image+2',
+        'https://via.placeholder.com/1920x600?text=Image+3'
+    ];
+    let heroImgIdx = 0;
+
+    function changeHeroImage() {
+        const img = document.getElementById('hero-slider-img');
+        if (img) {
+            heroImgIdx = (heroImgIdx + 1) % heroImages.length;
+            img.src = heroImages[heroImgIdx];
+        }
+    }
+
+    setInterval(changeHeroImage, 3000);
 }); 

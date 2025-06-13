@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title data-i18n="title">OTS</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo" data-i18n="logo">로고</div>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home" data-i18n="nav.home">홈</a></li>
+                <li><a href="#about" data-i18n="nav.about">소개</a></li>
+                <li><a href="#services" data-i18n="nav.services">서비스</a></li>
+                <li><a href="#contact" data-i18n="nav.contact">연락처</a></li>
+            </ul>
+            <div class="language-switch">
+                <button class="lang-btn" data-lang="ko" data-i18n="lang.current">한국어</button>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="hero">
+            <div class="hero-content">
+                <h1 data-i18n="hero.title">환영합니다</h1>
+                <p data-i18n="hero.subtitle">이 웹사이트는 반응형 디자인을 적용한 예제입니다.</p>
+                <button class="cta-button" data-i18n="hero.button">자세히 보기</button>
+            </div>
+        </section>
+
+        <section id="about" class="about-section">
+            <h2 data-i18n="about.title">소개</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p data-i18n="about.text">우리는 최고의 서비스를 제공합니다.</p>
+                </div>
+                <div class="about-image">
+                    <img src="https://via.placeholder.com/400" alt="소개 이미지">
+                </div>
+            </div>
+        </section>
+
+        <section id="services" class="services-section">
+            <h2 data-i18n="services.title">서비스</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <i class="fas fa-laptop-code"></i>
+                    <h3 data-i18n="services.web.title">웹 개발</h3>
+                    <p data-i18n="services.web.desc">최신 기술을 활용한 웹 개발 서비스</p>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-mobile-alt"></i>
+                    <h3 data-i18n="services.mobile.title">모바일 앱</h3>
+                    <p data-i18n="services.mobile.desc">사용자 친화적인 모바일 앱 개발</p>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-paint-brush"></i>
+                    <h3 data-i18n="services.design.title">UI/UX 디자인</h3>
+                    <p data-i18n="services.design.desc">창의적인 디자인 솔루션</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact-section">
+            <h2 data-i18n="contact.title">연락처</h2>
+            <div class="contact-content">
+                <form class="contact-form">
+                    <input type="text" data-i18n-placeholder="contact.name" placeholder="이름" required>
+                    <input type="email" data-i18n-placeholder="contact.email" placeholder="이메일" required>
+                    <textarea data-i18n-placeholder="contact.message" placeholder="메시지" required></textarea>
+                    <button type="submit" data-i18n="contact.submit">보내기</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3 data-i18n="footer.company.title">회사 정보</h3>
+                <p data-i18n="footer.company.address">주소: 서울시 강남구</p>
+                <p data-i18n="footer.company.phone">전화: 02-123-4567</p>
+            </div>
+            <div class="footer-section">
+                <h3 data-i18n="footer.social.title">소셜 미디어</h3>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p data-i18n="footer.copyright">&copy; 2024 반응형 웹사이트. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html> 

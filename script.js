@@ -114,18 +114,12 @@ document.addEventListener('DOMContentLoaded', () => {
         hamburger.classList.toggle('active');
     });
 
-    // 스무스 스크롤
+    // 네비게이션 링크에 스무스 스크롤 적용
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         anchor.addEventListener('click', function (e) {
             e.preventDefault();
             const target = document.querySelector(this.getAttribute('href'));
             if (target) {
-                // 모바일 메뉴가 열려있으면 닫기
-                if (navLinks.classList.contains('active')) {
-                    navLinks.classList.remove('active');
-                    hamburger.classList.remove('active');
-                }
-                
                 target.scrollIntoView({
                     behavior: 'smooth'
                 });
@@ -158,9 +152,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // hero 이미지 슬라이더
     const heroImages = [
-        'https://via.placeholder.com/1920x600?text=Image+1',
-        'https://via.placeholder.com/1920x600?text=Image+2',
-        'https://via.placeholder.com/1920x600?text=Image+3'
+        'images/slide01.png',
+        'images/slide02.png',
+        'images/slide03.png'
     ];
     let heroImgIdx = 0;
 
@@ -172,5 +166,5 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     }
 
-    setInterval(changeHeroImage, 3000);
+    setInterval(changeHeroImage, 5000);
 }); 

@@ -1,3 +1,3 @@
 git add .
-git commit -m "자동 커밋"
+git commit -m "auto commit"
 git push

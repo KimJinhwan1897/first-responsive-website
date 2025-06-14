@@ -1,0 +1,1671 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <title>뉴스룸</title>
+    <meta charset="UTF-8" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="viewport" content="initial-scale=1.0, minimum-scale=1.0, width=device-width, maximum-scale=1,user-scalable=no" />
+
+
+
+    <!-- 페이지별 메타 태그 추가 -->
+    <meta name="description" content="혁신적인 기술로, 세상을 변화시킵니다." />
+    <meta name="keywords" content="와치텍, 와치올, 와치올 애플망고, 와치올 구아바, 와치올 CMP, 와치올 ITSM, 와치로그, 통합 운영 관리, 통합 모니터링, 통합 관제" />
+
+
+
+    <!-- 오픈그래프 메타 태그 추가 -->
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="watchtek.co.kr" />
+    <meta property="og:url" content="https://www.watchtek.co.kr" />
+    <meta property="og:locale" content="" />
+    <meta property="og:locale:alternate" content="" />
+    <meta property="og:title" content="와치텍" />
+    <meta property="og:description" content="혁신적인 기술로, 세상을 변화시킵니다." />
+    <meta property="og:image" content="https://watchtek.co.kr/resources/assets/images/og/og.png" />
+	<meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="fb:app_id" content="1756423808224119" />
+
+
+    <!-- 추가: Twitter 카드 메타 태그 -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@Watch_Tek" />
+    <meta name="twitter:title" content="와치텍" />
+    <meta name="twitter:description" content="혁신적인 기술로, 세상을 변화시킵니다." />
+    <meta name="twitter:image" content="https://watchtek.co.kr/resources/assets/images/og/og.png" />
+
+
+
+	
+	<!-- 파비콘 -->
+	<link rel="apple-touch-icon" sizes="57x57" href="../../resources/assets/images/favicon/apple-icon-57x57.png">
+	<link rel="apple-touch-icon" sizes="60x60" href="../../resources/assets/images/favicon/apple-icon-60x60.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="../../resources/assets/images/favicon/apple-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="76x76" href="../../resources/assets/images/favicon/apple-icon-76x76.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="../../resources/assets/images/favicon/apple-icon-114x114.png">
+	<link rel="apple-touch-icon" sizes="120x120" href="../../resources/assets/images/favicon/apple-icon-120x120.png">
+	<link rel="apple-touch-icon" sizes="144x144" href="../../resources/assets/images/favicon/apple-icon-144x144.png">
+	<link rel="apple-touch-icon" sizes="152x152" href="../../resources/assets/images/favicon/apple-icon-152x152.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="../../resources/assets/images/favicon/apple-icon-180x180.png">
+	<link rel="icon" type="image/png" sizes="192x192"  href="../../resources/assets/images/favicon/android-icon-192x192.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="../../resources/assets/images/favicon/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="96x96" href="../../resources/assets/images/favicon/favicon-96x96.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="../../resources/assets/images/favicon/favicon-16x16.png">
+	<link rel="manifest" href="../../resources/assets/images/favicon/manifest.json">
+	<meta name="msapplication-TileColor" content="#ffffff">
+	<meta name="msapplication-TileImage" content="/resources/assets/images/favicon/ms-icon-144x144.png">
+	<meta name="theme-color" content="#ffffff">
+	
+	
+	
+	<!-- naver Serch Advisor 웹마스터 도구 -->
+	<meta name="naver-site-verification" content="4c6324bd68ca8733bff798fc626073b03ac329cc" />
+
+	<!-- google search console -->
+	<meta name="google-site-verification" content="LzyTELYid5HqSXrDqE-vnev_Q_FtxNbd5kCZCj_uNgk" />
+
+    
+    <!-- Global site tag (gtag.js) - Google Analytics - 오픈 후 주석 삭제 -->
+	<!-- Google tag (gtag.js) -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-LRN1216D31"></script>
+	<script>
+  	window.dataLayer = window.dataLayer || [];
+  	function gtag(){dataLayer.push(arguments);}
+  	gtag('js', new Date());
+
+ 	 gtag('config', 'G-LRN1216D31');
+	</script>
+
+
+     
+	
+
+    <script src="../../resources/vendor/jquery-3.6.4.min.js" type="text/javascript"></script>
+    <script src="../../resources/vendor/jquery-ui.js"></script>
+    <script src="../../resources/vendor/mobile-detect.min.js" type="text/javascript"></script>
+    <script src="../../resources/vendor/vanilla-tilt.min.js" type="text/javascript"></script>
+    <script src="../../resources/vendor/simple-scrollspy.min.js" type="text/javascript"></script>
+    <script src="../../resources/vendor/parallax.min.js" type="text/javascript"></script>
+    <script src="../../resources/vendor/jquery.stellar.min.js" type="text/javascript"></script>
+    <script src="../../resources/vendor/js.cookie.min.js" type="text/javascript"></script>
+    <script src="../../resources/vendor/swiper-bundle.min.js"></script>
+    <script src="../../resources/vendor/gsap.min.js"></script>
+    <script src="../../resources/vendor/ScrollTrigger.min.js"></script>
+    <script src="../../resources/vendor/ScrollToPlugin.min.js"></script>
+    <script src="../../resources/vendor/sticky.min.js"></script>
+    <script src="../../resources/vendor/jquery-validation/jquery.validate.min.js"></script>
+    <script src="../../resources/vendor/jquery-validation/localization/messages_ko.min.js"></script>
+    <script src="../../resources/vendor/lenis.min.js"></script>
+    <script src="../../resources/vendor/jquery-ui.js"></script>
+    
+    <script src="../../resources/vendor/jquery-ui.accordion.multiple.js" type="text/javascript"></script>
+    <script src="../../resources/vendor/scrollMagic.js"></script>
+    <script src="../../resources/vendor/scrollMagicAddIndicators.js"></script>
+    <script src="../../resources/vendor/jquery.fullPage.js" type="text/javascript"></script>
+    <script src="../../resources/vendor/scrolloverflow.js"></script>
+    <script src="../../resources/vendor/jquery.fullpage.extensions.js"></script>
+    <script src="../../resources/vendor/animation.gsap.js" type="text/javascript"></script>
+    <script src="../../resources/vendor/particles.js" type="text/javascript"></script>
+	<script src="../../resources/vendor/jquery.form.min.js"></script>
+    
+    <script src="../../resources/vendor/require.js" type="text/javascript"></script>
+    <script src="../../resources/js/base.js" type="text/javascript"></script>
+    <script src="../../resources/js/util.js" type="text/javascript"></script>
+    <script src="../../resources/js/common.js" type="text/javascript"></script>
+    <script src="../../resources/js/component.js" type="text/javascript"></script>
+    <script src="../../resources/js/module.js" type="text/javascript"></script>
+    <script src="../../resources/js/page.js" type="text/javascript"></script>
+    <script src="../../resources/js/ots.js" type="text/javascript"></script>
+
+
+    <link rel="stylesheet" href="../../resources/vendor/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="../../resources/vendor/jquery.fullPage.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet" />
+    <script defer src="../../resources/style.bundle.js"></script>
+    <link href="../../resources/styles/style.css" rel="stylesheet">
+</head>
+<body class="page page-sub page-com page-com-newsroom-view">
+  <header class="header" id="header">
+<script src="../../resources/js/page/search.js" type="text/javascript"></script>
+
+<div class="header-inner">
+        <h1 class="header__logo">
+          <a href="../../index.html" class="anchor">
+            <span class="span logo-text">와치텍 | 자율운영관리 전문 기업</span>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="164"
+              height="60"
+              viewBox="0 0 164 60"
+              fill="none"
+            >
+              <g clip-path="url(#clip0_649_2540)">
+                <path
+                  d="M149.362 55.8368C149.257 49.066 149.196 39.9823 149.196 29.9938C149.196 20.0054 149.261 10.9381 149.362 4.16728C148.867 3.87254 148.363 3.59418 147.851 3.32809C147.961 10.1767 148.03 19.5961 148.03 29.9938C148.03 40.3916 147.961 49.8233 147.851 56.676C148.363 56.4099 148.867 56.1315 149.362 55.8368Z"
+                  fill="#9FA0A0"
+                />
+                <path
+                  d="M146.974 57.1181C146.86 50.2326 146.787 40.625 146.787 29.9939C146.787 19.3628 146.86 9.77144 146.974 2.88599C146.466 2.64447 145.947 2.41932 145.427 2.20236C145.549 9.12874 145.626 19.0148 145.626 29.9939C145.626 40.9729 145.549 50.8753 145.427 57.8017C145.951 57.5889 146.466 57.3596 146.974 57.1181Z"
+                  fill="#9FA0A0"
+                />
+                <path
+                  d="M118.072 55.1859C117.975 48.4888 117.914 39.663 117.914 29.9898C117.914 20.3166 117.975 11.5071 118.072 4.81C117.577 5.13339 117.085 5.46907 116.61 5.82521C116.7 12.3873 116.752 20.8078 116.752 29.9898C116.752 39.1717 116.7 47.6046 116.61 54.1707C117.085 54.5228 117.577 54.8584 118.072 55.1859Z"
+                  fill="#9FA0A0"
+                />
+                <path
+                  d="M154.126 52.3122C154.053 46.049 154.009 38.3366 154.009 29.9939C154.009 21.6511 154.053 13.951 154.126 7.6878C153.667 7.27435 153.192 6.87727 152.709 6.48837C152.794 12.9481 152.843 21.1148 152.843 29.9939C152.843 38.8729 152.794 47.0478 152.709 53.5116C153.192 53.1268 153.667 52.7298 154.126 52.3122Z"
+                  fill="#9FA0A0"
+                />
+                <path
+                  d="M151.746 54.2526C151.657 47.6782 151.604 39.2208 151.604 29.9898C151.604 20.7587 151.657 12.3177 151.746 5.74332C151.267 5.39127 150.78 5.05969 150.28 4.7363C150.378 11.4416 150.439 20.292 150.439 29.9898C150.439 39.6875 150.378 48.5502 150.28 55.2596C150.78 54.9362 151.267 54.6005 151.746 54.2526Z"
+                  fill="#9FA0A0"
+                />
+                <path
+                  d="M139.801 59.4678C139.659 52.5169 139.57 41.894 139.57 29.9898C139.57 18.0856 139.659 7.48311 139.801 0.528074C139.265 0.425733 138.721 0.339768 138.173 0.266083C138.315 7.21293 138.408 17.9464 138.408 29.9898C138.408 42.0332 138.315 52.783 138.173 59.7298C138.721 59.6561 139.265 59.5702 139.801 59.4678Z"
+                  fill="#9FA0A0"
+                />
+                <path
+                  d="M142.198 58.907C142.064 51.952 141.978 41.5788 141.978 29.9939C141.978 18.409 142.064 8.05213 142.198 1.0971C141.666 0.949726 141.13 0.814637 140.589 0.695923C140.727 7.65096 140.817 18.192 140.817 29.998C140.817 41.8039 140.727 52.3613 140.589 59.3164C141.134 59.1977 141.67 59.0626 142.198 58.9152V58.907Z"
+                  fill="#9FA0A0"
+                />
+                <path
+                  d="M157.579 11.3966C157.627 16.8902 157.66 23.2353 157.66 29.9898C157.66 36.7442 157.632 43.1016 157.579 48.5993C158.034 48.0221 158.472 47.4285 158.887 46.8145C158.846 41.7425 158.822 36.0319 158.822 29.9898C158.822 23.9476 158.846 18.2452 158.887 13.1814C158.472 12.5674 158.034 11.9779 157.579 11.3966Z"
+                  fill="#9FA0A0"
+                />
+                <path
+                  d="M161.263 42.5653C161.238 38.6314 161.226 34.3986 161.226 29.9898C161.226 25.581 161.238 21.3605 161.263 17.4306C160.881 16.5996 160.466 15.7931 160.016 15.0072C160.048 19.6043 160.064 24.6681 160.064 29.9898C160.064 35.3115 160.048 40.3875 160.016 44.9888C160.466 44.2028 160.885 43.3963 161.263 42.5653Z"
+                  fill="#9FA0A0"
+                />
+                <path
+                  d="M164 29.998C164 26.6576 163.452 23.4482 162.448 20.4476C162.461 23.4973 162.469 26.6944 162.469 29.9898C162.469 33.2851 162.461 36.4945 162.448 39.5483C163.448 36.5477 164 33.3383 164 29.998Z"
+                  fill="#9FA0A0"
+                />
+                <path
+                  d="M114.226 7.78604C114.299 14.0288 114.344 21.6961 114.344 29.9898C114.344 38.2834 114.299 45.9671 114.226 52.2099C114.681 52.6274 115.156 53.0286 115.64 53.4175C115.554 46.9701 115.505 38.832 115.505 29.9898C115.505 21.1476 115.554 13.0259 115.64 6.57843C115.156 6.96732 114.685 7.3685 114.226 7.78604Z"
+                  fill="#9FA0A0"
+                />
+                <path
+                  d="M135.76 0.0409241C135.906 6.97959 136 17.8154 136 29.9938C136 42.1723 135.906 53.0245 135.76 59.9631C136.313 59.9345 136.857 59.8895 137.401 59.8321C137.255 52.8894 137.161 42.1068 137.161 29.9938C137.161 17.8809 137.255 7.11468 137.397 0.171919C136.853 0.114609 136.309 0.0695793 135.756 0.0409241H135.76Z"
+                  fill="#9FA0A0"
+                />
+                <path
+                  d="M144.586 58.1333C144.46 51.1946 144.383 41.1571 144.383 29.9938C144.383 18.8306 144.46 8.80943 144.586 1.87077C144.066 1.67428 143.538 1.49416 143.002 1.33041C143.132 8.28545 143.217 18.5481 143.217 29.9979C143.217 41.4478 143.132 51.7268 143.002 58.6819C143.538 58.514 144.062 58.3339 144.586 58.1415V58.1333Z"
+                  fill="#9FA0A0"
+                />
+                <path
+                  d="M120.501 56.6146C120.391 49.7701 120.322 40.367 120.322 29.9938C120.322 19.6206 120.391 10.234 120.501 3.3895C119.989 3.65967 119.486 3.93804 118.994 4.23278C119.096 10.9954 119.161 20.0464 119.161 29.9938C119.161 39.9413 119.1 49.0046 118.994 55.7713C119.486 56.0701 119.989 56.3485 120.501 56.6146Z"
+                  fill="#9FA0A0"
+                />
+                <path
+                  d="M113.101 29.9938C113.101 22.13 113.142 14.8229 113.207 8.76849C112.736 9.24335 112.285 9.73868 111.846 10.2422C111.903 15.9937 111.935 22.7563 111.935 29.9938C111.935 37.2313 111.903 44.0063 111.846 49.7619C112.285 50.2654 112.736 50.7607 113.207 51.2356C113.138 45.177 113.101 37.8659 113.101 29.9938Z"
+                  fill="#9FA0A0"
+                />
+                <path
+                  d="M107.094 17.6885C107.114 21.5488 107.127 25.6874 107.127 29.9939C107.127 34.3003 107.114 38.4513 107.094 42.3156C107.472 43.163 107.89 43.9858 108.341 44.7882C108.308 40.2443 108.292 35.2419 108.292 29.9939C108.292 24.7459 108.308 19.7558 108.341 15.2159C107.89 16.0183 107.476 16.8411 107.094 17.6885Z"
+                  fill="#9FA0A0"
+                />
+                <path
+                  d="M156.413 29.9938C156.413 22.7031 156.446 15.8914 156.506 10.1071C156.068 9.60768 155.613 9.12054 155.142 8.65387C155.211 14.7329 155.247 22.0809 155.247 29.9938C155.247 37.9068 155.207 45.2671 155.138 51.3461C155.609 50.8753 156.064 50.3923 156.502 49.8929C156.446 44.1086 156.409 37.2927 156.409 29.9938H156.413Z"
+                  fill="#9FA0A0"
+                />
+                <path
+                  d="M110.774 48.4519C110.725 42.987 110.697 36.6951 110.697 29.9898C110.697 23.2844 110.725 17.0048 110.774 11.544C110.319 12.1294 109.88 12.7311 109.47 13.3533C109.511 18.3762 109.535 24.0213 109.535 29.9898C109.535 35.9582 109.511 41.6156 109.47 46.6426C109.88 47.2648 110.319 47.8666 110.774 48.4519Z"
+                  fill="#9FA0A0"
+                />
+                <path
+                  d="M134.757 29.9939C134.757 17.8031 134.85 6.95913 134.997 0.020468C134.741 0.0122808 134.489 0 134.233 0C133.937 0 133.644 0.0122808 133.352 0.020468C133.498 6.95913 133.591 17.8031 133.591 29.9898C133.591 42.1764 133.498 53.0368 133.352 59.9754C133.644 59.9836 133.937 59.9959 134.233 59.9959C134.489 59.9959 134.741 59.9836 134.997 59.9754C134.85 53.0368 134.757 42.1846 134.757 29.9857V29.9939Z"
+                  fill="#9FA0A0"
+                />
+                <path
+                  d="M105.884 29.9939C105.884 26.8213 105.892 23.7429 105.904 20.7996C104.978 23.702 104.47 26.7927 104.47 30.0021C104.47 33.2114 104.978 36.3062 105.904 39.2045C105.892 36.2571 105.884 33.1705 105.884 29.9939Z"
+                  fill="#9FA0A0"
+                />
+                <path
+                  d="M132.592 59.955C132.446 53.0163 132.353 42.1764 132.353 29.9939C132.353 17.8113 132.446 6.9878 132.592 0.0491333C132.04 0.0777886 131.496 0.126912 130.951 0.188316C131.098 7.13107 131.187 17.9014 131.187 29.9939C131.187 42.0864 131.094 52.873 130.951 59.8158C131.496 59.8772 132.04 59.9222 132.592 59.955Z"
+                  fill="#9FA0A0"
+                />
+                <path
+                  d="M122.926 57.7526C122.804 50.8303 122.727 40.9565 122.727 29.9938C122.727 19.0312 122.804 9.16966 122.926 2.24738C122.402 2.46434 121.886 2.68949 121.378 2.9351C121.492 9.81645 121.565 19.3955 121.565 29.9897C121.565 40.584 121.492 50.1794 121.378 57.0608C121.886 57.3064 122.402 57.5315 122.926 57.7485V57.7526Z"
+                  fill="#9FA0A0"
+                />
+                <path
+                  d="M125.347 58.6409C125.217 51.69 125.131 41.4314 125.131 29.9938C125.131 18.5563 125.212 8.3141 125.347 1.36316C124.81 1.531 124.286 1.7193 123.767 1.9158C123.893 8.85446 123.97 18.8633 123.97 29.9938C123.97 41.1244 123.893 51.1496 123.767 58.0883C124.286 58.2848 124.814 58.4731 125.347 58.6409Z"
+                  fill="#9FA0A0"
+                />
+                <path
+                  d="M130.18 59.7175C130.038 52.7707 129.944 42.0373 129.944 29.9939C129.944 17.9505 130.038 7.23341 130.18 0.28656C129.631 0.360245 129.087 0.450304 128.551 0.556738C128.693 7.50768 128.783 18.1142 128.783 29.998C128.783 41.8817 128.693 52.5005 128.551 59.4556C129.087 59.562 129.631 59.6479 130.18 59.7257V59.7175Z"
+                  fill="#9FA0A0"
+                />
+                <path
+                  d="M127.767 59.2836C127.629 52.3286 127.54 41.7916 127.54 29.9939C127.54 18.1961 127.629 7.67553 127.767 0.72049C127.227 0.843298 126.691 0.978387 126.159 1.12985C126.293 8.08489 126.378 18.4335 126.378 29.9939C126.378 41.5542 126.293 51.9192 126.159 58.8743C126.691 59.0257 127.223 59.1608 127.767 59.2836Z"
+                  fill="#9FA0A0"
+                />
+                <path
+                  d="M124.161 19.7271H107.809V24.4061H113.418V40.3138H118.998V24.4061H124.161V19.7271Z"
+                  fill="black"
+                />
+                <path
+                  d="M154.788 40.2483H161.51L154.151 30.6079V30.5874C154.017 30.4155 153.936 30.2026 153.936 29.9693C153.936 29.7155 154.029 29.4862 154.183 29.3102L154.175 29.302L160.617 19.7476H154.321L149.045 27.6114H147.656V19.7271H142.072V40.2483H147.656V32.2904H149.029L154.788 40.2483Z"
+                  fill="black"
+                />
+                <path
+                  d="M131.642 35.4261V32.0734H139.079V28.2172H131.642V24.4634H140.195V19.6862L125.94 19.7025V40.2115L140.2 40.2074V35.4261H131.642Z"
+                  fill="black"
+                />
+                <path
+                  d="M95.5919 19.7598V27.6236H88.4558V19.7598H82.8712V40.2975H88.4558V32.3026H95.5919V40.2975H101.176V19.7598H95.5919Z"
+                  fill="black"
+                />
+                <path
+                  d="M42.9952 40.2974H48.5798L42.654 19.6493H33.8974L27.9717 40.2974H33.5563L34.5107 36.9734H42.0448L42.9993 40.2974H42.9952ZM35.8551 32.2944L38.2757 23.8534L40.7005 32.2944H35.8551Z"
+                  fill="black"
+                />
+                <path
+                  d="M24.7346 19.6452L21.6398 35.5366L18.0534 19.8376H17.0015H13.4111H12.3592L8.72008 35.774L5.58459 19.637H0L4.02496 40.3384H12.347L15.2063 27.7014L18.0656 40.3384H26.2861L30.3192 19.6452H24.7346Z"
+                  fill="black"
+                />
+                <path
+                  d="M62.1331 19.6943H45.7814V24.3733H51.3904V40.2934H56.9709V24.3733H62.1331V19.6943Z"
+                  fill="black"
+                />
+                <path
+                  d="M81.1857 32.5278H75.6011V34.2103C75.4996 35.0331 74.8985 35.5612 74.0496 35.6799H71.1457V35.6881C69.7688 35.7413 68.7412 34.8693 68.8671 33.498V26.3424C68.8996 25.0037 69.7688 24.3365 70.8085 24.3201L73.9481 24.3283C75.1706 24.5698 75.5646 25.4786 75.5849 26.3915V27.3658H81.1451V24.4102H81.141C81.141 24.2546 81.1167 24.0622 81.0801 23.8739H81.0882C81.0761 23.8002 81.0558 23.7306 81.0395 23.6651C81.0314 23.6365 81.0233 23.6037 81.0151 23.5792C80.4628 21.516 78.9478 20.0628 76.6774 19.678L68.9484 19.6616C65.8657 19.6616 63.2866 22.4985 63.2866 25.9985H63.3069L63.2866 26.0026V34.0547C63.376 37.6489 65.6707 40.3057 68.725 40.3548H76.1697C76.1941 40.3548 76.2185 40.3548 76.2307 40.3548C76.3119 40.3548 76.519 40.3507 76.7424 40.3302C76.7424 40.3302 76.7587 40.3302 76.7668 40.3302C76.8765 40.3179 76.9821 40.3016 77.0795 40.2811C79.1834 39.8922 80.8892 38.5004 81.1573 36.2202C81.1573 36.2202 81.1776 35.9501 81.1776 35.815V35.7454V32.5278H81.1857Z"
+                  fill="black"
+                />
+              </g>
+              <defs>
+                <clipPath id="clip0_649_2540">
+                  <rect width="164" height="60" fill="black" />
+                </clipPath>
+              </defs>
+            </svg>	
+	</a>
+        </h1>
+    
+        <nav class="header__nav">
+          <a href="javascript:void(0);" class="anchor">제품</a>
+          <a href="javascript:void(0);" class="anchor">고객지원</a>
+          <a href="javascript:void(0);" class="anchor">회사 소개</a>
+        </nav>
+    
+        <div class="header__util">
+          <button type="button" class="btn-header-search">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="26"
+              height="26"
+              viewBox="0 0 26 26"
+              fill="none"
+            >
+              <path
+                d="M21.2333 22.75L14.4083 15.925C13.8667 16.3583 13.2437 16.7014 12.5396 16.9542C11.8354 17.2069 11.0861 17.3333 10.2917 17.3333C8.32361 17.3333 6.65799 16.6517 5.29479 15.2885C3.9316 13.9253 3.25 12.2597 3.25 10.2917C3.25 8.32361 3.9316 6.65799 5.29479 5.29479C6.65799 3.9316 8.32361 3.25 10.2917 3.25C12.2597 3.25 13.9253 3.9316 15.2885 5.29479C16.6517 6.65799 17.3333 8.32361 17.3333 10.2917C17.3333 11.0861 17.2069 11.8354 16.9542 12.5396C16.7014 13.2437 16.3583 13.8667 15.925 14.4083L22.75 21.2333L21.2333 22.75ZM10.2917 15.1667C11.6458 15.1667 12.7969 14.6927 13.7448 13.7448C14.6927 12.7969 15.1667 11.6458 15.1667 10.2917C15.1667 8.9375 14.6927 7.78646 13.7448 6.83854C12.7969 5.89062 11.6458 5.41667 10.2917 5.41667C8.9375 5.41667 7.78646 5.89062 6.83854 6.83854C5.89062 7.78646 5.41667 8.9375 5.41667 10.2917C5.41667 11.6458 5.89062 12.7969 6.83854 13.7448C7.78646 14.6927 8.9375 15.1667 10.2917 15.1667Z"
+                fill="black"
+              />
+            </svg>
+          </button>
+          <div class="language">
+            <a href="javascript:void(0);" class="anchor active" onclick="fnLangChg('KO');">KR</a>
+            <span class="seperate-dot">·</span>
+            <a href="javascript:void(0);" class="anchor " onclick="fnLangChg('EN');">EN</a>
+          </div>
+          <button type="button" class="btn-drawer-menu">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="32"
+              height="32"
+              viewBox="0 0 32 32"
+              fill="none"
+            >
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M5 7C5 6.44772 5.44772 6 6 6H26C26.5523 6 27 6.44772 27 7C27 7.55228 26.5523 8 26 8H6C5.44772 8 5 7.55228 5 7ZM5 16C5 15.4477 5.44772 15 6 15H26C26.5523 15 27 15.4477 27 16C27 16.5523 26.5523 17 26 17H6C5.44772 17 5 16.5523 5 16ZM6 24C5.44772 24 5 24.4477 5 25C5 25.5523 5.44772 26 6 26H26C26.5523 26 27 25.5523 27 25C27 24.4477 26.5523 24 26 24H6Z"
+                fill="black"
+              />
+            </svg>
+          </button>
+        </div>
+      </div>
+<form id="searchfrm" name="searchfrm" onsubmit="return false;">
+	<input type="hidden" id="searchArea" name="searchArea" value=""/>
+	<input type="hidden" id="tIdx" name="tIdx" value=""/>
+      <div class="search-area">
+        <div class="input-search-pack">
+          <input
+            type="text"
+            name=""
+            id="searchText"
+            placeholder="무엇이 궁금하신가요?"
+            class="input-search"
+          />
+          <button type="button" class="btn-search-clear"></button>
+          <button type="button" class="btn-search"></button>
+        </div>
+      </div>
+</form>
+<!-- PC GNB : start -->
+      <div class="gnb">
+        <div class="gnb-wrapper">
+          <ul class="gnb__list-wrap">
+            <li class="gnb__list">
+              <div class="gnb-main-area">
+                <div class="gnb__menu-area">
+                  <ul class="gnb__menu-wrap">
+                    <li class="gnb__menu">
+                      <a href="../../product/cloud.html" class="gnb__menu__title"
+                        >클라우드</a
+                      >
+                      <a
+                        href="../../product/cloud/platform.html"
+                        class="anchor gnb__link gnb__menu__link"
+                        >클라우드 관리 플랫폼</a
+                      >
+                      <a
+                        href="../../product/cloud/monitoring.html"
+                        class="anchor gnb__link gnb__menu__link"
+                        >클라우드 모니터링</a
+                      >
+                    </li>
+                    <li class="gnb__menu">
+                      <a href="../../product/ai.html" class="gnb__menu__title"
+                      >AI</a>
+                      <a
+                        href="../../product/ai/aiops.html"
+                        class="anchor gnb__link gnb__menu__link"
+                        >AIOps</a
+                      >
+                    </li>
+                    <li class="gnb__menu">
+                      <a href="../../product/obs.html" class="gnb__menu__title"
+                        >옵저버빌리티</a
+                      >
+                      <a
+                        href="../../product/obs/app.html"
+                        class="anchor gnb__link gnb__menu__link"
+                        >애플리케이션 성능 모니터링</a
+                      >
+                      <a
+                        href="../../product/obs/db.html"
+                        class="anchor gnb__link gnb__menu__link"
+                        >DB 성능 모니터링</a
+                      >
+                      <a
+                        href="../../product/obs/web.html"
+                        class="anchor gnb__link gnb__menu__link"
+                        >웹서비스 성능 모니터링</a
+                      >
+                      <!-- 240701 : 수정 : START -->
+                      <a
+                        href="../../product/obs/log.html"
+                        class="anchor gnb__link gnb__menu__link"
+                        >통합 로그 관리</a
+                      >
+                      <!-- 240701 : 수정 : END -->
+                    </li>
+                    <li class="gnb__menu">
+                      <a href="../../product/infra.html" class="gnb__menu__title"
+                        >IT 인프라</a
+                      >
+                      <a
+                        href="../../product/infra/server.html"
+                        class="anchor gnb__link gnb__menu__link"
+                        >서버 모니터링</a
+                      >
+                      <a
+                        href="../../product/infra/network.html"
+                        class="anchor gnb__link gnb__menu__link"
+                        >네트워크 모니터링</a
+                      >
+                      <a
+                        href="../../product/infra/iot.html"
+                        class="anchor gnb__link gnb__menu__link"
+                        >시설/IoT 모니터링</a
+                      >
+                      <a
+                        href="../../product/infra/storage.html"
+                        class="anchor gnb__link gnb__menu__link"
+                        >스토리지 모니터링</a
+                      >
+                    </li>
+                    <li class="gnb__menu">
+                      <a href="../../product/service.html" class="gnb__menu__title"
+                        >IT 서비스</a
+                      >
+                      <a
+                        href="../../product/service/itservice.html"
+                        class="anchor gnb__link gnb__menu__link"
+                        >IT 서비스 관리</a
+                      >
+                      <a
+                        href="../../product/service/itasset.html"
+                        class="anchor gnb__link gnb__menu__link"
+                        >IT 자산 관리</a
+                      >
+                    </li>
+                    <li class="gnb__menu">
+                      <a href="../../product/visual.html" class="gnb__menu__title"
+                        >시각화</a
+                      >
+                      <a
+                        href="../../product/visual/dashboard.html"
+                        class="anchor gnb__link gnb__menu__link"
+                        >통합 대시보드</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+                <div class="gnb__service-area">
+                  <p class="gnb__service__title"><a href="../../product/platform/applemango.html">서비스 플랫폼</a></p>
+                  <div class="gnb__service__list-wrap">
+                    <a href="../../product/platform/applemango.html" class="anchor">
+                      <div class="gnb__service__list">
+                        <p class="title">
+                          와치올 <strong class="strong">애플망고</strong>
+                        </p>
+                        <p class="description">IT 인프라 관리</p>
+                      </div>
+                    </a>
+                    <a href="../../product/platform/guava.html" class="anchor">
+                      <div class="gnb__service__list">
+                        <p class="title">
+                          와치올 <strong class="strong">구아바</strong>
+                        </p>
+                        <p class="description">클라우드 서비스 모니터링</p>
+                      </div>
+                    </a>
+                    <a href="../../product/platform/itsm.html" class="anchor">
+                      <div class="gnb__service__list">
+                        <p class="title">
+                          와치올 <strong class="strong">ITSM</strong>
+                        </p>
+                        <p class="description">IT 서비스 관리</p>
+                      </div>
+                    </a>
+                    <a href="../../product/platform/cmp.html" class="anchor">
+                      <div class="gnb__service__list">
+                        <p class="title">
+                          와치올 <strong class="strong">CMP</strong>
+                        </p>
+                        <p class="description">클라우드 관리 플랫폼</p>
+                      </div>
+                    </a>
+                    <a href="../../product/platform/log.html" class="anchor">
+                      <div class="gnb__service__list">
+                        <p class="title">
+                          <strong class="strong">와치로그</strong>
+                        </p>
+                        <p class="description">통합 로그 관리</p>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="gnb-banner-area">
+                <ul class="gnb-banner__list-wrap">
+                  <li class="gnb-banner__list">
+                    <a href="../../product/all.html" class="anchor">
+                      <img
+                        src="../../resources/assets/images/gnb-banner-1.png"
+                        alt=""
+                        class="img"
+                      />
+                    </a>
+                  </li>
+                  <li class="gnb-banner__list">
+                    <a href="../../product/reason/client.html" class="anchor">
+                      <img
+                        src="../../resources/assets/images/gnb-banner-2.png"
+                        alt=""
+                        class="img"
+                      />
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="gnb__list">
+              <a href="../../customer/faq/list.html" class="anchor gnb__link">FAQ</a>
+              <a href="../../customer/support/qna.html" class="anchor gnb__link">문의하기</a>
+            </li>
+            <li class="gnb__list">
+              <a href="../aboutUs.html" class="anchor gnb__link">기업 정보</a>
+<a href="list.html" class="anchor gnb__link">뉴스룸</a>
+              <a href="../recruit/info.html" class="anchor gnb__link">인재 채용</a>
+</li>
+          </ul>
+        </div>
+      </div>
+      <!-- PC GNB : end -->
+    
+      <!-- MO GNB : start -->
+      <div class="m_gnb">
+        <div class="m_gnb__header">
+          <h1 class="header__logo">
+            <a href="../../index.html" class="anchor">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="164"
+              height="60"
+              viewBox="0 0 164 60"
+              fill="none"
+            >
+              <g clip-path="url(#clip0_649_2540)">
+                <path
+                  d="M149.362 55.8368C149.257 49.066 149.196 39.9823 149.196 29.9938C149.196 20.0054 149.261 10.9381 149.362 4.16728C148.867 3.87254 148.363 3.59418 147.851 3.32809C147.961 10.1767 148.03 19.5961 148.03 29.9938C148.03 40.3916 147.961 49.8233 147.851 56.676C148.363 56.4099 148.867 56.1315 149.362 55.8368Z"
+                  fill="#9FA0A0"
+                />
+                <path
+                  d="M146.974 57.1181C146.86 50.2326 146.787 40.625 146.787 29.9939C146.787 19.3628 146.86 9.77144 146.974 2.88599C146.466 2.64447 145.947 2.41932 145.427 2.20236C145.549 9.12874 145.626 19.0148 145.626 29.9939C145.626 40.9729 145.549 50.8753 145.427 57.8017C145.951 57.5889 146.466 57.3596 146.974 57.1181Z"
+                  fill="#9FA0A0"
+                />
+                <path
+                  d="M118.072 55.1859C117.975 48.4888 117.914 39.663 117.914 29.9898C117.914 20.3166 117.975 11.5071 118.072 4.81C117.577 5.13339 117.085 5.46907 116.61 5.82521C116.7 12.3873 116.752 20.8078 116.752 29.9898C116.752 39.1717 116.7 47.6046 116.61 54.1707C117.085 54.5228 117.577 54.8584 118.072 55.1859Z"
+                  fill="#9FA0A0"
+                />
+                <path
+                  d="M154.126 52.3122C154.053 46.049 154.009 38.3366 154.009 29.9939C154.009 21.6511 154.053 13.951 154.126 7.6878C153.667 7.27435 153.192 6.87727 152.709 6.48837C152.794 12.9481 152.843 21.1148 152.843 29.9939C152.843 38.8729 152.794 47.0478 152.709 53.5116C153.192 53.1268 153.667 52.7298 154.126 52.3122Z"
+                  fill="#9FA0A0"
+                />
+                <path
+                  d="M151.746 54.2526C151.657 47.6782 151.604 39.2208 151.604 29.9898C151.604 20.7587 151.657 12.3177 151.746 5.74332C151.267 5.39127 150.78 5.05969 150.28 4.7363C150.378 11.4416 150.439 20.292 150.439 29.9898C150.439 39.6875 150.378 48.5502 150.28 55.2596C150.78 54.9362 151.267 54.6005 151.746 54.2526Z"
+                  fill="#9FA0A0"
+                />
+                <path
+                  d="M139.801 59.4678C139.659 52.5169 139.57 41.894 139.57 29.9898C139.57 18.0856 139.659 7.48311 139.801 0.528074C139.265 0.425733 138.721 0.339768 138.173 0.266083C138.315 7.21293 138.408 17.9464 138.408 29.9898C138.408 42.0332 138.315 52.783 138.173 59.7298C138.721 59.6561 139.265 59.5702 139.801 59.4678Z"
+                  fill="#9FA0A0"
+                />
+                <path
+                  d="M142.198 58.907C142.064 51.952 141.978 41.5788 141.978 29.9939C141.978 18.409 142.064 8.05213 142.198 1.0971C141.666 0.949726 141.13 0.814637 140.589 0.695923C140.727 7.65096 140.817 18.192 140.817 29.998C140.817 41.8039 140.727 52.3613 140.589 59.3164C141.134 59.1977 141.67 59.0626 142.198 58.9152V58.907Z"
+                  fill="#9FA0A0"
+                />
+                <path
+                  d="M157.579 11.3966C157.627 16.8902 157.66 23.2353 157.66 29.9898C157.66 36.7442 157.632 43.1016 157.579 48.5993C158.034 48.0221 158.472 47.4285 158.887 46.8145C158.846 41.7425 158.822 36.0319 158.822 29.9898C158.822 23.9476 158.846 18.2452 158.887 13.1814C158.472 12.5674 158.034 11.9779 157.579 11.3966Z"
+                  fill="#9FA0A0"
+                />
+                <path
+                  d="M161.263 42.5653C161.238 38.6314 161.226 34.3986 161.226 29.9898C161.226 25.581 161.238 21.3605 161.263 17.4306C160.881 16.5996 160.466 15.7931 160.016 15.0072C160.048 19.6043 160.064 24.6681 160.064 29.9898C160.064 35.3115 160.048 40.3875 160.016 44.9888C160.466 44.2028 160.885 43.3963 161.263 42.5653Z"
+                  fill="#9FA0A0"
+                />
+                <path
+                  d="M164 29.998C164 26.6576 163.452 23.4482 162.448 20.4476C162.461 23.4973 162.469 26.6944 162.469 29.9898C162.469 33.2851 162.461 36.4945 162.448 39.5483C163.448 36.5477 164 33.3383 164 29.998Z"
+                  fill="#9FA0A0"
+                />
+                <path
+                  d="M114.226 7.78604C114.299 14.0288 114.344 21.6961 114.344 29.9898C114.344 38.2834 114.299 45.9671 114.226 52.2099C114.681 52.6274 115.156 53.0286 115.64 53.4175C115.554 46.9701 115.505 38.832 115.505 29.9898C115.505 21.1476 115.554 13.0259 115.64 6.57843C115.156 6.96732 114.685 7.3685 114.226 7.78604Z"
+                  fill="#9FA0A0"
+                />
+                <path
+                  d="M135.76 0.0409241C135.906 6.97959 136 17.8154 136 29.9938C136 42.1723 135.906 53.0245 135.76 59.9631C136.313 59.9345 136.857 59.8895 137.401 59.8321C137.255 52.8894 137.161 42.1068 137.161 29.9938C137.161 17.8809 137.255 7.11468 137.397 0.171919C136.853 0.114609 136.309 0.0695793 135.756 0.0409241H135.76Z"
+                  fill="#9FA0A0"
+                />
+                <path
+                  d="M144.586 58.1333C144.46 51.1946 144.383 41.1571 144.383 29.9938C144.383 18.8306 144.46 8.80943 144.586 1.87077C144.066 1.67428 143.538 1.49416 143.002 1.33041C143.132 8.28545 143.217 18.5481 143.217 29.9979C143.217 41.4478 143.132 51.7268 143.002 58.6819C143.538 58.514 144.062 58.3339 144.586 58.1415V58.1333Z"
+                  fill="#9FA0A0"
+                />
+                <path
+                  d="M120.501 56.6146C120.391 49.7701 120.322 40.367 120.322 29.9938C120.322 19.6206 120.391 10.234 120.501 3.3895C119.989 3.65967 119.486 3.93804 118.994 4.23278C119.096 10.9954 119.161 20.0464 119.161 29.9938C119.161 39.9413 119.1 49.0046 118.994 55.7713C119.486 56.0701 119.989 56.3485 120.501 56.6146Z"
+                  fill="#9FA0A0"
+                />
+                <path
+                  d="M113.101 29.9938C113.101 22.13 113.142 14.8229 113.207 8.76849C112.736 9.24335 112.285 9.73868 111.846 10.2422C111.903 15.9937 111.935 22.7563 111.935 29.9938C111.935 37.2313 111.903 44.0063 111.846 49.7619C112.285 50.2654 112.736 50.7607 113.207 51.2356C113.138 45.177 113.101 37.8659 113.101 29.9938Z"
+                  fill="#9FA0A0"
+                />
+                <path
+                  d="M107.094 17.6885C107.114 21.5488 107.127 25.6874 107.127 29.9939C107.127 34.3003 107.114 38.4513 107.094 42.3156C107.472 43.163 107.89 43.9858 108.341 44.7882C108.308 40.2443 108.292 35.2419 108.292 29.9939C108.292 24.7459 108.308 19.7558 108.341 15.2159C107.89 16.0183 107.476 16.8411 107.094 17.6885Z"
+                  fill="#9FA0A0"
+                />
+                <path
+                  d="M156.413 29.9938C156.413 22.7031 156.446 15.8914 156.506 10.1071C156.068 9.60768 155.613 9.12054 155.142 8.65387C155.211 14.7329 155.247 22.0809 155.247 29.9938C155.247 37.9068 155.207 45.2671 155.138 51.3461C155.609 50.8753 156.064 50.3923 156.502 49.8929C156.446 44.1086 156.409 37.2927 156.409 29.9938H156.413Z"
+                  fill="#9FA0A0"
+                />
+                <path
+                  d="M110.774 48.4519C110.725 42.987 110.697 36.6951 110.697 29.9898C110.697 23.2844 110.725 17.0048 110.774 11.544C110.319 12.1294 109.88 12.7311 109.47 13.3533C109.511 18.3762 109.535 24.0213 109.535 29.9898C109.535 35.9582 109.511 41.6156 109.47 46.6426C109.88 47.2648 110.319 47.8666 110.774 48.4519Z"
+                  fill="#9FA0A0"
+                />
+                <path
+                  d="M134.757 29.9939C134.757 17.8031 134.85 6.95913 134.997 0.020468C134.741 0.0122808 134.489 0 134.233 0C133.937 0 133.644 0.0122808 133.352 0.020468C133.498 6.95913 133.591 17.8031 133.591 29.9898C133.591 42.1764 133.498 53.0368 133.352 59.9754C133.644 59.9836 133.937 59.9959 134.233 59.9959C134.489 59.9959 134.741 59.9836 134.997 59.9754C134.85 53.0368 134.757 42.1846 134.757 29.9857V29.9939Z"
+                  fill="#9FA0A0"
+                />
+                <path
+                  d="M105.884 29.9939C105.884 26.8213 105.892 23.7429 105.904 20.7996C104.978 23.702 104.47 26.7927 104.47 30.0021C104.47 33.2114 104.978 36.3062 105.904 39.2045C105.892 36.2571 105.884 33.1705 105.884 29.9939Z"
+                  fill="#9FA0A0"
+                />
+                <path
+                  d="M132.592 59.955C132.446 53.0163 132.353 42.1764 132.353 29.9939C132.353 17.8113 132.446 6.9878 132.592 0.0491333C132.04 0.0777886 131.496 0.126912 130.951 0.188316C131.098 7.13107 131.187 17.9014 131.187 29.9939C131.187 42.0864 131.094 52.873 130.951 59.8158C131.496 59.8772 132.04 59.9222 132.592 59.955Z"
+                  fill="#9FA0A0"
+                />
+                <path
+                  d="M122.926 57.7526C122.804 50.8303 122.727 40.9565 122.727 29.9938C122.727 19.0312 122.804 9.16966 122.926 2.24738C122.402 2.46434 121.886 2.68949 121.378 2.9351C121.492 9.81645 121.565 19.3955 121.565 29.9897C121.565 40.584 121.492 50.1794 121.378 57.0608C121.886 57.3064 122.402 57.5315 122.926 57.7485V57.7526Z"
+                  fill="#9FA0A0"
+                />
+                <path
+                  d="M125.347 58.6409C125.217 51.69 125.131 41.4314 125.131 29.9938C125.131 18.5563 125.212 8.3141 125.347 1.36316C124.81 1.531 124.286 1.7193 123.767 1.9158C123.893 8.85446 123.97 18.8633 123.97 29.9938C123.97 41.1244 123.893 51.1496 123.767 58.0883C124.286 58.2848 124.814 58.4731 125.347 58.6409Z"
+                  fill="#9FA0A0"
+                />
+                <path
+                  d="M130.18 59.7175C130.038 52.7707 129.944 42.0373 129.944 29.9939C129.944 17.9505 130.038 7.23341 130.18 0.28656C129.631 0.360245 129.087 0.450304 128.551 0.556738C128.693 7.50768 128.783 18.1142 128.783 29.998C128.783 41.8817 128.693 52.5005 128.551 59.4556C129.087 59.562 129.631 59.6479 130.18 59.7257V59.7175Z"
+                  fill="#9FA0A0"
+                />
+                <path
+                  d="M127.767 59.2836C127.629 52.3286 127.54 41.7916 127.54 29.9939C127.54 18.1961 127.629 7.67553 127.767 0.72049C127.227 0.843298 126.691 0.978387 126.159 1.12985C126.293 8.08489 126.378 18.4335 126.378 29.9939C126.378 41.5542 126.293 51.9192 126.159 58.8743C126.691 59.0257 127.223 59.1608 127.767 59.2836Z"
+                  fill="#9FA0A0"
+                />
+                <path
+                  d="M124.161 19.7271H107.809V24.4061H113.418V40.3138H118.998V24.4061H124.161V19.7271Z"
+                  fill="black"
+                />
+                <path
+                  d="M154.788 40.2483H161.51L154.151 30.6079V30.5874C154.017 30.4155 153.936 30.2026 153.936 29.9693C153.936 29.7155 154.029 29.4862 154.183 29.3102L154.175 29.302L160.617 19.7476H154.321L149.045 27.6114H147.656V19.7271H142.072V40.2483H147.656V32.2904H149.029L154.788 40.2483Z"
+                  fill="black"
+                />
+                <path
+                  d="M131.642 35.4261V32.0734H139.079V28.2172H131.642V24.4634H140.195V19.6862L125.94 19.7025V40.2115L140.2 40.2074V35.4261H131.642Z"
+                  fill="black"
+                />
+                <path
+                  d="M95.5919 19.7598V27.6236H88.4558V19.7598H82.8712V40.2975H88.4558V32.3026H95.5919V40.2975H101.176V19.7598H95.5919Z"
+                  fill="black"
+                />
+                <path
+                  d="M42.9952 40.2974H48.5798L42.654 19.6493H33.8974L27.9717 40.2974H33.5563L34.5107 36.9734H42.0448L42.9993 40.2974H42.9952ZM35.8551 32.2944L38.2757 23.8534L40.7005 32.2944H35.8551Z"
+                  fill="black"
+                />
+                <path
+                  d="M24.7346 19.6452L21.6398 35.5366L18.0534 19.8376H17.0015H13.4111H12.3592L8.72008 35.774L5.58459 19.637H0L4.02496 40.3384H12.347L15.2063 27.7014L18.0656 40.3384H26.2861L30.3192 19.6452H24.7346Z"
+                  fill="black"
+                />
+                <path
+                  d="M62.1331 19.6943H45.7814V24.3733H51.3904V40.2934H56.9709V24.3733H62.1331V19.6943Z"
+                  fill="black"
+                />
+                <path
+                  d="M81.1857 32.5278H75.6011V34.2103C75.4996 35.0331 74.8985 35.5612 74.0496 35.6799H71.1457V35.6881C69.7688 35.7413 68.7412 34.8693 68.8671 33.498V26.3424C68.8996 25.0037 69.7688 24.3365 70.8085 24.3201L73.9481 24.3283C75.1706 24.5698 75.5646 25.4786 75.5849 26.3915V27.3658H81.1451V24.4102H81.141C81.141 24.2546 81.1167 24.0622 81.0801 23.8739H81.0882C81.0761 23.8002 81.0558 23.7306 81.0395 23.6651C81.0314 23.6365 81.0233 23.6037 81.0151 23.5792C80.4628 21.516 78.9478 20.0628 76.6774 19.678L68.9484 19.6616C65.8657 19.6616 63.2866 22.4985 63.2866 25.9985H63.3069L63.2866 26.0026V34.0547C63.376 37.6489 65.6707 40.3057 68.725 40.3548H76.1697C76.1941 40.3548 76.2185 40.3548 76.2307 40.3548C76.3119 40.3548 76.519 40.3507 76.7424 40.3302C76.7424 40.3302 76.7587 40.3302 76.7668 40.3302C76.8765 40.3179 76.9821 40.3016 77.0795 40.2811C79.1834 39.8922 80.8892 38.5004 81.1573 36.2202C81.1573 36.2202 81.1776 35.9501 81.1776 35.815V35.7454V32.5278H81.1857Z"
+                  fill="black"
+                />
+              </g>
+              <defs>
+                <clipPath id="clip0_649_2540">
+                  <rect width="164" height="60" fill="black" />
+                </clipPath>
+              </defs>
+            </svg>	
+	</a>
+          </h1>
+    
+          <div class="m_gnb__header__util">
+            <div class="language">
+              <a href="javascript:void(0);" class="anchor active" onclick="javascript:fnLangChg('KO')">KR</a>
+              <span class="seperate-dot">·</span>
+              <a href="javascript:void(0);" class="anchor " onclick="javascript:fnLangChg('EN')">EN</a>
+            </div>
+    
+            <button type="button" class="btn-drawer-menu-close">x</button>
+          </div>
+          
+        </div>
+        <div class="m_gnb__body" data-lenis-prevent>
+          <div class="accordion">
+            <ul class="accordion__list-wrap">
+              <li class="accordion__list">
+                <div class="accordion__list__header">
+                  <p class="accordion__list__title">제품</p>
+                  <!-- 240617 : 수정 : START -->
+                  <button type="button" class="btn-m_gnb-accordion-opener">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="20"
+                      height="11"
+                      viewBox="0 0 20 11"
+                      fill="none"
+                    >
+                      <path
+                        d="M1 10L10 2L19 10"
+                        stroke="#7C43F4"
+                        stroke-width="2"
+                      />
+                    </svg>
+                  </button>
+                  <!-- 240617 : 수정 : END -->
+                </div>
+                <div class="accordion__list__content">
+                  <ul class="m_gnb__list-wrap">
+                    <li class="m_gnb__list mb-3">
+                      <a
+                        href="../../product/all.html"
+                        class="anchor m_gnb__list__title m_gnb__list__title-special"
+                        >와치올 모두 살펴보기</a
+                      >
+                    </li>
+                    <li class="m_gnb__list">
+                      <a
+                        href="../../product/reason/client.html"
+                        class="anchor m_gnb__list__title m_gnb__list__title-special"
+                        >와치올을 선택하는 이유</a
+                      >
+                    </li>
+                    <li class="m_gnb__list">
+                      <a href="../../product/cloud.html" class="anchor m_gnb__list__title"
+                        >클라우드</a
+                      >
+                      <a href="../../product/cloud/platform.html" class="anchor m_gnb__list__link"
+                        >클라우드 관리 플랫폼</a
+                      >
+                      <a href="../../product/cloud/monitoring.html" class="anchor m_gnb__list__link"
+                        >클라우드 모니터링</a
+                      >
+                    </li>
+                    <li class="m_gnb__list">
+                      <a href="../../product/ai.html" class="anchor m_gnb__list__title"
+                        >AI</a
+                      >
+                      <a href="../../product/ai/aiops.html" class="anchor m_gnb__list__link"
+                        >AIOps</a
+                      >
+                    </li>
+                    <li class="m_gnb__list">
+                      <a href="../../product/obs.html" class="anchor m_gnb__list__title"
+                        >옵저버빌리티</a
+                      >
+                      <a href="../../product/obs/app.html" class="anchor m_gnb__list__link"
+                        >애플리케이션 성능 모니터링</a
+                      >
+                      <a href="../../product/obs/db.html" class="anchor m_gnb__list__link"
+                        >DB 성능 모니터링</a
+                      >
+                      <a href="../../product/obs/web.html" class="anchor m_gnb__list__link"
+                        >웹서비스 성능 모니터링</a
+                      >
+                      <!-- 240613 : 수정 : START -->
+                      <a href="../../product/obs/log.html" class="anchor m_gnb__list__link"
+                        >통합 로그 관리</a
+                      >
+                      <!-- 240613 : 수정 : END -->
+                    </li>
+                    <li class="m_gnb__list">
+                      <a href="../../product/infra.html" class="anchor m_gnb__list__title"
+                        >IT 인프라</a
+                      >
+                      <a href="../../product/infra/server.html" class="anchor m_gnb__list__link"
+                        >서버 모니터링</a
+                      >
+                      <a href="../../product/infra/network.html" class="anchor m_gnb__list__link"
+                        >네트워크 모니터링</a
+                      >
+                      <a href="../../product/infra/iot.html" class="anchor m_gnb__list__link"
+                        >시설/IoT 모니터링</a
+                      >
+                      <a href="../../product/infra/storage.html" class="anchor m_gnb__list__link"
+                        >스토리지 모니터링</a
+                      >
+                    </li>
+                    <li class="m_gnb__list">
+                      <a href="../../product/service.html" class="anchor m_gnb__list__title"
+                        >IT 서비스</a
+                      >
+                      <a href="../../product/service/itservice.html" class="anchor m_gnb__list__link"
+                        >IT 서비스 관리</a
+                      >
+                      <a href="../../product/service/itasset.html" class="anchor m_gnb__list__link"
+                        >IT 자산 관리</a
+                      >
+                    </li>
+                    <li class="m_gnb__list">
+                      <a href="../../product/visual.html" class="anchor m_gnb__list__title"
+                        >시각화</a
+                      >
+                      <a href="../../product/visual/dashboard.html" class="anchor m_gnb__list__link"
+                        >통합 대시보드</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li class="accordion__list">
+                <div class="accordion__list__header">
+                  <p class="accordion__list__title">서비스 플랫폼</p>
+                  <!-- 240613 : 수정 : START -->
+                  <button type="button" class="btn-m_gnb-accordion-opener">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="20"
+                      height="11"
+                      viewBox="0 0 20 11"
+                      fill="none"
+                    >
+                      <path
+                        d="M1 10L10 2L19 10"
+                        stroke="#7C43F4"
+                        stroke-width="2"
+                      />
+                    </svg>
+                  </button>
+                  <!-- 240613 : 수정 : END -->
+                </div>
+                <div class="accordion__list__content">
+                  <ul class="m_gnb__list-wrap">
+                    <li class="m_gnb__list">
+                      <a href="../../product/platform/applemango.html" class="anchor m_gnb__list__title"
+                        >와치올 애플망고</a
+                      >
+                    </li>
+                    <li class="m_gnb__list">
+                      <a href="../../product/platform/guava.html" class="anchor m_gnb__list__title"
+                        >와치올 구아바</a
+                      >
+                    </li>
+                    <li class="m_gnb__list">
+                      <a href="../../product/platform/itsm.html" class="anchor m_gnb__list__title"
+                        >와치올 ITSM</a
+                      >
+                    </li>
+                    <li class="m_gnb__list">
+                      <a href="../../product/platform/cmp.html" class="anchor m_gnb__list__title"
+                        >와치올 CMP</a
+                      >
+                    </li>
+                    <li class="m_gnb__list">
+                      <a href="../../product/platform/log.html" class="anchor m_gnb__list__title"
+                        >와치로그</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li class="accordion__list">
+                <div class="accordion__list__header">
+                  <p class="accordion__list__title">고객지원</p>
+                  <!-- 240613 : 수정 : START -->
+                  <button type="button" class="btn-m_gnb-accordion-opener">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="20"
+                      height="11"
+                      viewBox="0 0 20 11"
+                      fill="none"
+                    >
+                      <path
+                        d="M1 10L10 2L19 10"
+                        stroke="#7C43F4"
+                        stroke-width="2"
+                      />
+                    </svg>
+                  </button>
+                  <!-- 240613 : 수정 : END -->
+                </div>
+                <div class="accordion__list__content">
+                  <ul class="m_gnb__list-wrap">
+                    <li class="m_gnb__list">
+                      <a href="../../customer/faq/list.html" class="anchor m_gnb__list__title"
+                        >FAQ</a
+                      >
+                    </li>
+                    <li class="m_gnb__list">
+                      <a href="../../customer/support/qna.html" class="anchor m_gnb__list__title"
+                        >문의하기</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li class="accordion__list">
+                <div class="accordion__list__header">
+                  <p class="accordion__list__title">회사 소개</p>
+                  <!-- 240613 : 수정 : START -->
+                  <button type="button" class="btn-m_gnb-accordion-opener">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="20"
+                      height="11"
+                      viewBox="0 0 20 11"
+                      fill="none"
+                    >
+                      <path
+                        d="M1 10L10 2L19 10"
+                        stroke="#7C43F4"
+                        stroke-width="2"
+                      />
+                    </svg>
+                  </button>
+                  <!-- 240613 : 수정 : END -->
+                </div>
+                <div class="accordion__list__content">
+                  <ul class="m_gnb__list-wrap">
+                    <li class="m_gnb__list">
+                      <a href="../aboutUs.html" class="anchor m_gnb__list__title"
+                        >기업 정보</a
+                      >
+                    </li>
+                    <li class="m_gnb__list">
+                      <a href="list.html" class="anchor m_gnb__list__title"
+                        >뉴스룸</a
+                      >
+                    </li>
+<li class="m_gnb__list">
+                      <a href="../recruit/info.html" class="anchor m_gnb__list__title"
+                        >인재 채용</a
+                      >
+                    </li>
+</ul>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div class="footer-bottom-area">
+            <div class="footer__term">
+              <a href="../../policy/policyEmail.html">이메일무단수집거부</a>
+              <a href="../../policy/policyPrivacy.html">개인정보처리방침</a>
+              <a href="https://blog.naver.com/watch_all" target="_blank" class="lg-hide">네이버 블로그</a>
+            </div>
+            <p class="copyright">
+               Copyright © Watchtek Co., Ltd. All Rights Reserved.</p>
+          </div>
+        </div>
+      </div>
+      <!-- MO GNB : end -->
+
+</header>
+    
+<div class="content" id="content">
+      <div class="layout-container">
+        <div class="article__view">
+          <div class="article__header">
+            <p class="article__category color-main">
+               테크</p>
+            <p class="article__title">
+            AI·HPC 시대의 핵심 요소, InfiniBand와 GPU 모니터링</p>
+            <div class="article__util">
+              <div class="article__writer">
+<img
+                  src="../../common/imgReader@fIdx=4630"
+                  alt=""
+                  class="img"
+                />
+                <p class="str">와치텍</p>
+              </div>
+              <p class="article__date">2024.11.29</p>
+            </div>
+          </div>
+          <div class="article__content">
+			<p style="line-height: 1.8;"><span style="font-family: 나눔고딕, NanumGothic, sans-serif; font-size: 14pt;">﻿</span><!-- Not Allowed Attribute Filtered ( data-input-buffer="INPUT_BUFFER_DATA;Mozilla%2F5.0%20(Windows%20NT%2010.0%3B%20Win64%3B%20x64)%20AppleWebKit%2F537.36%20(KHTML%2C%20like%20Gecko)%20Chrome%2F129.0.0.0%20Safari%2F537.36%20Edg%2F129.0.0.0;blog.naver.com") --><span></span><span id="SE-05e81c70-6de3-43f3-9fd1-699dc6b9033f" class="se-ff-nanumsquare se-fs15 __se-node" style="font-family: 나눔고딕, NanumGothic, sans-serif; font-size: 14pt;">&nbsp; 데이터<span style="background-color: rgb(255, 255, 255); color: rgb(0, 0, 0);">센터는 다양한 사용자 IT 서비스를 지속적으로 제공하기 위한 수많은 인프라를 기반으로 구성되어 있습니다.<span style="background-color: rgb(222, 247, 229);">특히 최근 AI(인공지능) 서비스 수요가 급증함에 따라 GPU, InfiniBand, 고성능 컴퓨팅 클러스터</span></span></span><span style="background-color: rgb(222, 247, 229); font-family: 나눔고딕, NanumGothic, sans-serif; font-size: 18.6667px;">(HPC)</span><span class="se-ff-nanumsquare se-fs15 __se-node" style="font-family: 나눔고딕, NanumGothic, sans-serif; font-size: 14pt;"><span style="background-color: rgb(255, 255, 255);"><span style="background-color: rgb(222, 247, 229);">와 같은 첨단 인프라 기술이 적용되고 이로 인한 높은 전력과 고도화된 공조 시스템의 도입으로 데이터센터의 환경은 더욱 복잡해지고 있습니다.</span></span></span><span id="SE-35163b62-0170-451e-b216-18d176afe85e" class="se-ff-nanumsquare se-fs15 __se-node" style="font-family: 나눔고딕, NanumGothic, sans-serif; font-size: 14pt;"><span style="background-color: rgb(255, 255, 255);">&nbsp;이로</span><span style="background-color: rgb(255, 255, 255);"> 인해 높은 </span><span style="background-color: rgb(255, 255, 255);">전력 소</span>비와 정교한 공조 시스템이 필수적이며, 운영 관리의 복잡성 또한 증가하고 있습니다.</span></p><p style="line-height: 1.8;"><span class="se-ff-nanumsquare se-fs15 __se-node" style="font-family: 나눔고딕, NanumGothic, sans-serif; font-size: 14pt;">&nbsp;</span></p><p style="line-height: 1.8;"><span class="se-ff-nanumsquare se-fs15 __se-node" style="font-family: 나눔고딕, NanumGothic, sans-serif; font-size: 14pt;">&nbsp;</span></p><p style="text-align: center; line-height: 1.8;" align="center"><span class="se-ff-nanumsquare se-fs15 __se-node" style="font-family: 나눔고딕, NanumGothic, sans-serif; font-size: 14pt;"><img src="../../common/imgReader@fIdx=4621" title="futuristic-computer-network-powers-global-communications-inside-modern-factory-generated-by-artificial-intelligence.jpg" alt="">&nbsp;</span></p><p style="text-align: center; line-height: 1.8;" align="center"><span class="se-ff-nanumsquare se-fs15 __se-node" style="font-family: 나눔고딕, NanumGothic, sans-serif; font-size: 14pt;"><span style="color: rgb(99, 99, 99); font-size: 10pt;">[그림1] 데이터센터 이미지 예시</span></span></p><p style="line-height: 1.8;"><span class="se-ff-nanumsquare se-fs15 __se-node" style="font-family: 나눔고딕, NanumGothic, sans-serif; font-size: 14pt;">&nbsp;</span></p><p style="line-height: 1.8;"><span class="se-ff-nanumsquare se-fs15 __se-node" style="font-family: 나눔고딕, NanumGothic, sans-serif; font-size: 14pt;">&nbsp;</span></p><p style="line-height: 1.8;"><span style="font-size: 14pt; font-family: 나눔고딕, NanumGothic, sans-serif;">﻿&nbsp;</span><!-- Not Allowed Attribute Filtered ( data-input-buffer="INPUT_BUFFER_DATA;Mozilla%2F5.0%20(Windows%20NT%2010.0%3B%20Win64%3B%20x64)%20AppleWebKit%2F537.36%20(KHTML%2C%20like%20Gecko)%20Chrome%2F129.0.0.0%20Safari%2F537.36%20Edg%2F129.0.0.0;blog.naver.com") --><span></span><span id="SE-9a25f7c4-39e9-4b59-9002-5e260e836389" class="se-ff-nanumsquare se-fs15 __se-node" style="font-size: 14pt; font-family: 나눔고딕, NanumGothic, sans-serif;">  이처럼 방대하고 복잡한 환경의 데이터센터를 효율적이고 안정적으로 운영하기 위해서는 섬세한 관리가 필수적입니다. 고가의 설비 및 시스템이 집약되어 있기 때문에 예기치 못한 재난이나 설비 장애가 서비스 중단으로 이어질 수 있으며, 복구 비용 또한 막대합니다. <span style="background-color: rgb(247, 226, 210);">특히 InfiniBand와 GPU는 AI, 게임 산업, 금융 데이터 분석 등 다양한 분야에서 핵심적인 역할을 수행하며, 고성능 연산과 데이터 전송이 중요한 슈퍼컴퓨터 및 HPC 클러스터 환경에서 필수적인 인프라로 자리 잡고 있습니다.</span></span><span style="font-size: 14pt; font-family: 나눔고딕, NanumGothic, sans-serif; background-color: rgb(247, 226, 210);">﻿</span></p><p>&nbsp;</p><p style="text-align: center; " align="center"><u><br></u></p><p style="text-align: center; " align="center"><u><br></u></p><p style="text-align: center; " align="center"><u>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</u></p><p style="text-align: center; " align="center"><u><br></u></p><p><span style="font-family: 나눔고딕, NanumGothic, sans-serif; font-size: 14pt;">&nbsp;</span></p><p><span style="font-family: 나눔고딕, NanumGothic, sans-serif; font-size: 14pt;">&nbsp;</span></p><blockquote class=se2_quote1 style="_zoom:1;padding:0 8px; margin:0 0 30px 20px; margin-right:15px; border-left:2px solid #cccccc;color:#888888;"><span style="color: rgb(0, 0, 0); font-family: 나눔고딕, NanumGothic, sans-serif; font-size: 24px; font-weight: 700; white-space-collapse: preserve;">그렇다면 InfiniBand란 무엇일까요?</span><span style="text-align: center;">&nbsp;</span></blockquote><p style="text-align: center; line-height: 1.8;" align="center"><img src="../../common/imgReader@fIdx=4622" title="??2.1.jpg" alt="">&nbsp;</p><p align="center" style="text-align: center; line-height: 1.8;"><span class="se-ff-nanumsquare se-fs15 __se-node" style="font-family: 나눔고딕, NanumGothic, sans-serif; font-size: 14pt;"><span style="color: rgb(99, 99, 99); font-size: 10pt;">[그림2] InfiniBand Switch 이미 예시 (NVIDIA)</span></span></p><div><span class="se-ff-nanumsquare se-fs15 __se-node" style="font-family: 나눔고딕, NanumGothic, sans-serif; font-size: 14pt;"><span style="color: rgb(99, 99, 99); font-size: 10pt;"><br></span></span></div><p style="line-height: 1.8;">&nbsp;</p><p style="line-height: 1.8;">﻿&nbsp;&nbsp;<span style="font-family: 나눔고딕, NanumGothic, sans-serif; font-size: 14pt;">고속, 저지연, 고신뢰성의 통신을 제공하는 통신 프로토콜로 주로 슈퍼컴퓨터, 데이터 센터, 대규모 HPC 환경에서 서버 간 데이터 전송 속도와 효율성을 극대화하는 데 사용됩니다. 데이터 전송 속도(최대 수백 Gbps)와 효율성 면에서 Ethernet보다 뛰어난 성능을 제공합니다.</span></p><p id="SE-f14c5f89-6a90-4fc9-9977-b196719c7567" class="se-text-paragraph se-text-paragraph-align-left se-is-text-paragraph-block-selected" style="line-height: 1.8;"><span id="SE-93959a6b-088a-4daa-a09a-b5830271f14c" class="se-ff-nanumsquare se-fs15 __se-node"></span></p><p id="SE-b6e4ca0d-e3b4-4eed-ad68-36e51e0ce3c4" class="se-text-paragraph se-text-paragraph-align-left se-is-text-paragraph-block-selected" style="line-height: 1.8;"><span class="se-ff-nanumsquare se-fs15 __se-node" style="font-family: 나눔고딕, NanumGothic, sans-serif; font-size: 14pt;">&nbsp;</span></p><p id="SE-b6e4ca0d-e3b4-4eed-ad68-36e51e0ce3c4" class="se-text-paragraph se-text-paragraph-align-left se-is-text-paragraph-block-selected" style="line-height: 1.8;"><span id="SE-a47222b5-8c24-4749-9f42-be6fd2bc4806" class="se-ff-nanumsquare se-fs15 __se-node" style="font-family: 나눔고딕, NanumGothic, sans-serif; font-size: 14pt;">&nbsp; 고성능 네트워크 환경에서 시스템의 안정성과 효율성을 유지하기 위해서는 InfiniBand 네크워크의 상태와 성능을 실시간으로 감시하고 잠재적인 문제를 조기에 발견해 대응해야 합니다. <span style="background-color: rgb(237, 242, 194);">특히 대규모의 슈퍼컴 클러스터에서의 연구 작업, 데이터센터 내 서버 간 데이터 전송 최적화, 고성능 애플리케이션 동작을 위해서는 InfiniBand의 성능을 지속적으로 모니터링 하여야 합니다.</span>&nbsp;</span></p><p id="SE-b6e4ca0d-e3b4-4eed-ad68-36e51e0ce3c4" class="se-text-paragraph se-text-paragraph-align-left se-is-text-paragraph-block-selected" style="line-height: 1.8;"><span class="se-ff-nanumsquare se-fs15 __se-node" style="font-family: 나눔고딕, NanumGothic, sans-serif; font-size: 14pt;">&nbsp;</span></p><p id="SE-b6e4ca0d-e3b4-4eed-ad68-36e51e0ce3c4" class="se-text-paragraph se-text-paragraph-align-left se-is-text-paragraph-block-selected" style="line-height: 1.8;"><span class="se-ff-nanumsquare se-fs15 __se-node" style="font-family: 나눔고딕, NanumGothic, sans-serif; font-size: 14pt;">&nbsp;</span></p><p id="SE-b6e4ca0d-e3b4-4eed-ad68-36e51e0ce3c4" class="se-text-paragraph se-text-paragraph-align-left se-is-text-paragraph-block-selected" style="text-align: center; line-height: 1.8;" align="center"><span class="se-ff-nanumsquare se-fs15 __se-node" style="font-family: 나눔고딕, NanumGothic, sans-serif; font-size: 14pt;"><img src="../../common/imgReader@fIdx=4623" title="??3.2.png" alt="">&nbsp;</span></p><p id="SE-b6e4ca0d-e3b4-4eed-ad68-36e51e0ce3c4" class="se-text-paragraph se-text-paragraph-align-left se-is-text-paragraph-block-selected" style="text-align: center; line-height: 1.8;" align="center"><span class="se-ff-nanumsquare se-fs15 __se-node" style="font-family: 나눔고딕, NanumGothic, sans-serif; font-size: 14pt;"><span style="color: rgb(99, 99, 99); font-size: 13.3333px;">[그림3] 와치올 InfiniBand 모니터링 화면 예시</span></span></p><p style="line-height: 1.8;"><span style="font-family: 나눔고딕, NanumGothic, sans-serif; font-size: 14pt;">&nbsp;</span></p><p style="line-height: 1.8;"><span style="font-family: 나눔고딕, NanumGothic, sans-serif; font-size: 14pt;">&nbsp;</span></p><p style="line-height: 1.8;">﻿<span style="font-family: 나눔고딕, NanumGothic, sans-serif; font-size: 14pt;">InfiniBand 모니터링을 위한 주요 지표는 다음과 같습니다.</span></p><p style="line-height: 1.8;"><span style="font-family: 나눔고딕, NanumGothic, sans-serif; font-size: 14pt;">&nbsp;</span></p><p id="SE-2ff5c4c8-5176-4c69-b62f-e86a9ced155a" class="se-text-paragraph se-text-paragraph-align-left se-is-text-paragraph-block-selected" style="line-height: 1.8;"><span id="SE-4f79b4ac-65fd-4436-9d5e-bd3f043b8da0" class="se-ff-nanumsquare se-fs15 __se-node" style="font-size: 14pt; font-family: 나눔고딕, NanumGothic, sans-serif;"> </span></p><p id="SE-727905db-49d3-43d8-b09e-b1e3da1b5a0d" class="se-text-paragraph se-text-paragraph-align-left se-is-text-paragraph-block-selected" style="line-height: 1.8;"><span id="SE-ed9e5978-161d-4ae8-a4ca-1b1788182b3b" class="se-ff-nanumsquare se-fs15 __se-node" style="font-size: 14pt; font-family: 나눔고딕, NanumGothic, sans-serif;"><span style="color: rgb(136, 136, 136); font-size: 24px; font-weight: 700; white-space-collapse: preserve;">1. 대역폭 (Bandwidth)</span></span></p><p id="SE-abfd5d77-a300-47a8-a0b6-d8c0b6034522" class="se-text-paragraph se-text-paragraph-align-left se-is-text-paragraph-block-selected" style="line-height: 1.8;"><span id="SE-ecf96456-14da-4cf4-9313-227963e6c711" class="se-ff-nanumsquare se-fs15 __se-node" style="font-size: 14pt; font-family: 나눔고딕, NanumGothic, sans-serif;">     • 네트워크 링크에서 사용 중인 실시간 사용량을 나타내는 지표입니다.</span></p><p id="SE-1983348b-0b34-4342-88d5-b01b542b67ca" class="se-text-paragraph se-text-paragraph-align-left se-is-text-paragraph-block-selected" style="line-height: 1.8;"><span id="SE-e1a045c5-b221-46b0-b646-23421f2063f4" class="se-ff-nanumsquare se-fs15 __se-node" style="font-size: 14pt; font-family: 나눔고딕, NanumGothic, sans-serif;">     • Infiniband 네트워크의 최대 전송 속도를 모니터링하여 네트워크의 용량을 관리합니다.</span></p><p id="SE-1983348b-0b34-4342-88d5-b01b542b67ca" class="se-text-paragraph se-text-paragraph-align-left se-is-text-paragraph-block-selected" style="line-height: 1.8;"><span class="se-ff-nanumsquare se-fs15 __se-node" style="font-size: 14pt; font-family: 나눔고딕, NanumGothic, sans-serif;">&nbsp;</span></p><p id="SE-4cd09de4-6109-4dba-97d1-86d42d6f0658" class="se-text-paragraph se-text-paragraph-align-left se-is-text-paragraph-block-selected" style="line-height: 1.8;"><span id="SE-bdd16b5e-a44a-4584-bde6-bdc6be11983d" class="se-ff-nanumsquare se-fs15 __se-node"><b></b></span></p><p id="SE-79b33bad-8229-45c6-bb1e-dc65abdc4aef" class="se-text-paragraph se-text-paragraph-align-left se-is-text-paragraph-block-selected" style="line-height: 1.8;"><span id="SE-e0a2daeb-90c3-4896-9635-42e64f988683" class="se-ff-nanumsquare se-fs15 __se-node" style="font-size: 14pt; font-family: 나눔고딕, NanumGothic, sans-serif;"><span style="color: rgb(136, 136, 136); font-size: 24px; font-weight: 700; white-space-collapse: preserve;">2. 전송 지연 (Latency)</span></span></p><p id="SE-79a26113-7c1d-4afd-b4f6-ffe77b1aba76" class="se-text-paragraph se-text-paragraph-align-left se-is-text-paragraph-block-selected" style="line-height: 1.8;"><span id="SE-31077b83-4623-41e0-bd6f-429f9e46703b" class="se-ff-nanumsquare se-fs15 __se-node" style="font-size: 14pt; font-family: 나눔고딕, NanumGothic, sans-serif;">     • 패킷이 발신지에서 수신지까지 도달하는 데 걸리는 시간을 나타냅니다.</span></p><p id="SE-1e6e0641-2a2c-461f-8cd9-92be8d0a5962" class="se-text-paragraph se-text-paragraph-align-left se-is-text-paragraph-block-selected" style="line-height: 1.8;"><span id="SE-e930875c-1a0a-4359-ad88-004d06f82372" class="se-ff-nanumsquare se-fs15 __se-node" style="font-size: 14pt; font-family: 나눔고딕, NanumGothic, sans-serif;">     • Infiniband는 마이크로초(μs) 단위의 초저지연을 목표로 데이터 지연 시간을 측정하여 애플리케이션 성능에 미치는 영향을 파악합니다.</span></p><p id="SE-1e6e0641-2a2c-461f-8cd9-92be8d0a5962" class="se-text-paragraph se-text-paragraph-align-left se-is-text-paragraph-block-selected" style="line-height: 1.8;"><span class="se-ff-nanumsquare se-fs15 __se-node" style="font-size: 14pt; font-family: 나눔고딕, NanumGothic, sans-serif;">&nbsp;</span></p><p id="SE-8ca17492-8717-4584-a684-6438f23fdd27" class="se-text-paragraph se-text-paragraph-align-left se-is-text-paragraph-block-selected" style="line-height: 1.8;"><span id="SE-c552cea7-d2f9-4334-82d3-0ac49d6b9dad" class="se-ff-nanumsquare se-fs15 __se-node"></span></p><p id="SE-004093c1-5133-4674-8ece-5a5fc9636a21" class="se-text-paragraph se-text-paragraph-align-left se-is-text-paragraph-block-selected" style="line-height: 1.8;"><span id="SE-7ecb7351-9de3-4262-a953-d3fe59a01f5d" class="se-ff-nanumsquare se-fs15 __se-node" style="font-size: 14pt; font-family: 나눔고딕, NanumGothic, sans-serif;"><span style="color: rgb(136, 136, 136); font-size: 24px; font-weight: 700; white-space-collapse: preserve;">3. 패킷 손실률 (Packet Loss Rate)</span></span></p><p id="SE-d78bb65c-9a4a-4e97-b47e-3d61364199a9" class="se-text-paragraph se-text-paragraph-align-left se-is-text-paragraph-block-selected" style="line-height: 1.8;"><span id="SE-b8b03922-f4d1-4558-b299-05e6acc00018" class="se-ff-nanumsquare se-fs15 __se-node" style="font-size: 14pt; font-family: 나눔고딕, NanumGothic, sans-serif;">     • 네트워크에서 전송 시 손실되거나 손상된 패킷 오류 발생 비율을 나타냅니다.</span></p><p id="SE-1873c6e4-e8e7-434e-9425-cdcb45325c44" class="se-text-paragraph se-text-paragraph-align-left se-is-text-paragraph-block-selected" style="line-height: 1.8;"><span id="SE-13a478cc-4dc2-4e79-ad80-96eb0de37873" class="se-ff-nanumsquare se-fs15 __se-node" style="font-size: 14pt; font-family: 나눔고딕, NanumGothic, sans-serif;">     • 패킷 손실을 모니터링하여 네트워크의 품질 안정성을 평가합니다.</span></p><p id="SE-1873c6e4-e8e7-434e-9425-cdcb45325c44" class="se-text-paragraph se-text-paragraph-align-left se-is-text-paragraph-block-selected" style="line-height: 1.8;"><span class="se-ff-nanumsquare se-fs15 __se-node" style="font-size: 14pt; font-family: 나눔고딕, NanumGothic, sans-serif;">&nbsp;</span></p><p id="SE-321374fa-ef69-4214-84a3-0a602da8fc1d" class="se-text-paragraph se-text-paragraph-align-left se-is-text-paragraph-block-selected" style="line-height: 1.8;"><span id="SE-805825ac-f547-4adf-8f76-78b33f1255cc" class="se-ff-nanumsquare se-fs15 __se-node"></span></p><p id="SE-577d366e-e654-40ba-9f7c-cb94253769f9" class="se-text-paragraph se-text-paragraph-align-left se-is-text-paragraph-block-selected" style="line-height: 1.8;"><span id="SE-3ce50469-e94e-479a-8f51-affa518fec22" class="se-ff-nanumsquare se-fs15 __se-node" style="font-size: 14pt; font-family: 나눔고딕, NanumGothic, sans-serif;"><span style="color: rgb(136, 136, 136); font-size: 24px; font-weight: 700; white-space-collapse: preserve;">4. 포트 상태 (Port Status)</span></span></p><p id="SE-ef804cd4-cd77-4283-b9a2-bbc219bf66b5" class="se-text-paragraph se-text-paragraph-align-left se-is-text-paragraph-block-selected" style="line-height: 1.8;"><span id="SE-7c163df7-8b1c-4da8-be0a-16d10431953f" class="se-ff-nanumsquare se-fs15 __se-node" style="font-size: 14pt; font-family: 나눔고딕, NanumGothic, sans-serif;">     • Infiniband 스위치나 노드의 각 포트가 활성화 상태인지, 어떤 속도로 동작하는지를 나타내는 지표입니다.</span></p><p id="SE-cd1ea574-f1c5-41a0-9bff-a1b914fa3bf9" class="se-text-paragraph se-text-paragraph-align-left se-is-text-paragraph-block-selected" style="line-height: 1.8;"><span id="SE-62900453-c3d0-4a1f-a4be-93a6b552a9ea" class="se-ff-nanumsquare se-fs15 __se-node" style="font-size: 14pt; font-family: 나눔고딕, NanumGothic, sans-serif;">     • 각 Infiniband 포트의 활성화 여부를 실시간으로 확인하여 장애를 조기에 발견하고 속도 저하 문제를 파악합니다.</span></p><p id="SE-cd1ea574-f1c5-41a0-9bff-a1b914fa3bf9" class="se-text-paragraph se-text-paragraph-align-left se-is-text-paragraph-block-selected" style="line-height: 1.8;"><span class="se-ff-nanumsquare se-fs15 __se-node" style="font-size: 14pt; font-family: 나눔고딕, NanumGothic, sans-serif;">&nbsp;</span></p><p id="SE-43a52efb-da54-4430-8260-a82f727118a8" class="se-text-paragraph se-text-paragraph-align-left se-is-text-paragraph-block-selected" style="line-height: 1.8;"><span id="SE-f2455d37-c598-413d-b149-f6d2ce888a3f" class="se-ff-nanumsquare se-fs15 __se-node"></span></p><p id="SE-91fd930d-f3f8-4f1c-998f-c2d070cad12e" class="se-text-paragraph se-text-paragraph-align-left se-is-text-paragraph-block-selected" style="line-height: 1.8;"><span id="SE-f59387f2-519c-404b-bedd-ba9463750985" class="se-ff-nanumsquare se-fs15 __se-node" style="font-size: 14pt; font-family: 나눔고딕, NanumGothic, sans-serif;"><span style="color: rgb(136, 136, 136); font-size: 24px; font-weight: 700; white-space-collapse: preserve;">5. 트래픽 (Traffic)</span></span></p><p id="SE-2f03d6da-14a9-43a1-aae4-1e251f078ccf" class="se-text-paragraph se-text-paragraph-align-left se-is-text-paragraph-block-selected" style="line-height: 1.8;"><span id="SE-5f6491c3-71d0-4c08-856c-4cc6d2a7aa1b" class="se-ff-nanumsquare se-fs15 __se-node" style="font-size: 14pt; font-family: 나눔고딕, NanumGothic, sans-serif;">     • 일정 시간동안 송수신한 데이터의 총 바이트 수를 나타냅니다.</span></p><p id="SE-b2e22b9e-4b19-4d4d-bec8-4d8aa4303708" class="se-text-paragraph se-text-paragraph-align-left se-is-text-paragraph-block-selected" style="line-height: 1.8;"><span id="SE-0411a855-4f6f-4b2b-a6ca-d0ba9def52fa" class="se-ff-nanumsquare se-fs15 __se-node" style="font-size: 14pt; font-family: 나눔고딕, NanumGothic, sans-serif;">     • 송수신된 데이터의 양을 분석하여 네트워크 사용 패턴을 이해하고, 용량 계획을 수립합니다.</span></p><p id="SE-b2e22b9e-4b19-4d4d-bec8-4d8aa4303708" class="se-text-paragraph se-text-paragraph-align-left se-is-text-paragraph-block-selected" style="line-height: 1.8;"><span class="se-ff-nanumsquare se-fs15 __se-node" style="font-size: 14pt; font-family: 나눔고딕, NanumGothic, sans-serif;">&nbsp;</span></p><p id="SE-3c6c1f25-0599-4b01-a0ff-4ef01dbb3a84" class="se-text-paragraph se-text-paragraph-align-left se-is-text-paragraph-block-selected" style="line-height: 1.8;"><span id="SE-91107f29-189c-4eca-ae36-08e13150ebaa" class="se-ff-nanumsquare se-fs15 __se-node"></span></p><p id="SE-c0dc7db8-9eb8-4faa-9f51-2ceae3faef1f" class="se-text-paragraph se-text-paragraph-align-left se-is-text-paragraph-block-selected" style="line-height: 1.8;"><span id="SE-7cca9dac-98a9-4dd7-afe6-f1c4b32c03a4" class="se-ff-nanumsquare se-fs15 __se-node" style="font-size: 14pt; font-family: 나눔고딕, NanumGothic, sans-serif;"><span style="color: rgb(136, 136, 136); font-size: 24px; font-weight: 700; white-space-collapse: preserve;">6. 에러 카운트 (Error Count)</span></span></p><p id="SE-0147ed12-6580-4286-8471-ee42e472b157" class="se-text-paragraph se-text-paragraph-align-left se-is-text-paragraph-block-selected" style="line-height: 1.8;"><span id="SE-be938f90-d1d5-4095-bdc1-0e6d5391a7e8" class="se-ff-nanumsquare se-fs15 __se-node" style="font-size: 14pt; font-family: 나눔고딕, NanumGothic, sans-serif;">     • 송수신된 패킷 중 에러가 발생한 패킷의 수, 재전송된 패킷의 수를 나타냅니다.</span></p><p id="SE-543f40f9-b35f-4d32-85a9-2b952f908cb0" class="se-text-paragraph se-text-paragraph-align-left se-is-text-paragraph-block-selected" style="line-height: 1.8;"><span id="SE-392126a5-86bb-4a4d-93f2-8783d3f251b5" class="se-ff-nanumsquare se-fs15 __se-node" style="font-size: 14pt; font-family: 나눔고딕, NanumGothic, sans-serif;">     • 네트워크 에러 발생 횟수를 모니터링하여 문제의 원인을 파악하고 대응합니다.</span></p><p><span style="font-size: 14pt; font-family: 나눔고딕, NanumGothic, sans-serif;">﻿</span></p><p><span style="font-size: 14pt; font-family: 나눔고딕, NanumGothic, sans-serif;">&nbsp;</span></p><p>&nbsp;</p><p>&nbsp;</p><blockquote class=se2_quote1 style="_zoom:1;padding:0 8px; margin:0 0 30px 20px; margin-right:15px; border-left:2px solid #cccccc;color:#888888;"><span style="white-space-collapse: preserve; color: rgb(0, 0, 0); font-family: 나눔고딕, NanumGothic, sans-serif; font-size: 24px; font-weight: 700;">GPU란 무엇일까요?</span></blockquote><p style="text-align: center; line-height: 1.8;" align="center"><span style="font-family: 나눔고딕, NanumGothic, sans-serif; font-size: 14pt;">&nbsp;</span></p><p style="text-align: center; line-height: 1.8;" align="center"><span style="font-family: 나눔고딕, NanumGothic, sans-serif; font-size: 14pt;"><img src="../../common/imgReader@fIdx=4624" title="??4.png" alt="">&nbsp;</span></p><p style="text-align: center; line-height: 1.8;" align="center"><span style="color: rgb(99, 99, 99); font-family: 나눔고딕, NanumGothic, sans-serif; font-size: 13.3333px;">[그림4] GPU 이미지 예시</span></p><p style="line-height: 1.8;" align="left"><span style="font-family: 나눔고딕, NanumGothic, sans-serif; font-size: 14pt;">&nbsp;</span></p><p style="line-height: 1.8;" align="left"><span style="font-family: 나눔고딕, NanumGothic, sans-serif; font-size: 14pt;">&nbsp;</span></p><p style="line-height: 1.8;"><span style="font-family: 나눔고딕, NanumGothic, sans-serif; font-size: 14pt;">﻿&nbsp; 컴퓨터 시스템에서 대량의 그래픽 연산을 빠르게 처리하여 결과값을 모니터에 출력하는 중앙처리장치로, 복잡한 수학적 계산을 병렬로 수행하는 데 강점이 있습니다. 주로 게임 그래픽과 비주얼 연산에 활용되었으나 최근에는 인공지능, 머신러닝, 데이터 과학, 자율주행 등 다양한 고성능 연산 영역에서 사용됩니다.</span></p><p style="line-height: 1.8;"><span style="font-family: 나눔고딕, NanumGothic, sans-serif; font-size: 14pt;">&nbsp;</span></p><p id="SE-6a5423b4-8e83-4daa-b179-5728d51fefa6" class="se-text-paragraph se-text-paragraph-align-left se-is-text-paragraph-block-selected" style="line-height: 1.8;"><span id="SE-186d84e4-12d0-4c5e-9518-75d289a88d99" class="se-ff-nanumsquare se-fs15 __se-node"></span></p><p id="SE-f93c5d19-c9ca-48cc-a983-823ce6d66a70" class="se-text-paragraph se-text-paragraph-align-left se-is-text-paragraph-block-selected" style="line-height: 1.8;"><span id="SE-e359d71d-9147-497b-8a0b-e241d878294a" class="se-ff-nanumsquare se-fs15 __se-node" style="font-family: 나눔고딕, NanumGothic, sans-serif; font-size: 14pt;">&nbsp; 특히 고성능 컴퓨팅(HPC), 인공지능 학습, 그래픽 디자인 등의 작업에서는 GPU 사용률이 높은 상태에서 장시간 작동하므로 주의 깊게 관리해야 합니다. <span style="background-color: rgb(217, 238, 236);">과부하 시 성능 저하 및 오류가 발생할 수 있고, 전력 소비 및 온도를 제어하지 않으면 시스템이 비정상 종료되거나 손상될 위험이 있습니다. 따라서 시스템 성능, 안정성 및 자원 효율성을 보장하기 위해서는 GPU 모니터링은 필수적입니다.</span></span></p><p id="SE-f93c5d19-c9ca-48cc-a983-823ce6d66a70" class="se-text-paragraph se-text-paragraph-align-left se-is-text-paragraph-block-selected" style="line-height: 1.8;"><span style="font-family: 나눔고딕, NanumGothic, sans-serif; font-size: 14pt;">&nbsp;</span></p><p id="SE-f93c5d19-c9ca-48cc-a983-823ce6d66a70" class="se-text-paragraph se-text-paragraph-align-left se-is-text-paragraph-block-selected" style="line-height: 1.8;"><span style="font-family: 나눔고딕, NanumGothic, sans-serif; font-size: 14pt;">&nbsp;</span></p><p id="SE-f93c5d19-c9ca-48cc-a983-823ce6d66a70" class="se-text-paragraph se-text-paragraph-align-left se-is-text-paragraph-block-selected" style="text-align: center; line-height: 1.8;" align="center"><span style="font-family: 나눔고딕, NanumGothic, sans-serif; font-size: 14pt;"><img src="../../common/imgReader@fIdx=4625" title="??6.png" alt="">&nbsp;</span></p><p id="SE-f93c5d19-c9ca-48cc-a983-823ce6d66a70" class="se-text-paragraph se-text-paragraph-align-left se-is-text-paragraph-block-selected" style="text-align: center; line-height: 1.8;" align="center"><span style="color: rgb(99, 99, 99); font-family: 나눔고딕, NanumGothic, sans-serif; font-size: 13.3333px;">[그림5] 와치올 GPU 모니터링 화면 예시</span></p><p id="SE-f93c5d19-c9ca-48cc-a983-823ce6d66a70" class="se-text-paragraph se-text-paragraph-align-left se-is-text-paragraph-block-selected" style="line-height: 1.8;"><span style="font-family: 나눔고딕, NanumGothic, sans-serif; font-size: 14pt;">&nbsp;</span></p><p id="SE-f93c5d19-c9ca-48cc-a983-823ce6d66a70" class="se-text-paragraph se-text-paragraph-align-left se-is-text-paragraph-block-selected" style="line-height: 1.8;"><span style="font-family: 나눔고딕, NanumGothic, sans-serif; font-size: 14pt;">&nbsp;</span></p><p id="SE-f93c5d19-c9ca-48cc-a983-823ce6d66a70" class="se-text-paragraph se-text-paragraph-align-left se-is-text-paragraph-block-selected" style="line-height: 1.8;"><span style="font-family: 나눔고딕, NanumGothic, sans-serif; font-size: 14pt;">GPU 모니터링에서 주로 확인해야 할 주요 지표는 다음과 같습니다.</span></p><p id="SE-0ae51ac6-42f6-4ead-bbc3-dcff92115738" class="se-text-paragraph se-text-paragraph-align-left se-is-text-paragraph-block-selected" style="line-height: 1.8;"><span class="se-ff-nanumsquare se-fs15 __se-node" style="font-family: 나눔고딕, NanumGothic, sans-serif; font-size: 14pt;">&nbsp;</span></p><p id="SE-66c032e2-cbf9-4997-be11-ca12755a5b9e" class="se-text-paragraph se-text-paragraph-align-left se-is-text-paragraph-block-selected" style="line-height: 1.8;"><span id="SE-80dbc863-6234-4d82-9fb6-33eb1fb80ac7" class="se-ff-nanumsquare se-fs15 __se-node" style="font-family: 나눔고딕, NanumGothic, sans-serif; font-size: 14pt;"> </span></p><p id="SE-b4064426-8665-4225-b326-d31c92e4fec5" class="se-text-paragraph se-text-paragraph-align-left se-is-text-paragraph-block-selected" style="line-height: 1.8;"><span id="SE-e41a0822-9495-4988-920b-9ae3cd43ecf2" class="se-ff-nanumsquare se-fs15 __se-node" style="font-family: 나눔고딕, NanumGothic, sans-serif; font-size: 14pt;"><span style="color: rgb(136, 136, 136); font-size: 24px; font-weight: 700; white-space-collapse: preserve;">1. GPU 사용률 (Uilization)</span></span></p><p id="SE-228e4006-3161-4255-96ad-931b9da48bec" class="se-text-paragraph se-text-paragraph-align-left se-is-text-paragraph-block-selected" style="line-height: 1.8;"><span id="SE-d4a57495-f72b-46d0-9457-a0e56772b832" class="se-ff-nanumsquare se-fs15 __se-node" style="font-family: 나눔고딕, NanumGothic, sans-serif; font-size: 14pt;">     • GPU가 작업 중 얼마나 사용되는지를 나타내는 지표입니다.</span></p><p id="SE-ce8f9eaa-5e93-4367-83f1-0353d8958421" class="se-text-paragraph se-text-paragraph-align-left se-is-text-paragraph-block-selected" style="line-height: 1.8;"><span id="SE-ee0f31c1-ee3c-40a3-99e8-1be2d6e4a209" class="se-ff-nanumsquare se-fs15 __se-node" style="font-family: 나눔고딕, NanumGothic, sans-serif; font-size: 14pt;">     • 학습 모델의 효율성을 확인하거나 병목 현상을 파악하는 데 사용됩니다.</span></p><p id="SE-ce8f9eaa-5e93-4367-83f1-0353d8958421" class="se-text-paragraph se-text-paragraph-align-left se-is-text-paragraph-block-selected" style="line-height: 1.8;"><span class="se-ff-nanumsquare se-fs15 __se-node" style="font-family: 나눔고딕, NanumGothic, sans-serif; font-size: 14pt;">&nbsp;</span></p><p id="SE-fa16f70c-84c2-46fd-91c9-2902bf2ec425" class="se-text-paragraph se-text-paragraph-align-left se-is-text-paragraph-block-selected" style="line-height: 1.8;"><span id="SE-0e0e1c6b-ab27-4ef0-8f3f-cdbd09c0a5f6" class="se-ff-nanumsquare se-fs15 __se-node"></span></p><p id="SE-9452be6c-823b-45ea-bb2a-084a5308f997" class="se-text-paragraph se-text-paragraph-align-left se-is-text-paragraph-block-selected" style="line-height: 1.8;"><span id="SE-52170257-68f9-4a50-b102-406b988674de" class="se-ff-nanumsquare se-fs15 __se-node" style="font-family: 나눔고딕, NanumGothic, sans-serif; font-size: 14pt;"><span style="color: rgb(136, 136, 136); font-size: 24px; font-weight: 700; white-space-collapse: preserve;">2. 메모리 사용량 (Memory Usage)</span></span></p><p id="SE-1222e7f3-b4a2-4807-8014-d1031a81255b" class="se-text-paragraph se-text-paragraph-align-left se-is-text-paragraph-block-selected" style="line-height: 1.8;"><span id="SE-ac3b478f-cf44-4848-954b-4e277f5c7c0f" class="se-ff-nanumsquare se-fs15 __se-node" style="font-family: 나눔고딕, NanumGothic, sans-serif; font-size: 14pt;">     • GPU 메모리(VRAM)의 현재 사용량을 나타냅니다.</span></p><p id="SE-40d9a0ca-84ae-425d-9b1e-fe9ac2ee3d34" class="se-text-paragraph se-text-paragraph-align-left se-is-text-paragraph-block-selected" style="line-height: 1.8;"><span id="SE-667853ce-4bf0-44cd-9943-dc9442a03736" class="se-ff-nanumsquare se-fs15 __se-node" style="font-family: 나눔고딕, NanumGothic, sans-serif; font-size: 14pt;">     • 인공지능 학습에서는 대규모 데이터셋 및 모델 파라미터를 처리할 때 메모리 관리가 중요합니다.</span></p><p id="SE-40d9a0ca-84ae-425d-9b1e-fe9ac2ee3d34" class="se-text-paragraph se-text-paragraph-align-left se-is-text-paragraph-block-selected" style="line-height: 1.8;"><span class="se-ff-nanumsquare se-fs15 __se-node" style="font-family: 나눔고딕, NanumGothic, sans-serif; font-size: 14pt;">&nbsp;</span></p><p id="SE-db60212a-6977-4751-a505-ee94fa06c1a2" class="se-text-paragraph se-text-paragraph-align-left se-is-text-paragraph-block-selected" style="line-height: 1.8;"><span id="SE-74e70316-ebac-4aea-ab3b-684f854118fb" class="se-ff-nanumsquare se-fs15 __se-node"></span></p><p id="SE-c5565304-d82b-41ad-bf2c-b39645d95958" class="se-text-paragraph se-text-paragraph-align-left se-is-text-paragraph-block-selected" style="line-height: 1.8;"><span id="SE-fbc74afb-d472-4eac-a978-ac51c05fbb85" class="se-ff-nanumsquare se-fs15 __se-node" style="font-family: 나눔고딕, NanumGothic, sans-serif; font-size: 14pt;"><span style="color: rgb(136, 136, 136); font-size: 24px; font-weight: 700; white-space-collapse: preserve;">3. GPU 온도 (Temperature)</span></span></p><p id="SE-0a01b064-687b-486c-899d-99f7ca706d7d" class="se-text-paragraph se-text-paragraph-align-left se-is-text-paragraph-block-selected" style="line-height: 1.8;"><span id="SE-53d9011c-1a36-4d64-990f-22a75208e3da" class="se-ff-nanumsquare se-fs15 __se-node" style="font-family: 나눔고딕, NanumGothic, sans-serif; font-size: 14pt;">     • GPU 코어의 온도를 나타내며, 과열은 성능 저하를 유발할 수 있습니다.</span></p><p id="SE-baa912e4-32aa-43cc-9170-90832d6f69a0" class="se-text-paragraph se-text-paragraph-align-left se-is-text-paragraph-block-selected" style="line-height: 1.8;"><span id="SE-e4677a28-6581-41bf-a625-ec0351d22dd2" class="se-ff-nanumsquare se-fs15 __se-node" style="font-family: 나눔고딕, NanumGothic, sans-serif; font-size: 14pt;">     • 일반적으로 GPU 온도가 80~85도를 넘으면 위험 신호입니다.</span></p><p id="SE-baa912e4-32aa-43cc-9170-90832d6f69a0" class="se-text-paragraph se-text-paragraph-align-left se-is-text-paragraph-block-selected" style="line-height: 1.8;"><span class="se-ff-nanumsquare se-fs15 __se-node" style="font-family: 나눔고딕, NanumGothic, sans-serif; font-size: 14pt;">&nbsp;</span></p><p id="SE-dcec8dfb-89f9-465e-9116-a8c37804c388" class="se-text-paragraph se-text-paragraph-align-left se-is-text-paragraph-block-selected" style="line-height: 1.8;"><span id="SE-9ac49394-0a84-403c-b8a2-4009f425d660" class="se-ff-nanumsquare se-fs15 __se-node"></span></p><p id="SE-25bbda51-381d-4fc7-829e-006c2b1e096d" class="se-text-paragraph se-text-paragraph-align-left se-is-text-paragraph-block-selected" style="line-height: 1.8;"><span id="SE-d418cbc6-965e-497b-9c3b-0918a2e9413e" class="se-ff-nanumsquare se-fs15 __se-node" style="font-family: 나눔고딕, NanumGothic, sans-serif; font-size: 14pt;"><span style="color: rgb(136, 136, 136); font-size: 24px; font-weight: 700; white-space-collapse: preserve;">4. 전력 소비량 (Power Consumption)</span></span></p><p id="SE-c66143d2-80e3-4567-bdf0-3d19e7e4cc9f" class="se-text-paragraph se-text-paragraph-align-left se-is-text-paragraph-block-selected" style="line-height: 1.8;"><span id="SE-c7184ba7-8621-4c83-bbaa-7bd501941745" class="se-ff-nanumsquare se-fs15 __se-node" style="font-family: 나눔고딕, NanumGothic, sans-serif; font-size: 14pt;">     • GPU가 사용하는 전력량을 나타내며, 서버 환경에서 에너지 관리와 직결됩니다.</span></p><p id="SE-2b40b251-51b8-407e-85ea-9bd8d4a3928c" class="se-text-paragraph se-text-paragraph-align-left se-is-text-paragraph-block-selected" style="line-height: 1.8;"><span id="SE-7eecf815-c98b-4da7-b528-679aa36dcc3d" class="se-ff-nanumsquare se-fs15 __se-node" style="font-family: 나눔고딕, NanumGothic, sans-serif; font-size: 14pt;">     • 전력 한계를 초과할 경우 시스템 손상을 초래할 수 있습니다.</span></p><p id="SE-2b40b251-51b8-407e-85ea-9bd8d4a3928c" class="se-text-paragraph se-text-paragraph-align-left se-is-text-paragraph-block-selected" style="line-height: 1.8;"><span class="se-ff-nanumsquare se-fs15 __se-node" style="font-family: 나눔고딕, NanumGothic, sans-serif; font-size: 14pt;">&nbsp;</span></p><p id="SE-b444920d-6769-4aee-84e8-3223a78ec536" class="se-text-paragraph se-text-paragraph-align-left se-is-text-paragraph-block-selected" style="line-height: 1.8;"><span id="SE-7c95484b-634f-4ca6-af5f-719fcc746363" class="se-ff-nanumsquare se-fs15 __se-node"></span></p><p id="SE-fc1e6971-d3f9-46c5-81f4-f509211f7fcc" class="se-text-paragraph se-text-paragraph-align-left se-is-text-paragraph-block-selected" style="line-height: 1.8;"><span id="SE-93a4a222-d283-4cae-8ef4-387d25f1dd85" class="se-ff-nanumsquare se-fs15 __se-node" style="font-family: 나눔고딕, NanumGothic, sans-serif; font-size: 14pt;"><span style="color: rgb(136, 136, 136); font-size: 24px; font-weight: 700; white-space-collapse: preserve;">5. 클럭 속도 (Clock Speed)</span></span></p><p id="SE-895df05e-3bcc-4bbd-b7e5-49e682d34554" class="se-text-paragraph se-text-paragraph-align-left se-is-text-paragraph-block-selected" style="line-height: 1.8;"><span id="SE-a155789e-4a37-4ef4-b162-2a0b377ce1c0" class="se-ff-nanumsquare se-fs15 __se-node" style="font-family: 나눔고딕, NanumGothic, sans-serif; font-size: 14pt;">     • GPU의 코어 및 메모리 클럭 속도를 측정합니다.</span></p><p id="SE-6bec01df-8f5c-4b2f-b250-ff6165063851" class="se-text-paragraph se-text-paragraph-align-left se-is-text-paragraph-block-selected" style="line-height: 1.8;"><span id="SE-4f76edcf-b9cf-4c6b-88ab-d1a400b5a608" class="se-ff-nanumsquare se-fs15 __se-node" style="font-family: 나눔고딕, NanumGothic, sans-serif; font-size: 14pt;">     • 오버클럭으로 성능을 높일 때 안정성을 위해 클럭 속도와 온도 변화를 모니터링 해야 합니다.</span></p><p id="SE-6bec01df-8f5c-4b2f-b250-ff6165063851" class="se-text-paragraph se-text-paragraph-align-left se-is-text-paragraph-block-selected" style="line-height: 1.8;"><span class="se-ff-nanumsquare se-fs15 __se-node" style="font-family: 나눔고딕, NanumGothic, sans-serif; font-size: 14pt;">&nbsp;</span></p><p id="SE-07871aaa-11c8-43a7-8d74-deb82a972a85" class="se-text-paragraph se-text-paragraph-align-left se-is-text-paragraph-block-selected" style="line-height: 1.8;"><span id="SE-57cf0381-f7c6-4b4e-b128-ffdc0dc997c4" class="se-ff-nanumsquare se-fs15 __se-node"></span></p><p id="SE-00cd0f55-7cef-4692-8b23-0f27f636cc71" class="se-text-paragraph se-text-paragraph-align-left se-is-text-paragraph-block-selected" style="line-height: 1.8;"><span id="SE-c2492dd5-4a05-4c87-b3f2-12d0d5d83ee7" class="se-ff-nanumsquare se-fs15 __se-node" style="font-family: 나눔고딕, NanumGothic, sans-serif; font-size: 14pt;"><span style="color: rgb(136, 136, 136); font-size: 24px; font-weight: 700; white-space-collapse: preserve;">6. 팬 속도 (Fan Speed)</span></span></p><p id="SE-0a9260b5-22c9-4eef-afd2-abba6a65838d" class="se-text-paragraph se-text-paragraph-align-left se-is-text-paragraph-block-selected" style="line-height: 1.8;"><span id="SE-1a172fd1-c9ac-4ec7-be6c-f33e708918b8" class="se-ff-nanumsquare se-fs15 __se-node" style="font-family: 나눔고딕, NanumGothic, sans-serif; font-size: 14pt;">     • GPU 팬이 얼마나 빠르게 작동하고 있는지 측정합니다.</span></p><p id="SE-1289ba2c-6bc8-43b1-92ba-a55ca0d34661" class="se-text-paragraph se-text-paragraph-align-left se-is-text-paragraph-block-selected" style="line-height: 1.8;"><span id="SE-8f7fdb1b-972c-420b-aa35-bc98c7c0decc" class="se-ff-nanumsquare se-fs15 __se-node" style="font-family: 나눔고딕, NanumGothic, sans-serif; font-size: 14pt;">     • 온도와 직접적인 연관이 있으며 고온에서는 더 빠른 속도로 작동합니다.</span></p><p class="se-text-paragraph se-text-paragraph-align-left se-is-text-paragraph-block-selected" style="line-height: 1.8;"><span class="se-ff-nanumsquare se-fs15 __se-node" style="font-family: 나눔고딕, NanumGothic, sans-serif; font-size: 14pt;">&nbsp;</span></p><p class="se-text-paragraph se-text-paragraph-align-left se-is-text-paragraph-block-selected" style="line-height: 1.8;"><span class="se-ff-nanumsquare se-fs15 __se-node" style="font-family: 나눔고딕, NanumGothic, sans-serif; font-size: 14pt;">&nbsp;</span></p><p align="center" style="text-align: center;"><u><br></u></p><p align="center" style="text-align: center;"><u>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</u></p><p class="se-text-paragraph se-text-paragraph-align-left se-is-text-paragraph-block-selected" style="line-height: 1.8;"><span class="se-ff-nanumsquare se-fs15 __se-node" style="font-family: 나눔고딕, NanumGothic, sans-serif; font-size: 14pt;">&nbsp;</span></p><p class="se-text-paragraph se-text-paragraph-align-left se-is-text-paragraph-block-selected" style="line-height: 1.8;"><span class="se-ff-nanumsquare se-fs15 __se-node" style="font-family: 나눔고딕, NanumGothic, sans-serif; font-size: 14pt;">﻿</span></p><p class="se-text-paragraph se-text-paragraph-align-left se-is-text-paragraph-block-selected" style="line-height: 1.8;"><span class="se-ff-nanumsquare se-fs15 __se-node" style="font-family: 나눔고딕, NanumGothic, sans-serif; font-size: 14pt;">&nbsp;</span></p><p id="SE-f93c5d19-c9ca-48cc-a983-823ce6d66a70" class="se-text-paragraph se-text-paragraph-align-left se-is-text-paragraph-block-selected" style="line-height: 1.8;"><span class="se-ff-nanumsquare se-fs15 __se-node" style="font-family: 나눔고딕, NanumGothic, sans-serif; font-size: 14pt;">&nbsp; <span style="background-color: rgb(231, 219, 237);">AI연구소 및 데이터센터에서 대규모 딥러닝 모델을 학습할 때 InfiniBand를 통해 GPU클러스터 간 대용량 데이터를 빠르게 전송해야 하는데 InfiniBand는 이러한 데이터를 GPU 메모리로 즉시 전송해 병목을 방지합니다.</span> 그렇기 때문에 병목을 해소하고 성능을 극대화하기 위해서는 InfiniBand와 GPU를 통합하여 모니터링 해야 합니다.</span></p><p><span style="font-family: 나눔고딕, NanumGothic, sans-serif; font-size: 14pt;">&nbsp;</span></p><p><span style="font-family: 나눔고딕, NanumGothic, sans-serif; font-size: 14pt;">&nbsp;</span></p><p><span style="font-family: 나눔고딕, NanumGothic, sans-serif; font-size: 14pt;">&nbsp;</span></p><blockquote class=se2_quote1 style="_zoom:1;padding:0 8px; margin:0 0 30px 20px; margin-right:15px; border-left:2px solid #cccccc;color:#888888;"><span style="white-space-collapse: preserve; color: rgb(0, 0, 0); font-family: 나눔고딕, NanumGothic, sans-serif; font-size: 24px; font-weight: 700;">InfiniBand와 GPU 통합 모니터링의 장점</span></blockquote><div><span style="white-space-collapse: preserve; color: rgb(0, 0, 0); font-family: 나눔고딕, NanumGothic, sans-serif; font-size: 24px; font-weight: 700;"><br></span></div><p style="text-align: center;" align="center"><span class="se-ff-nanumsquare se-fs15 __se-node" style="font-family: 나눔고딕, NanumGothic, sans-serif; font-size: 14pt;"><img src="../../common/imgReader@fIdx=4626" title="representation-user-experience-interface-design.jpg" alt="">&nbsp;</span></p><p><span class="se-ff-nanumsquare se-fs15 __se-node" style="font-family: 나눔고딕, NanumGothic, sans-serif; font-size: 14pt;">&nbsp;</span></p><p><span id="SE-0a1bcf70-d75e-458f-89b5-29dff9b0cbf2" class="se-ff-nanumsquare se-fs15 __se-node" style="font-family: 나눔고딕, NanumGothic, sans-serif; font-size: 14pt;">•&nbsp;</span><span style="color: rgb(136, 136, 136); font-family: 나눔고딕, NanumGothic, sans-serif; font-size: 24px; font-weight: 700; white-space-collapse: preserve;">성능 최적화</span><span id="SE-7f79c2ea-225a-4777-ad55-68da669489ed" class="se-ff-nanumsquare se-fs15 __se-node" style="font-family: 나눔고딕, NanumGothic, sans-serif; font-size: 14pt;"><b>&nbsp;: </b></span><span id="SE-de3e3375-d38d-4898-9230-c9608192036c" class="se-ff-nanumsquare se-fs15 __se-node" style="font-family: 나눔고딕, NanumGothic, sans-serif; font-size: 14pt;">GPU 연산 및 데이터 전송 성능을 극대화하기 위한 네트워크 상태 실시간 파악합니다.</span></p><p id="SE-bbbd722f-08b0-4c4f-99b0-aeebdc77ba42" class="se-text-paragraph se-text-paragraph-align-left se-is-text-paragraph-block-selected" style="line-height: 1.8;"><span id="SE-053baab4-d5d9-4ed9-a382-904d904924fa" class="se-ff-nanumsquare se-fs15 __se-node" style="font-family: 나눔고딕, NanumGothic, sans-serif; font-size: 14pt;">•&nbsp;</span><span style="color: rgb(136, 136, 136); font-family: 나눔고딕, NanumGothic, sans-serif; font-size: 24px; font-weight: 700; white-space-collapse: preserve;">자원 효율화</span><span id="SE-77bf18e5-1743-4710-9866-017e3bb7d1b9" class="se-ff-nanumsquare se-fs15 __se-node" style="font-family: 나눔고딕, NanumGothic, sans-serif; font-size: 14pt;"><b>&nbsp;: </b></span><span id="SE-151afb9c-47c6-4221-982d-b4dd30df9ce3" class="se-ff-nanumsquare se-fs15 __se-node" style="font-family: 나눔고딕, NanumGothic, sans-serif; font-size: 14pt;">GPU와 네트워크 사용 패턴을 분석해 자원 낭비를 방지합니다.</span></p><p id="SE-5cac1825-d724-4afc-b4f6-732ff9dc9192" class="se-text-paragraph se-text-paragraph-align-left se-is-text-paragraph-block-selected" style="line-height: 1.8;"><span id="SE-7d42f34e-7cad-424a-81c8-b0e1166bd09d" class="se-ff-nanumsquare se-fs15 __se-node" style="font-family: 나눔고딕, NanumGothic, sans-serif; font-size: 14pt;">•&nbsp;</span><span style="color: rgb(136, 136, 136); font-family: 나눔고딕, NanumGothic, sans-serif; font-size: 24px; font-weight: 700; white-space-collapse: preserve;">장애 예방</span><span id="SE-6e446b64-db06-4459-b2f3-010a98970f1f" class="se-ff-nanumsquare se-fs15 __se-node" style="font-family: 나눔고딕, NanumGothic, sans-serif; font-size: 14pt;"><b>&nbsp;: </b></span><span id="SE-d7c10cf0-79c9-4f7a-8223-4d095bf886b9" class="se-ff-nanumsquare se-fs15 __se-node" style="font-family: 나눔고딕, NanumGothic, sans-serif; font-size: 14pt;">네트워크 지연과 GPU 자원 사용률을 실시간으로 모니터링 해 문제를 조기에 발견합니다.</span></p><p id="SE-fc9f4c6a-01f9-4c9d-886a-e14cd4ecd94c" class="se-text-paragraph se-text-paragraph-align-left se-is-text-paragraph-block-selected" style="line-height: 1.8;"><span id="SE-4b17e188-80f7-44d4-a4f3-fa7f2b2fa44f" class="se-ff-nanumsquare se-fs15 __se-node" style="font-family: 나눔고딕, NanumGothic, sans-serif; font-size: 14pt;">•&nbsp;</span><span style="color: rgb(136, 136, 136); font-family: 나눔고딕, NanumGothic, sans-serif; font-size: 24px; font-weight: 700; white-space-collapse: preserve;">비용 절감</span><span id="SE-337c18ea-502a-4d48-8948-ff977b9dda19" class="se-ff-nanumsquare se-fs15 __se-node" style="font-family: 나눔고딕, NanumGothic, sans-serif; font-size: 14pt;"><b>&nbsp;: </b></span><span id="SE-af833f09-1f71-4c44-a713-599a4c83a87c" class="se-ff-nanumsquare se-fs15 __se-node" style="font-family: 나눔고딕, NanumGothic, sans-serif; font-size: 14pt;">전력 소비와 네트워크 과부하를 줄여 <span style="font-size: 14pt;">운영 비용을 절감합니다.</span></span></p><p><span style="font-family: 나눔고딕, NanumGothic, sans-serif; font-size: 14pt;">﻿</span></p><p><span style="font-family: 나눔고딕, NanumGothic, sans-serif; font-size: 14pt;">&nbsp;</span></p><p align="center" style="text-align: center;"><u><br></u></p><p align="center" style="text-align: center;"><u>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</u></p><div><u><br></u></div><p><span style="font-family: 나눔고딕, NanumGothic, sans-serif; font-size: 14pt;">﻿</span></p><p><span style="font-family: 나눔고딕, NanumGothic, sans-serif; font-size: 14pt;">&nbsp;</span></p><p id="SE-cb9cfeef-9067-4802-8ee0-828306184515" class="se-text-paragraph se-text-paragraph-align-left se-is-text-paragraph-block-selected" style="line-height: 1.8;"><span id="SE-0f4be4c7-a969-4807-992c-014f8214d4f5" class="se-ff-nanumsquare se-fs15 __se-node" style="font-family: 나눔고딕, NanumGothic, sans-serif; font-size: 14pt;">이 밖에도 InfiniBand와 GPU는 금융 데이터 분석, 자율주행차 시뮬레이션 등 다음과 같이 다양한 분야에서 활용되고 있습니다.</span></p><p id="SE-cb9cfeef-9067-4802-8ee0-828306184515" class="se-text-paragraph se-text-paragraph-align-left se-is-text-paragraph-block-selected" style="line-height: 1.8;"><span class="se-ff-nanumsquare se-fs15 __se-node" style="font-family: 나눔고딕, NanumGothic, sans-serif; font-size: 14pt;">&nbsp;</span></p><p id="SE-19e46379-8898-4720-a508-5336ae50a92e" class="se-text-paragraph se-text-paragraph-align-left se-is-text-paragraph-block-selected" style="line-height: 1.8;"><span id="SE-a028b674-569c-4874-aa80-b90e5d3c57cd" class="se-ff-nanumsquare se-fs15 __se-node" style="font-family: 나눔고딕, NanumGothic, sans-serif; font-size: 14pt;"> </span></p><p id="SE-99a578ed-d2ff-4814-bb34-aae92f7b45c5" class="se-text-paragraph se-text-paragraph-align-left se-is-text-paragraph-block-selected" style="line-height: 1.8;"><span id="SE-390973c7-ff7a-4e7f-9ce1-d58bcb570c4e" class="se-ff-nanumsquare se-fs15 __se-node" style="font-family: 나눔고딕, NanumGothic, sans-serif; font-size: 14pt;"><span style="color: rgb(136, 136, 136); font-size: 24px; font-weight: 700; white-space-collapse: preserve;">1. 대규모 슈퍼컴퓨터 클러스터 연구</span></span></p><p id="SE-d27e82bd-a5ec-4984-95b4-c2a8379c289a" class="se-text-paragraph se-text-paragraph-align-left se-is-text-paragraph-block-selected" style="line-height: 1.8;"><span id="SE-f862ee4e-8f57-491f-8598-e746133b2682" class="se-ff-nanumsquare se-fs15 __se-node" style="font-family: 나눔고딕, NanumGothic, sans-serif; font-size: 14pt;">• 대용량 GPU를 필요로 하는 슈퍼컴퓨터 클러스터에서 Infiniband 네트워크의 성능을 실시간으로 모니터링 하여 연구 작업의 효율성 향상</span></p><p id="SE-59110d2f-f808-45fe-b5e1-b23d397012ba" class="se-text-paragraph se-text-paragraph-align-left se-is-text-paragraph-block-selected" style="line-height: 1.8;"><span id="SE-ae054ccb-3a93-48e3-89f3-8a74cf284091" class="se-ff-nanumsquare se-fs15 __se-node" style="font-family: 나눔고딕, NanumGothic, sans-serif; font-size: 14pt;">• Infiniband는 초당 최대 400Gbps 대역폭과 마이크로초 단위의 지연 시간을 제공해 GPU 클러스터의 성능을 극대화</span></p><p id="SE-59110d2f-f808-45fe-b5e1-b23d397012ba" class="se-text-paragraph se-text-paragraph-align-left se-is-text-paragraph-block-selected" style="line-height: 1.8;"><span class="se-ff-nanumsquare se-fs15 __se-node" style="font-family: 나눔고딕, NanumGothic, sans-serif; font-size: 14pt;">&nbsp;</span></p><p id="SE-442d5e73-4589-401d-a954-9f705dee3d7d" class="se-text-paragraph se-text-paragraph-align-left se-is-text-paragraph-block-selected" style="line-height: 1.8;"><span id="SE-6da45337-83a9-4e57-8390-7897df472286" class="se-ff-nanumsquare se-fs15 __se-node"></span></p><p id="SE-a95ebdf6-cd0c-4f60-a049-757c7ec4007b" class="se-text-paragraph se-text-paragraph-align-left se-is-text-paragraph-block-selected" style="line-height: 1.8;"><span id="SE-99e82589-8368-4600-a9b4-478a2490c231" class="se-ff-nanumsquare se-fs15 __se-node" style="font-family: 나눔고딕, NanumGothic, sans-serif; font-size: 14pt;"><span style="color: rgb(136, 136, 136); font-size: 24px; font-weight: 700; white-space-collapse: preserve;">2. 금융 데이터 분석</span></span></p><p id="SE-41d8dd27-90ff-4629-bc71-0517d6d3d413" class="se-text-paragraph se-text-paragraph-align-left se-is-text-paragraph-block-selected" style="line-height: 1.8;"><span id="SE-341bb525-5cd8-4500-9c84-c89c17ef3aa3" class="se-ff-nanumsquare se-fs15 __se-node" style="font-family: 나눔고딕, NanumGothic, sans-serif; font-size: 14pt;">• GPU를 활용한 고빈도 거래 시스템에서 Infiniband의 저지연 네트워크로 실시간 데이터 처리</span></p><p id="SE-c263c79e-4e85-4d7e-a86c-ba0f397150f6" class="se-text-paragraph se-text-paragraph-align-left se-is-text-paragraph-block-selected" style="line-height: 1.8;"><span id="SE-210992e6-9f78-4810-a10f-374b3c052a87" class="se-ff-nanumsquare se-fs15 __se-node" style="font-family: 나눔고딕, NanumGothic, sans-serif; font-size: 14pt;">• GPU 및 네트워크 사용 패턴을 모니터링 하여 성능 최적화 및 비용 절감</span></p><p id="SE-c263c79e-4e85-4d7e-a86c-ba0f397150f6" class="se-text-paragraph se-text-paragraph-align-left se-is-text-paragraph-block-selected" style="line-height: 1.8;"><span class="se-ff-nanumsquare se-fs15 __se-node" style="font-family: 나눔고딕, NanumGothic, sans-serif; font-size: 14pt;">&nbsp;</span></p><p id="SE-1a0cad89-5b23-4c6f-b3fb-20b352b5a867" class="se-text-paragraph se-text-paragraph-align-left se-is-text-paragraph-block-selected" style="line-height: 1.8;"><span id="SE-1d56a112-905e-4d9c-bcd4-4aee151f00df" class="se-ff-nanumsquare se-fs15 __se-node"></span></p><p id="SE-ccfbcfb7-8f6f-4852-b262-7f6cac6b6f97" class="se-text-paragraph se-text-paragraph-align-left se-is-text-paragraph-block-selected" style="line-height: 1.8;"><span id="SE-f613682e-ddc7-470b-b71b-ed3fd7fec7be" class="se-ff-nanumsquare se-fs15 __se-node" style="font-family: 나눔고딕, NanumGothic, sans-serif; font-size: 14pt;"><span style="color: rgb(136, 136, 136); font-size: 24px; font-weight: 700; white-space-collapse: preserve;">3. 자율주행차 시뮬레이션</span></span></p><p id="SE-404b3740-3581-4cc0-9ffe-2028d7946f78" class="se-text-paragraph se-text-paragraph-align-left se-is-text-paragraph-block-selected" style="line-height: 1.8;"><span id="SE-396313f9-5756-4735-b8f1-02e1ef608cf2" class="se-ff-nanumsquare se-fs15 __se-node" style="font-family: 나눔고딕, NanumGothic, sans-serif; font-size: 14pt;">• 대규모 시뮬레이션 환경에서 Infiniband를 통해 GPU 간 데이터를 신속히 전송</span></p><p id="SE-a908fac2-1cca-417b-849d-02924164d59e" class="se-text-paragraph se-text-paragraph-align-left se-is-text-paragraph-block-selected" style="line-height: 1.8;"><span id="SE-a8450976-ee01-4ad4-b0a9-c5dfd0d75557" class="se-ff-nanumsquare se-fs15 __se-node" style="font-family: 나눔고딕, NanumGothic, sans-serif; font-size: 14pt;">• GPU와 네트워크 상태를 실시간 모니터링 하여 시뮬레이션 중단 없이 연속성 보장</span></p><p id="SE-a908fac2-1cca-417b-849d-02924164d59e" class="se-text-paragraph se-text-paragraph-align-left se-is-text-paragraph-block-selected" style="line-height: 1.8;"><span class="se-ff-nanumsquare se-fs15 __se-node" style="font-family: 나눔고딕, NanumGothic, sans-serif; font-size: 14pt;">&nbsp;</span></p><p style="line-height: 1.8;"><span style="font-size: 14pt; font-family: 나눔고딕, NanumGothic, sans-serif;">﻿</span></p><p style="line-height: 1.8;" align="center"><span style="font-size: 14pt; font-family: 나눔고딕, NanumGothic, sans-serif;"><img src="../../common/imgReader@fIdx=4628" title="??1.png" alt="">&nbsp;</span></p><p style="line-height: 1.8;"><span style="font-size: 14pt; font-family: 나눔고딕, NanumGothic, sans-serif;">&nbsp;</span></p><p style="line-height: 1.8;"><span style="font-family: 나눔고딕, NanumGothic, sans-serif; font-size: 14pt;">﻿&nbsp;&nbsp;</span><span style="font-family: 나눔고딕, NanumGothic, sans-serif; font-size: 14pt;">앞으로의 데이터센터는 고도화된 AI와 HPC 기술 수요 증가에 따라 더욱 정교한 인프라와 운영 방식을 필요로 할 것입니다. GPU와 InfiniBand 같이 고성능 컴퓨팅 및 네트워크 장비는 필수 요소가 되며, 이를 안정적이고 효율적으로 운영하기 위해서는 실시간 모니터링 솔루션의 중요성이 더욱 커질 것입니다.</span></p><p><span style="font-family: 나눔고딕, NanumGothic, sans-serif; font-size: 14pt;">&nbsp;</span></p><p id="SE-51634d69-bab4-4926-9c5f-3b2ed0406ce8" class="se-text-paragraph se-text-paragraph-align-left se-is-text-paragraph-block-selected" style="line-height: 1.8;"><span id="SE-ab554649-88d9-40fb-aff0-6410f5ebcd65" class="se-ff-nanumsquare se-fs15 __se-node"></span></p><p id="SE-8f384a17-b4f6-4e87-ab29-8538c0c30e22" class="se-text-paragraph se-text-paragraph-align-left se-is-text-paragraph-block-selected" style="line-height: 1.8;"><span id="SE-d9028812-1fbb-47ef-8f7d-0b86fa316c04" class="se-ff-nanumsquare se-fs15 __se-node" style="font-family: 나눔고딕, NanumGothic, sans-serif; font-size: 14pt;">&nbsp; 장애와 성능 저하를 사전에 감지하고 최적의 상태를 유지하는 관리 체계가 구축되지 않으면 비즈니스 연속성에 큰 위협이 될 수 있습니다. 따라서 <span style="background-color: rgb(255, 232, 232);">데이터센터 운영자는 이러한 변화에 발맞춰 GPU와 InfiniBand 모니터링을 포함한 통합 모니터링 시스템을 적극 도입해 서비스 안정성과 운영 효율성을 극대화해야 할 것입니다.</span></span></p><p id="SE-78228096-551f-42a4-8040-8c4c02f3c2b1" class="se-text-paragraph se-text-paragraph-align-left se-is-text-paragraph-block-selected" style="line-height: 1.8;"><span id="SE-f469042d-968b-47e5-90d0-3ae653bd726d" class="se-ff-nanummaruburi se-fs15 se-highlight __se-node" style="background-color: rgb(176, 241, 255);"><mark></mark></span></p><p id="SE-13763580-e3fa-40c5-8336-c75e9f98915a" class="se-text-paragraph se-text-paragraph-align-left se-is-text-paragraph-block-selected" style="line-height: 1.8;"><span id="SE-3a3dd7d2-18ad-4d80-aa84-79c4aa0a8a44" class="se-ff-nanumsquare se-fs15 __se-node" style="font-family: 나눔고딕, NanumGothic, sans-serif; font-size: 14pt;"> </span></p><p id="SE-b46cc109-68f9-484c-a1cd-4d0a659737bb" class="se-text-paragraph se-text-paragraph-align-left se-is-text-paragraph-block-selected" style="line-height: 1.8;"><span class="se-ff-nanumsquare se-fs15 __se-node" style="font-family: 나눔고딕, NanumGothic, sans-serif; font-size: 14pt;">&nbsp;</span></p><p id="SE-b46cc109-68f9-484c-a1cd-4d0a659737bb" class="se-text-paragraph se-text-paragraph-align-left se-is-text-paragraph-block-selected" style="line-height: 1.8;"><span id="SE-d013ad78-4892-45e5-bc12-48df0350549f" class="se-ff-nanumsquare se-fs15 __se-node" style="font-family: 나눔고딕, NanumGothic, sans-serif; font-size: 14pt;">다음 콘텐츠에서도 현재 시장에서 주목할 만한 IT 트렌드를 여러분들께 공유 드리겠습니다.&nbsp;</span><span style="font-family: 나눔고딕, NanumGothic, sans-serif; font-size: 14pt;">많은 관심 부탁드립니다. 감사합니다.</span></p><p><span style="font-family: 나눔고딕, NanumGothic, sans-serif; font-size: 14pt;">﻿</span></p><p>&nbsp;</p></div>
+
+</div>
+      </div>
+
+      <div class="btn-wrap d-flex justify-center">
+        <a href="javascript:location.href='/company/news/list#section1';" class="btn" data-type="ghost">목록</a>
+      </div>
+
+      <div class="related-content-area">
+        <div class="layout-container">
+          <p class="related-content__title">관련 콘텐츠</p>
+
+          <div class="swiper swiper-related-content">
+            <ul class="article__list-wrap swiper-wrapper">
+	<li class="article__list swiper-slide">
+                <a href="view@boardIdx=67.html" class="anchor">
+                  <div class="img-wrap">
+                    <div
+                      class="img"
+                      style="
+                        background: url('../../common/imgReader@fIdx=5463')
+                          no-repeat center / cover;
+                      "
+                    ></div>
+                  </div>
+                  <div class="str-wrap">
+                    <div class="article__util">
+                      <p class="article__category color-main">
+         테크</p>
+                      <p class="article__date">2025.02.20</p>
+                    </div>
+                    <p class="article__title">
+                      APM의 모든 것 : 탄생부터 활용까지</p>
+                  </div>
+                </a>
+              </li>
+	<li class="article__list swiper-slide">
+                <a href="view@boardIdx=65.html" class="anchor">
+                  <div class="img-wrap">
+                    <div
+                      class="img"
+                      style="
+                        background: url('../../common/imgReader@fIdx=5439')
+                          no-repeat center / cover;
+                      "
+                    ></div>
+                  </div>
+                  <div class="str-wrap">
+                    <div class="article__util">
+                      <p class="article__category color-main">
+         테크</p>
+                      <p class="article__date">2025.01.16</p>
+                    </div>
+                    <p class="article__title">
+                      클라우드 네이티브를 위한 풀스택 옵저버빌리티</p>
+                  </div>
+                </a>
+              </li>
+	<li class="article__list swiper-slide">
+                <a href="view@boardIdx=61.html" class="anchor">
+                  <div class="img-wrap">
+                    <div
+                      class="img"
+                      style="
+                        background: url('../../common/imgReader@fIdx=4773')
+                          no-repeat center / cover;
+                      "
+                    ></div>
+                  </div>
+                  <div class="str-wrap">
+                    <div class="article__util">
+                      <p class="article__category color-main">
+         테크</p>
+                      <p class="article__date">2024.11.14</p>
+                    </div>
+                    <p class="article__title">
+                      AIOps를 통한 IT 통합 운영 자동화</p>
+                  </div>
+                </a>
+              </li>
+	</ul>
+          </div>
+          <div class="related-content__nav">
+            <div class="related-content__nav__prev">
+              <p class="related-content__nav__str">이전 글</p>
+<a
+                href="view@boardIdx=62.html"
+                class="related-content__nav__article anchor"
+                >새로운 가능성과 기회를 마주한 시간, 공공솔루션 2024</a
+              >
+   </div>
+            <div class="related-content__nav__next">
+              <p class="related-content__nav__str">다음 글</p>
+<a href="view@boardIdx=64.html" class="related-content__nav__article anchor">
+					[2024 하반기 Best Goods] 와치텍-AI 기반 IT 서비스 운영 자동화 솔루션 &apos;와치올&apos;</a>
+	</div>
+          </div>
+        </div>
+      </div>
+    </div><footer class="footer" id="footer">
+	  <div class="layout-container">
+        <div class="footer-content-area">
+          <div class="footer-info-wrap">
+            <div class="footer__logo">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="125"
+                height="46"
+                viewBox="0 0 125 46"
+                fill="none"
+              >
+                <g clip-path="url(#clip0_520_26825)">
+                  <path
+                    d="M113.843 42.8082C113.763 37.6173 113.716 30.6531 113.716 22.9953C113.716 15.3375 113.766 8.38592 113.843 3.19495C113.466 2.96899 113.082 2.75557 112.692 2.55157C112.775 7.80217 112.828 15.0237 112.828 22.9953C112.828 30.9669 112.775 38.1979 112.692 43.4516C113.082 43.2476 113.466 43.0342 113.843 42.8082Z"
+                    fill="#484848"
+                  />
+                  <path
+                    d="M112.023 43.7905C111.936 38.5117 111.881 31.1458 111.881 22.9953C111.881 14.8448 111.936 7.49144 112.023 2.21259C111.636 2.02743 111.24 1.85481 110.843 1.68848C110.936 6.9987 110.995 14.578 110.995 22.9953C110.995 31.4126 110.936 39.0044 110.843 44.3147C111.243 44.1515 111.636 43.9757 112.023 43.7905Z"
+                    fill="#484848"
+                  />
+                  <path
+                    d="M89.9942 42.3092C89.9199 37.1748 89.8734 30.4083 89.8734 22.9922C89.8734 15.5761 89.9199 8.82216 89.9942 3.68768C89.6165 3.93562 89.2419 4.19297 88.8797 4.46601C88.9478 9.49692 88.9881 15.9527 88.9881 22.9922C88.9881 30.0317 88.9478 36.4968 88.8797 41.5309C89.2419 41.8008 89.6165 42.0582 89.9942 42.3092Z"
+                    fill="#484848"
+                  />
+                  <path
+                    d="M117.474 40.106C117.419 35.3042 117.385 29.3914 117.385 22.9953C117.385 16.5992 117.419 10.6958 117.474 5.89399C117.125 5.57701 116.762 5.27258 116.394 4.97443C116.459 9.92687 116.496 16.188 116.496 22.9953C116.496 29.8026 116.459 36.07 116.394 41.0256C116.762 40.7306 117.125 40.4262 117.474 40.106Z"
+                    fill="#484848"
+                  />
+                  <path
+                    d="M115.66 41.5936C115.592 36.5533 115.552 30.0693 115.552 22.9922C115.552 15.915 115.592 9.44354 115.66 4.40322C115.295 4.13331 114.924 3.8791 114.543 3.63116C114.617 8.77192 114.664 15.5572 114.664 22.9922C114.664 30.4271 114.617 37.2218 114.543 42.3657C114.924 42.1178 115.295 41.8604 115.66 41.5936Z"
+                    fill="#484848"
+                  />
+                  <path
+                    d="M106.556 45.592C106.448 40.2629 106.38 32.1187 106.38 22.9921C106.38 13.8656 106.448 5.73704 106.556 0.404839C106.147 0.326378 105.733 0.260471 105.315 0.203979C105.423 5.5299 105.494 13.7589 105.494 22.9921C105.494 32.2254 105.423 40.4669 105.315 45.7929C105.733 45.7364 106.147 45.6704 106.556 45.592Z"
+                    fill="#484848"
+                  />
+                  <path
+                    d="M108.382 45.162C108.28 39.8298 108.215 31.877 108.215 22.9953C108.215 14.1135 108.28 6.17327 108.382 0.841075C107.977 0.728091 107.568 0.624523 107.157 0.533508C107.262 5.8657 107.33 13.9472 107.33 22.9984C107.33 32.0496 107.262 40.1437 107.157 45.4759C107.571 45.3848 107.98 45.2813 108.382 45.1683V45.162Z"
+                    fill="#484848"
+                  />
+                  <path
+                    d="M120.106 8.73737C120.143 12.9491 120.168 17.8137 120.168 22.9921C120.168 28.1705 120.146 33.0445 120.106 37.2594C120.452 36.8169 120.787 36.3618 121.103 35.8911C121.072 32.0026 121.053 27.6244 121.053 22.9921C121.053 18.3598 121.072 13.988 121.103 10.1057C120.787 9.63496 120.452 9.18302 120.106 8.73737Z"
+                    fill="#484848"
+                  />
+                  <path
+                    d="M122.913 32.6334C122.895 29.6174 122.886 26.3722 122.886 22.9922C122.886 19.6121 122.895 16.3763 122.913 13.3634C122.623 12.7263 122.307 12.1081 121.963 11.5055C121.988 15.03 122 18.9122 122 22.9922C122 27.0721 121.988 30.9638 121.963 34.4914C122.307 33.8888 122.626 33.2705 122.913 32.6334Z"
+                    fill="#484848"
+                  />
+                  <path
+                    d="M125 22.9984C125 20.4375 124.582 17.9769 123.817 15.6765C123.827 18.0146 123.833 20.4657 123.833 22.9921C123.833 25.5186 123.827 27.9791 123.817 30.3204C124.579 28.0199 125 25.5594 125 22.9984Z"
+                    fill="#484848"
+                  />
+                  <path
+                    d="M87.0626 5.96929C87.1183 10.7554 87.1523 16.6337 87.1523 22.9922C87.1523 29.3506 87.1183 35.2415 87.0626 40.0276C87.4093 40.3477 87.7715 40.6553 88.1399 40.9534C88.0748 36.0104 88.0377 29.7712 88.0377 22.9922C88.0377 16.2131 88.0748 9.98649 88.1399 5.04346C87.7715 5.34161 87.4124 5.64917 87.0626 5.96929Z"
+                    fill="#484848"
+                  />
+                  <path
+                    d="M103.476 0.0313721C103.587 5.35101 103.658 13.6584 103.658 22.9953C103.658 32.3321 103.587 40.6521 103.476 45.9717C103.897 45.9498 104.312 45.9152 104.726 45.8713C104.615 40.5485 104.544 32.2819 104.544 22.9953C104.544 13.7087 104.615 5.45458 104.723 0.131802C104.309 0.0878638 103.894 0.0533411 103.473 0.0313721H103.476Z"
+                    fill="#484848"
+                  />
+                  <path
+                    d="M110.203 44.5689C110.107 39.2493 110.048 31.5538 110.048 22.9953C110.048 14.4368 110.107 6.75394 110.203 1.43429C109.806 1.28365 109.404 1.14556 108.995 1.02002C109.094 6.35222 109.159 14.2203 109.159 22.9985C109.159 31.7767 109.094 39.6573 108.995 44.9895C109.404 44.8608 109.803 44.7227 110.203 44.5752V44.5689Z"
+                    fill="#484848"
+                  />
+                  <path
+                    d="M91.8454 43.4045C91.7618 38.1571 91.7091 30.9481 91.7091 22.9953C91.7091 15.0425 91.7618 7.84609 91.8454 2.59863C91.4553 2.80577 91.0714 3.01918 90.6969 3.24515C90.7743 8.42984 90.8238 15.3689 90.8238 22.9953C90.8238 30.6217 90.7774 37.5702 90.6969 42.758C91.0714 42.9871 91.4553 43.2005 91.8454 43.4045Z"
+                    fill="#484848"
+                  />
+                  <path
+                    d="M86.2051 22.9953C86.2051 16.9664 86.236 11.3643 86.2856 6.72253C85.9265 7.08659 85.5828 7.46634 85.2485 7.85237C85.2918 12.2619 85.3166 17.4466 85.3166 22.9953C85.3166 28.5441 85.2918 33.7382 85.2485 38.1508C85.5828 38.5368 85.9265 38.9166 86.2856 39.2806C86.2329 34.6357 86.2051 29.0305 86.2051 22.9953Z"
+                    fill="#484848"
+                  />
+                  <path
+                    d="M81.6266 13.5611C81.642 16.5207 81.6513 19.6936 81.6513 22.9953C81.6513 26.2969 81.642 29.4793 81.6266 32.4419C81.9145 33.0916 82.2333 33.7224 82.5769 34.3376C82.5522 30.8539 82.5398 27.0187 82.5398 22.9953C82.5398 18.9718 82.5522 15.146 82.5769 11.6655C82.2333 12.2807 81.9175 12.9115 81.6266 13.5611Z"
+                    fill="#484848"
+                  />
+                  <path
+                    d="M119.217 22.9953C119.217 17.4057 119.242 12.1834 119.288 7.74879C118.954 7.3659 118.607 6.99242 118.248 6.63464C118.301 11.2952 118.329 16.9287 118.329 22.9953C118.329 29.0619 118.298 34.7048 118.245 39.3653C118.604 39.0044 118.951 38.6341 119.285 38.2512C119.242 33.8166 119.214 28.5911 119.214 22.9953H119.217Z"
+                    fill="#484848"
+                  />
+                  <path
+                    d="M84.4312 37.1465C84.3941 32.9567 84.3724 28.1329 84.3724 22.9922C84.3724 17.8514 84.3941 13.0371 84.4312 8.8504C84.0845 9.2992 83.7502 9.76055 83.4375 10.2376C83.4685 14.0884 83.4871 18.4163 83.4871 22.9922C83.4871 27.568 83.4685 31.9053 83.4375 35.7593C83.7502 36.2364 84.0845 36.6977 84.4312 37.1465Z"
+                    fill="#484848"
+                  />
+                  <path
+                    d="M102.711 22.9953C102.711 13.649 102.782 5.33533 102.894 0.0156922C102.699 0.0094153 102.507 0 102.312 0C102.086 0 101.863 0.0094153 101.64 0.0156922C101.752 5.33533 101.823 13.649 101.823 22.9922C101.823 32.3353 101.752 40.6615 101.64 45.9812C101.863 45.9874 102.086 45.9969 102.312 45.9969C102.507 45.9969 102.699 45.9874 102.894 45.9812C102.782 40.6615 102.711 32.3415 102.711 22.989V22.9953Z"
+                    fill="#484848"
+                  />
+                  <path
+                    d="M80.7041 22.9953C80.7041 20.563 80.7103 18.2029 80.7195 15.9464C80.0137 18.1715 79.6268 20.541 79.6268 23.0015C79.6268 25.4621 80.0137 27.8347 80.7195 30.0567C80.7103 27.7971 80.7041 25.4307 80.7041 22.9953Z"
+                    fill="#484848"
+                  />
+                  <path
+                    d="M101.061 45.9655C100.95 40.6458 100.879 32.3353 100.879 22.9953C100.879 13.6553 100.95 5.3573 101.061 0.0376587C100.64 0.0596277 100.225 0.0972889 99.8105 0.144365C99.922 5.46715 99.9901 13.7244 99.9901 22.9953C99.9901 32.2662 99.9189 40.536 99.8105 45.8588C100.225 45.9058 100.64 45.9404 101.061 45.9655Z"
+                    fill="#484848"
+                  />
+                  <path
+                    d="M93.6935 44.277C93.6006 38.9699 93.5418 31.4 93.5418 22.9953C93.5418 14.5906 93.6006 7.03011 93.6935 1.72302C93.2941 1.88936 92.901 2.06197 92.514 2.25028C92.6007 7.52598 92.6564 14.8699 92.6564 22.9922C92.6564 31.1144 92.6007 38.4709 92.514 43.7466C92.901 43.9349 93.2941 44.1075 93.6935 44.2739V44.277Z"
+                    fill="#484848"
+                  />
+                  <path
+                    d="M95.5385 44.958C95.4394 39.629 95.3744 31.7641 95.3744 22.9953C95.3744 14.2265 95.4363 6.37416 95.5385 1.0451C95.1299 1.17378 94.7305 1.31815 94.3343 1.46879C94.4303 6.78844 94.4891 14.4619 94.4891 22.9953C94.4891 31.5287 94.4303 39.2147 94.3343 44.5344C94.7305 44.685 95.133 44.8294 95.5385 44.958Z"
+                    fill="#484848"
+                  />
+                  <path
+                    d="M99.2223 45.7834C99.114 40.4575 99.0428 32.2285 99.0428 22.9953C99.0428 13.762 99.114 5.54558 99.2223 0.219666C98.8044 0.276157 98.3896 0.345203 97.981 0.426802C98.0893 5.75586 98.1574 13.8875 98.1574 22.9984C98.1574 32.1093 98.0893 40.2504 97.981 45.5826C98.3896 45.6642 98.8044 45.7301 99.2223 45.7897V45.7834Z"
+                    fill="#484848"
+                  />
+                  <path
+                    d="M97.3835 45.4508C97.2783 40.1186 97.2101 32.0403 97.2101 22.9953C97.2101 13.9503 97.2783 5.88456 97.3835 0.552368C96.9718 0.646521 96.5632 0.750089 96.1576 0.866211C96.2598 6.19841 96.3248 14.1324 96.3248 22.9953C96.3248 31.8582 96.2598 39.8047 96.1576 45.1369C96.5632 45.2531 96.9687 45.3566 97.3835 45.4508Z"
+                    fill="#484848"
+                  />
+                  <path
+                    d="M94.6346 15.1241H82.1714V18.7113H86.4465V30.9073H90.7V18.7113H94.6346V15.1241Z"
+                    fill="#D5D5D5"
+                  />
+                  <path
+                    d="M117.979 30.857H123.102L117.493 23.466V23.4503C117.391 23.3185 117.329 23.1553 117.329 22.9764C117.329 22.7819 117.4 22.6061 117.518 22.4712L117.512 22.4649L122.421 15.1398H117.623L113.602 21.1687H112.543V15.1241H108.286V30.857H112.543V24.7559H113.589L117.979 30.857Z"
+                    fill="#D5D5D5"
+                  />
+                  <path
+                    d="M100.337 27.16V24.5896H106.005V21.6332H100.337V18.7553H106.856V15.0927L95.9905 15.1053V30.8288L106.859 30.8257V27.16H100.337Z"
+                    fill="#D5D5D5"
+                  />
+                  <path
+                    d="M72.8597 15.1492V21.1782H67.4206V15.1492H63.164V30.8947H67.4206V24.7654H72.8597V30.8947H77.1162V15.1492H72.8597Z"
+                    fill="#D5D5D5"
+                  />
+                  <path
+                    d="M32.7708 30.8947H37.0273L32.5107 15.0645H25.8365L21.3199 30.8947H25.5764L26.3039 28.3463H32.0464L32.7739 30.8947H32.7708ZM27.3286 24.7591L29.1736 18.2876L31.0217 24.7591H27.3286Z"
+                    fill="#D5D5D5"
+                  />
+                  <path
+                    d="M18.8526 15.0613L16.4937 27.2447L13.7602 15.2088H12.9585H10.2219H9.42012L6.6464 27.4268L4.25654 15.0551H0L3.06781 30.9261H9.41083L11.5902 21.2378L13.7695 30.9261H20.0352L23.1092 15.0613H18.8526Z"
+                    fill="#D5D5D5"
+                  />
+                  <path
+                    d="M47.3575 15.099H34.8944V18.6862H39.1695V30.8916H43.4229V18.6862H47.3575V15.099Z"
+                    fill="#D5D5D5"
+                  />
+                  <path
+                    d="M61.8793 24.9379H57.6228V26.2278C57.5454 26.8587 57.0872 27.2635 56.4402 27.3545H54.2268V27.3608C53.1774 27.4016 52.3942 26.7331 52.4901 25.6818V20.1958C52.5149 19.1695 53.1774 18.6579 53.9699 18.6454L56.3628 18.6517C57.2946 18.8368 57.5949 19.5336 57.6104 20.2334V20.9804H61.8483V18.7144H61.8453C61.8453 18.5952 61.8267 18.4477 61.7988 18.3033H61.805C61.7957 18.2468 61.7802 18.1935 61.7679 18.1432C61.7617 18.1213 61.7555 18.0962 61.7493 18.0773C61.3283 16.4956 60.1736 15.3814 58.4431 15.0864L52.5521 15.0739C50.2024 15.0739 48.2367 17.2488 48.2367 19.9321H48.2522L48.2367 19.9353V26.1086C48.3048 28.8641 50.0539 30.901 52.3818 30.9386H58.0562C58.0747 30.9386 58.0933 30.9386 58.1026 30.9386C58.1645 30.9386 58.3224 30.9355 58.4926 30.9198C58.4926 30.9198 58.505 30.9198 58.5112 30.9198C58.5948 30.9104 58.6753 30.8978 58.7496 30.8821C60.3531 30.584 61.6533 29.5169 61.8576 27.7688C61.8576 27.7688 61.8731 27.5617 61.8731 27.4581V27.4048V24.9379H61.8793Z"
+                    fill="#D5D5D5"
+                  />
+                </g>
+                <defs>
+                  <clipPath id="clip0_520_26825">
+                    <rect width="125" height="46" fill="white" />
+                  </clipPath>
+                </defs>
+              </svg>
+            </div>
+            <div class="footer__info">
+              <!-- 240701 : 수정 : END -->
+              <p class="footer__ceo">(주)와치텍 대표 박권재</p>
+              <!-- 240701 : 수정 : END -->
+              <address class="footer__address">
+                서울특별시 영등포구 국제금융로 8길 11 14층</address>
+            </div>
+          </div>
+<div class="footer__link-wrap">
+            <a href="https://blog.naver.com/watch_all" target="_blank" class="footer__sns-naver">네이버 블로그</a>
+            <button type="button" class="footer__sitemap btn" data-type="text">
+              사이트맵</button>
+          </div>
+</div>
+        <div class="footer-bottom-area">
+          <div class="footer__term">
+            <a href="../../policy/policyEmail.html">이메일무단수집거부</a>
+            <a href="../../policy/policyPrivacy.html">개인정보처리방침</a>
+          </div>
+          <p class="copyright">
+             Copyright © Watchtek Co., Ltd. All Rights Reserved.</p>
+        </div>
+      </div></footer>
+<!-- 240618 : 수정 : START -->
+    <div class="sitemap">
+      <div class="sitemap__header">
+        <!-- 240628 : 수정 : START -->
+        <div class="sitemap__header__logo">
+          <a href="../../index.html" class="anchor">
+            <span class="span logo-text">Watchtek</span>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="164"
+              height="60"
+              viewBox="0 0 164 60"
+              fill="none"
+            >
+              <g clip-path="url(#clip0_649_2540)">
+                <path
+                  d="M149.362 55.8368C149.257 49.066 149.196 39.9823 149.196 29.9938C149.196 20.0054 149.261 10.9381 149.362 4.16728C148.867 3.87254 148.363 3.59418 147.851 3.32809C147.961 10.1767 148.03 19.5961 148.03 29.9938C148.03 40.3916 147.961 49.8233 147.851 56.676C148.363 56.4099 148.867 56.1315 149.362 55.8368Z"
+                  fill="#9FA0A0"
+                />
+                <path
+                  d="M146.974 57.1181C146.86 50.2326 146.787 40.625 146.787 29.9939C146.787 19.3628 146.86 9.77144 146.974 2.88599C146.466 2.64447 145.947 2.41932 145.427 2.20236C145.549 9.12874 145.626 19.0148 145.626 29.9939C145.626 40.9729 145.549 50.8753 145.427 57.8017C145.951 57.5889 146.466 57.3596 146.974 57.1181Z"
+                  fill="#9FA0A0"
+                />
+                <path
+                  d="M118.072 55.1859C117.975 48.4888 117.914 39.663 117.914 29.9898C117.914 20.3166 117.975 11.5071 118.072 4.81C117.577 5.13339 117.085 5.46907 116.61 5.82521C116.7 12.3873 116.752 20.8078 116.752 29.9898C116.752 39.1717 116.7 47.6046 116.61 54.1707C117.085 54.5228 117.577 54.8584 118.072 55.1859Z"
+                  fill="#9FA0A0"
+                />
+                <path
+                  d="M154.126 52.3122C154.053 46.049 154.009 38.3366 154.009 29.9939C154.009 21.6511 154.053 13.951 154.126 7.6878C153.667 7.27435 153.192 6.87727 152.709 6.48837C152.794 12.9481 152.843 21.1148 152.843 29.9939C152.843 38.8729 152.794 47.0478 152.709 53.5116C153.192 53.1268 153.667 52.7298 154.126 52.3122Z"
+                  fill="#9FA0A0"
+                />
+                <path
+                  d="M151.746 54.2526C151.657 47.6782 151.604 39.2208 151.604 29.9898C151.604 20.7587 151.657 12.3177 151.746 5.74332C151.267 5.39127 150.78 5.05969 150.28 4.7363C150.378 11.4416 150.439 20.292 150.439 29.9898C150.439 39.6875 150.378 48.5502 150.28 55.2596C150.78 54.9362 151.267 54.6005 151.746 54.2526Z"
+                  fill="#9FA0A0"
+                />
+                <path
+                  d="M139.801 59.4678C139.659 52.5169 139.57 41.894 139.57 29.9898C139.57 18.0856 139.659 7.48311 139.801 0.528074C139.265 0.425733 138.721 0.339768 138.173 0.266083C138.315 7.21293 138.408 17.9464 138.408 29.9898C138.408 42.0332 138.315 52.783 138.173 59.7298C138.721 59.6561 139.265 59.5702 139.801 59.4678Z"
+                  fill="#9FA0A0"
+                />
+                <path
+                  d="M142.198 58.907C142.064 51.952 141.978 41.5788 141.978 29.9939C141.978 18.409 142.064 8.05213 142.198 1.0971C141.666 0.949726 141.13 0.814637 140.589 0.695923C140.727 7.65096 140.817 18.192 140.817 29.998C140.817 41.8039 140.727 52.3613 140.589 59.3164C141.134 59.1977 141.67 59.0626 142.198 58.9152V58.907Z"
+                  fill="#9FA0A0"
+                />
+                <path
+                  d="M157.579 11.3966C157.627 16.8902 157.66 23.2353 157.66 29.9898C157.66 36.7442 157.632 43.1016 157.579 48.5993C158.034 48.0221 158.472 47.4285 158.887 46.8145C158.846 41.7425 158.822 36.0319 158.822 29.9898C158.822 23.9476 158.846 18.2452 158.887 13.1814C158.472 12.5674 158.034 11.9779 157.579 11.3966Z"
+                  fill="#9FA0A0"
+                />
+                <path
+                  d="M161.263 42.5653C161.238 38.6314 161.226 34.3986 161.226 29.9898C161.226 25.581 161.238 21.3605 161.263 17.4306C160.881 16.5996 160.466 15.7931 160.016 15.0072C160.048 19.6043 160.064 24.6681 160.064 29.9898C160.064 35.3115 160.048 40.3875 160.016 44.9888C160.466 44.2028 160.885 43.3963 161.263 42.5653Z"
+                  fill="#9FA0A0"
+                />
+                <path
+                  d="M164 29.998C164 26.6576 163.452 23.4482 162.448 20.4476C162.461 23.4973 162.469 26.6944 162.469 29.9898C162.469 33.2851 162.461 36.4945 162.448 39.5483C163.448 36.5477 164 33.3383 164 29.998Z"
+                  fill="#9FA0A0"
+                />
+                <path
+                  d="M114.226 7.78604C114.299 14.0288 114.344 21.6961 114.344 29.9898C114.344 38.2834 114.299 45.9671 114.226 52.2099C114.681 52.6274 115.156 53.0286 115.64 53.4175C115.554 46.9701 115.505 38.832 115.505 29.9898C115.505 21.1476 115.554 13.0259 115.64 6.57843C115.156 6.96732 114.685 7.3685 114.226 7.78604Z"
+                  fill="#9FA0A0"
+                />
+                <path
+                  d="M135.76 0.0409241C135.906 6.97959 136 17.8154 136 29.9938C136 42.1723 135.906 53.0245 135.76 59.9631C136.313 59.9345 136.857 59.8895 137.401 59.8321C137.255 52.8894 137.161 42.1068 137.161 29.9938C137.161 17.8809 137.255 7.11468 137.397 0.171919C136.853 0.114609 136.309 0.0695793 135.756 0.0409241H135.76Z"
+                  fill="#9FA0A0"
+                />
+                <path
+                  d="M144.586 58.1333C144.46 51.1946 144.383 41.1571 144.383 29.9938C144.383 18.8306 144.46 8.80943 144.586 1.87077C144.066 1.67428 143.538 1.49416 143.002 1.33041C143.132 8.28545 143.217 18.5481 143.217 29.9979C143.217 41.4478 143.132 51.7268 143.002 58.6819C143.538 58.514 144.062 58.3339 144.586 58.1415V58.1333Z"
+                  fill="#9FA0A0"
+                />
+                <path
+                  d="M120.501 56.6146C120.391 49.7701 120.322 40.367 120.322 29.9938C120.322 19.6206 120.391 10.234 120.501 3.3895C119.989 3.65967 119.486 3.93804 118.994 4.23278C119.096 10.9954 119.161 20.0464 119.161 29.9938C119.161 39.9413 119.1 49.0046 118.994 55.7713C119.486 56.0701 119.989 56.3485 120.501 56.6146Z"
+                  fill="#9FA0A0"
+                />
+                <path
+                  d="M113.101 29.9938C113.101 22.13 113.142 14.8229 113.207 8.76849C112.736 9.24335 112.285 9.73868 111.846 10.2422C111.903 15.9937 111.935 22.7563 111.935 29.9938C111.935 37.2313 111.903 44.0063 111.846 49.7619C112.285 50.2654 112.736 50.7607 113.207 51.2356C113.138 45.177 113.101 37.8659 113.101 29.9938Z"
+                  fill="#9FA0A0"
+                />
+                <path
+                  d="M107.094 17.6885C107.114 21.5488 107.127 25.6874 107.127 29.9939C107.127 34.3003 107.114 38.4513 107.094 42.3156C107.472 43.163 107.89 43.9858 108.341 44.7882C108.308 40.2443 108.292 35.2419 108.292 29.9939C108.292 24.7459 108.308 19.7558 108.341 15.2159C107.89 16.0183 107.476 16.8411 107.094 17.6885Z"
+                  fill="#9FA0A0"
+                />
+                <path
+                  d="M156.413 29.9938C156.413 22.7031 156.446 15.8914 156.506 10.1071C156.068 9.60768 155.613 9.12054 155.142 8.65387C155.211 14.7329 155.247 22.0809 155.247 29.9938C155.247 37.9068 155.207 45.2671 155.138 51.3461C155.609 50.8753 156.064 50.3923 156.502 49.8929C156.446 44.1086 156.409 37.2927 156.409 29.9938H156.413Z"
+                  fill="#9FA0A0"
+                />
+                <path
+                  d="M110.774 48.4519C110.725 42.987 110.697 36.6951 110.697 29.9898C110.697 23.2844 110.725 17.0048 110.774 11.544C110.319 12.1294 109.88 12.7311 109.47 13.3533C109.511 18.3762 109.535 24.0213 109.535 29.9898C109.535 35.9582 109.511 41.6156 109.47 46.6426C109.88 47.2648 110.319 47.8666 110.774 48.4519Z"
+                  fill="#9FA0A0"
+                />
+                <path
+                  d="M134.757 29.9939C134.757 17.8031 134.85 6.95913 134.997 0.020468C134.741 0.0122808 134.489 0 134.233 0C133.937 0 133.644 0.0122808 133.352 0.020468C133.498 6.95913 133.591 17.8031 133.591 29.9898C133.591 42.1764 133.498 53.0368 133.352 59.9754C133.644 59.9836 133.937 59.9959 134.233 59.9959C134.489 59.9959 134.741 59.9836 134.997 59.9754C134.85 53.0368 134.757 42.1846 134.757 29.9857V29.9939Z"
+                  fill="#9FA0A0"
+                />
+                <path
+                  d="M105.884 29.9939C105.884 26.8213 105.892 23.7429 105.904 20.7996C104.978 23.702 104.47 26.7927 104.47 30.0021C104.47 33.2114 104.978 36.3062 105.904 39.2045C105.892 36.2571 105.884 33.1705 105.884 29.9939Z"
+                  fill="#9FA0A0"
+                />
+                <path
+                  d="M132.592 59.955C132.446 53.0163 132.353 42.1764 132.353 29.9939C132.353 17.8113 132.446 6.9878 132.592 0.0491333C132.04 0.0777886 131.496 0.126912 130.951 0.188316C131.098 7.13107 131.187 17.9014 131.187 29.9939C131.187 42.0864 131.094 52.873 130.951 59.8158C131.496 59.8772 132.04 59.9222 132.592 59.955Z"
+                  fill="#9FA0A0"
+                />
+                <path
+                  d="M122.926 57.7526C122.804 50.8303 122.727 40.9565 122.727 29.9938C122.727 19.0312 122.804 9.16966 122.926 2.24738C122.402 2.46434 121.886 2.68949 121.378 2.9351C121.492 9.81645 121.565 19.3955 121.565 29.9897C121.565 40.584 121.492 50.1794 121.378 57.0608C121.886 57.3064 122.402 57.5315 122.926 57.7485V57.7526Z"
+                  fill="#9FA0A0"
+                />
+                <path
+                  d="M125.347 58.6409C125.217 51.69 125.131 41.4314 125.131 29.9938C125.131 18.5563 125.212 8.3141 125.347 1.36316C124.81 1.531 124.286 1.7193 123.767 1.9158C123.893 8.85446 123.97 18.8633 123.97 29.9938C123.97 41.1244 123.893 51.1496 123.767 58.0883C124.286 58.2848 124.814 58.4731 125.347 58.6409Z"
+                  fill="#9FA0A0"
+                />
+                <path
+                  d="M130.18 59.7175C130.038 52.7707 129.944 42.0373 129.944 29.9939C129.944 17.9505 130.038 7.23341 130.18 0.28656C129.631 0.360245 129.087 0.450304 128.551 0.556738C128.693 7.50768 128.783 18.1142 128.783 29.998C128.783 41.8817 128.693 52.5005 128.551 59.4556C129.087 59.562 129.631 59.6479 130.18 59.7257V59.7175Z"
+                  fill="#9FA0A0"
+                />
+                <path
+                  d="M127.767 59.2836C127.629 52.3286 127.54 41.7916 127.54 29.9939C127.54 18.1961 127.629 7.67553 127.767 0.72049C127.227 0.843298 126.691 0.978387 126.159 1.12985C126.293 8.08489 126.378 18.4335 126.378 29.9939C126.378 41.5542 126.293 51.9192 126.159 58.8743C126.691 59.0257 127.223 59.1608 127.767 59.2836Z"
+                  fill="#9FA0A0"
+                />
+                <path
+                  d="M124.161 19.7271H107.809V24.4061H113.418V40.3138H118.998V24.4061H124.161V19.7271Z"
+                  fill="black"
+                />
+                <path
+                  d="M154.788 40.2483H161.51L154.151 30.6079V30.5874C154.017 30.4155 153.936 30.2026 153.936 29.9693C153.936 29.7155 154.029 29.4862 154.183 29.3102L154.175 29.302L160.617 19.7476H154.321L149.045 27.6114H147.656V19.7271H142.072V40.2483H147.656V32.2904H149.029L154.788 40.2483Z"
+                  fill="black"
+                />
+                <path
+                  d="M131.642 35.4261V32.0734H139.079V28.2172H131.642V24.4634H140.195V19.6862L125.94 19.7025V40.2115L140.2 40.2074V35.4261H131.642Z"
+                  fill="black"
+                />
+                <path
+                  d="M95.5919 19.7598V27.6236H88.4558V19.7598H82.8712V40.2975H88.4558V32.3026H95.5919V40.2975H101.176V19.7598H95.5919Z"
+                  fill="black"
+                />
+                <path
+                  d="M42.9952 40.2974H48.5798L42.654 19.6493H33.8974L27.9717 40.2974H33.5563L34.5107 36.9734H42.0448L42.9993 40.2974H42.9952ZM35.8551 32.2944L38.2757 23.8534L40.7005 32.2944H35.8551Z"
+                  fill="black"
+                />
+                <path
+                  d="M24.7346 19.6452L21.6398 35.5366L18.0534 19.8376H17.0015H13.4111H12.3592L8.72008 35.774L5.58459 19.637H0L4.02496 40.3384H12.347L15.2063 27.7014L18.0656 40.3384H26.2861L30.3192 19.6452H24.7346Z"
+                  fill="black"
+                />
+                <path
+                  d="M62.1331 19.6943H45.7814V24.3733H51.3904V40.2934H56.9709V24.3733H62.1331V19.6943Z"
+                  fill="black"
+                />
+                <path
+                  d="M81.1857 32.5278H75.6011V34.2103C75.4996 35.0331 74.8985 35.5612 74.0496 35.6799H71.1457V35.6881C69.7688 35.7413 68.7412 34.8693 68.8671 33.498V26.3424C68.8996 25.0037 69.7688 24.3365 70.8085 24.3201L73.9481 24.3283C75.1706 24.5698 75.5646 25.4786 75.5849 26.3915V27.3658H81.1451V24.4102H81.141C81.141 24.2546 81.1167 24.0622 81.0801 23.8739H81.0882C81.0761 23.8002 81.0558 23.7306 81.0395 23.6651C81.0314 23.6365 81.0233 23.6037 81.0151 23.5792C80.4628 21.516 78.9478 20.0628 76.6774 19.678L68.9484 19.6616C65.8657 19.6616 63.2866 22.4985 63.2866 25.9985H63.3069L63.2866 26.0026V34.0547C63.376 37.6489 65.6707 40.3057 68.725 40.3548H76.1697C76.1941 40.3548 76.2185 40.3548 76.2307 40.3548C76.3119 40.3548 76.519 40.3507 76.7424 40.3302C76.7424 40.3302 76.7587 40.3302 76.7668 40.3302C76.8765 40.3179 76.9821 40.3016 77.0795 40.2811C79.1834 39.8922 80.8892 38.5004 81.1573 36.2202C81.1573 36.2202 81.1776 35.9501 81.1776 35.815V35.7454V32.5278H81.1857Z"
+                  fill="black"
+                />
+              </g>
+              <defs>
+                <clipPath id="clip0_649_2540">
+                  <rect width="164" height="60" fill="black" />
+                </clipPath>
+              </defs>
+            </svg>
+          </a>
+        </div>
+        <!-- 240628 : 수정 : START -->
+        <div class="sitemap__header__util">
+          <div class="language">
+            <a href="javascript:void();" class="anchor active" onclick="javascript:fnLangChg('KO')">KR</a>
+            <span class="seperate-dot">·</span>
+            <a href="javascript:void();" class="anchor " onclick="javascript:fnLangChg('EN')">EN</a>
+          </div>
+          <button type="button" class="btn-sitemap-close"></button>
+        </div>
+      </div>
+      <div class="sitemap__content">
+        <div class="layout-container">
+          <div class="sitemap__layout-container">
+            <div class="sitemap__category" data-lenis-prevent>
+              <p class="sitemap__category__title">제품</p>
+              <ul class="sitemap__category__list-wrap">
+                <li class="sitemap__category__list">
+                  <a
+                    href="../../product/all.html"
+                    class="sitemap__category__list__depth1 anchor"
+                    >와치올 모두 살펴보기</a
+                  >
+                </li>
+                <li class="sitemap__category__list m-0">
+                  <a
+                    href="../../product/reason/client.html"
+                    class="sitemap__category__list__depth1 anchor"
+                    >와치올을 선택하는 이유</a
+                  >
+                </li>
+                <li class="sitemap__category__list">
+                  <a
+                    href="../../product/cloud.html"
+                    class="sitemap__category__list__depth1 anchor"
+                    >클라우드</a
+                  >
+                  <a
+                    href="../../product/cloud/platform.html"
+                    class="sitemap__category__list__depth2 anchor"
+                    >클라우드 관리 플랫폼</a
+                  >
+                  <a
+                    href="../../product/cloud/monitoring.html"
+                    class="sitemap__category__list__depth2 anchor"
+                    >클라우드 모니터링</a
+                  >
+                </li>
+                <li class="sitemap__category__list">
+                  <a href="../../product/ai.html" class="sitemap__category__list__depth1 anchor">AI</a>
+                  <!-- 240603 : 수정 : START -->
+                  <a
+                    href="../../product/ai/aiops.html"
+                    class="sitemap__category__list__depth2 anchor"
+                    >AIOps</a
+                  >
+                  <!-- 240603 : 수정 : EMD -->
+                </li>
+                <li class="sitemap__category__list">
+                  <a
+                    href="../../product/obs.html"
+                    class="sitemap__category__list__depth1 anchor"
+                    >옵저버빌리티</a
+                  >
+                  <!-- 240603 : 수정 : START -->
+                  <a
+                    href="../../product/obs/app.html"
+                    class="sitemap__category__list__depth2 anchor"
+                    >애플리케이션 성능 모니터링</a
+                  >
+                  <!-- 240603 : 수정 : END -->
+                  <a
+                    href="../../product/obs/db.html"
+                    class="sitemap__category__list__depth2 anchor"
+                    >DB 성능 모니터링</a
+                  >
+                  <a
+                    href="../../product/obs/web.html"
+                    class="sitemap__category__list__depth2 anchor"
+                    >웹서비스 성능 모니터링</a
+                  >
+                  <a
+                    href="../../product/obs/log.html"
+                    class="sitemap__category__list__depth2 anchor"
+                    >통합 로그 관리</a
+                  >
+                </li>
+                <li class="sitemap__category__list">
+                  <a
+                    href="../../product/infra.html"
+                    class="sitemap__category__list__depth1 anchor"
+                    >IT 인프라</a
+                  >
+                  <a
+                    href="../../product/infra/server.html"
+                    class="sitemap__category__list__depth2 anchor"
+                    >서버 모니터링</a
+                  >
+                  <a
+                    href="../../product/infra/network.html"
+                    class="sitemap__category__list__depth2 anchor"
+                    >네트워크 모니터링</a
+                  >
+                  <a
+                    href="../../product/infra/iot.html"
+                    class="sitemap__category__list__depth2 anchor"
+                    >시설/IoT 모니터링</a
+                  >
+                  <a
+                    href="../../product/infra/storage.html"
+                    class="sitemap__category__list__depth2 anchor"
+                    >스토리지 모니터링</a
+                  >
+                </li>
+                <li class="sitemap__category__list">
+                  <a
+                    href="../../product/service.html"
+                    class="sitemap__category__list__depth1 anchor"
+                    >IT 서비스</a
+                  >
+                  <a
+                    href="../../product/service/itservice.html"
+                    class="sitemap__category__list__depth2 anchor"
+                    >IT 서비스 관리</a
+                  >
+                  <a
+                    href="../../product/service/itasset.html"
+                    class="sitemap__category__list__depth2 anchor"
+                    >IT 자산 관리</a
+                  >
+                </li>
+                <li class="sitemap__category__list">
+                  <a
+                    href="../../product/visual.html"
+                    class="sitemap__category__list__depth1 anchor"
+                    >시각화</a
+                  >
+                  <a
+                    href="../../product/visual/dashboard.html"
+                    class="sitemap__category__list__depth2 anchor"
+                    >통합 대시보드</a
+                  >
+                </li>
+                <li class="sitemap__category__list">
+                  <a
+                    href="../../product/platform/applemango.html"
+                    class="sitemap__category__list__depth1 anchor"
+                    >서비스 플랫폼</a
+                  >
+                  <a
+                    href="../../product/platform/applemango.html"
+                    class="sitemap__category__list__depth2 anchor"
+                    >와치올 애플망고</a
+                  >
+                  <a
+                    href="../../product/platform/guava.html"
+                    class="sitemap__category__list__depth2 anchor"
+                    >와치올 구아바</a
+                  >
+                  <a
+                    href="../../product/platform/itsm.html"
+                    class="sitemap__category__list__depth2 anchor"
+                    >와치올 ITSM</a
+                  >
+                  <a
+                    href="../../product/platform/cmp.html"
+                    class="sitemap__category__list__depth2 anchor"
+                    >와치올 CMP</a
+                  >
+                  <a
+                    href="../../product/platform/log.html"
+                    class="sitemap__category__list__depth2 anchor"
+                    >와치로그</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <div class="sitemap__category" data-lenis-prevent>
+              <p class="sitemap__category__title">고객지원</p>
+              <ul class="sitemap__category__list-wrap">
+                <li class="sitemap__category__list">
+                  <a
+                    href="../../customer/faq/list.html"
+                    class="sitemap__category__list__depth1 anchor"
+                    >FAQ</a
+                  >
+                </li>
+                <li class="sitemap__category__list">
+                  <a
+                    href="../../customer/support/qna.html"
+                    class="sitemap__category__list__depth1 anchor"
+                    >문의하기</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <div class="sitemap__category" data-lenis-prevent>
+              <p class="sitemap__category__title">회사 소개</p>
+              <ul class="sitemap__category__list-wrap">
+                <li class="sitemap__category__list">
+                  <a
+                    href="../aboutUs.html"
+                    class="sitemap__category__list__depth1 anchor"
+                    >기업 정보</a
+                  >
+                </li>
+<li class="sitemap__category__list">
+                  <a
+                    href="list.html"
+                    class="sitemap__category__list__depth1 anchor"
+                    >뉴스룸</a
+                  >
+                </li>
+                <li class="sitemap__category__list">
+                  <a
+                    href="../recruit/info.html"
+                    class="sitemap__category__list__depth1 anchor"
+                    >인재 채용</a
+                  >
+                </li>
+</ul>
+            </div>
+          </div>
+        </div>
+        <div class="footer-bottom-area">
+          <div class="layout-container">
+            <div class="footer__term">
+              <a href="../../policy/policyEmail.html" target="_blank">이메일무단수집거부</a>
+              <a href="../../policy/policyPrivacy.html" target="_blank">개인정보처리방침</a>
+<a
+                href="https://blog.naver.com/watch_all"
+                class="lg-hide"
+                target="_blank"
+                >네이버 블로그</a
+              >
+</div>
+            <p class="copyright">
+               Copyright © Watchtek Co., Ltd. All Rights Reserved.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- 240618 : 수정 : END -->
+
+<button type="button" id="scroll-top"></button>
+    </body>
+</html>

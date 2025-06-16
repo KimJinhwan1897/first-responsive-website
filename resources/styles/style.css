@@ -7720,9 +7720,9 @@ html {
   backdrop-filter: blur(12px);
 }
 
-#header.hidden {
+/*#header.hidden {
   top: -10rem;
-}
+}*/
 
 #header.hidden.notice-bar-on {
   top: -20rem;

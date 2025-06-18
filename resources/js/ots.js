@@ -20,24 +20,6 @@ const moveList = () => {
     }
 }
 
-//언어 처리 부분 
-function fnLangChg(lang){
-
-	$.ajax({
-	    url: "/common/changeLocale",
-	    type: "POST",
-	    dataType: "json",
-	    data: {'lang' : lang},
-		success: function(data){
-			location.reload();
-		},
-		error : function() {
-			console.log('change locale error');
-        	return false ;				
-        }		
-	});
-	
-}
 
 function hpcheck(obj){
 	var chk = true;

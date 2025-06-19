@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <title>데이터 관리 | OTS</title>
+  <meta charset="UTF-8" />
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="viewport" content="initial-scale=1.0, minimum-scale=1.0, width=device-width, maximum-scale=1,user-scalable=no" />
+
+  <!-- 파비콘 -->
+  <link rel="apple-touch-icon" sizes="180x180" href="resources/assets/images/favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="resources/assets/images/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="resources/assets/images/favicon/favicon-16x16.png">
+  <link rel="manifest" href="resources/assets/images/favicon/site.webmanifest">
+
+  <!-- Supabase -->
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+  
+  <!--import script-->
+  <script src="resources/vendor/jquery-3.6.4.min.js" type="text/javascript"></script>
+  <script src="resources/js/supabase.js" type="text/javascript"></script>
+  <link href="resources/styles/style.css" rel="stylesheet">
+  
+  <style>
+    .data-container {
+      max-width: 800px;
+      margin: 100px auto;
+      padding: 30px;
+      background-color: #fff;
+      border-radius: 10px;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    }
+    
+    .form-group {
+      margin-bottom: 20px;
+    }
+    
+    .form-group label {
+      display: block;
+      margin-bottom: 5px;
+      font-weight: bold;
+    }
+    
+    .form-group input, .form-group textarea {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+    }
+    
+    .btn-submit {
+      background-color: #7C43F4;
+      color: white;
+      padding: 12px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-weight: bold;
+    }
+    
+    .btn-submit:hover {
+      background-color: #6A35D8;
+    }
+    
+    .data-list {
+      margin-top: 40px;
+    }
+    
+    .data-item {
+      padding: 15px;
+      margin-bottom: 10px;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+    }
+    
+    .data-item h3 {
+      margin-top: 0;
+    }
+    
+    .data-item p {
+      margin-bottom: 5px;
+    }
+    
+    .data-item .metadata {
+      font-size: 0.8em;
+      color: #666;
+    }
+    
+    .tabs {
+      display: flex;
+      margin-bottom: 20px;
+    }
+    
+    .tab {
+      padding: 10px 20px;
+      cursor: pointer;
+      border: 1px solid #ddd;
+      background-color: #f5f5f5;
+    }
+    
+    .tab.active {
+      background-color: #7C43F4;
+      color: white;
+      border-color: #7C43F4;
+    }
+    
+    .tab-content {
+      display: none;
+    }
+    
+    .tab-content.active {
+      display: block;
+    }
+  </style>
+</head>
+<body class="page">
+  <header class="header" id="header">
+    <div class="header-inner">
+      <h1 class="header__logo">
+        <a href="index.html" class="anchor">
+          <span class="span logo-text">OTS | 계측 솔루션 전문 기업</span>
+          <img src="resources/assets/images/logo.png" alt="OTS" class="logo-img">
+        </a>
+      </h1>
+      <nav class="header__nav">
+        <a href="index.html" class="anchor">홈</a>
+        <a href="login.html" class="anchor">로그인</a>
+      </nav>
+    </div>
+  </header>
+
+  <div class="content" id="content">
+    <div class="data-container">
+      <h1>데이터 관리</h1>
+      
+      <div class="tabs">
+        <div class="tab active" data-tab="add-data">데이터 추가</div>
+        <div class="tab" data-tab="view-data">데이터 조회</div>
+      </div>
+      
+      <div class="tab-content active" id="add-data">
+        <h2>새 데이터 추가</h2>
+        <form id="dataForm">
+          <div class="form-group">
+            <label for="title">제목</label>
+            <input type="text" id="title" required>
+          </div>
+          <div class="form-group">
+            <label for="content">내용</label>
+            <textarea id="contents" rows="5" required></textarea>
+          </div>
+          <button type="submit" class="btn-submit">저장</button>
+        </form>
+      </div>
+      
+      <div class="tab-content" id="view-data">
+        <h2>데이터 목록</h2>
+        <div class="data-list" id="dataList">
+          <!-- 데이터 항목이 여기에 동적으로 추가됩니다 -->
+          <p id="loadingMessage">데이터를 불러오는 중...</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <script>
+    // 탭 전환 기능
+    document.querySelectorAll('.tab').forEach(tab => {
+      tab.addEventListener('click', function() {
+        document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
+        document.querySelectorAll('.tab-content').forEach(c => c.classList.remove('active'));
+        
+        this.classList.add('active');
+        document.getElementById(this.dataset.tab).classList.add('active');
+        
+        // 데이터 조회 탭이 활성화되면 데이터 로드
+        if (this.dataset.tab === 'view-data') {
+          loadData();
+        }
+      });
+    });
+    
+    // 데이터 폼 제출 처리
+    document.getElementById('dataForm').addEventListener('submit', async function(e) {
+      e.preventDefault();
+      
+      const title = document.getElementById('title').value;
+      const content = document.getElementById('contents').value;
+
+      alert("content: " + content);
+      
+      try {
+        // Supabase에 데이터 저장
+        await insertData('posts', {
+          title: title,
+          content: content,
+          created_at: new Date().toISOString()
+        });
+        
+        alert('데이터가 성공적으로 저장되었습니다!');
+        document.getElementById('dataForm').reset();
+      } catch (error) {
+        alert('데이터 저장 실패: ' + error.message);
+      }
+    });
+    
+    // 데이터 로드 함수
+    async function loadData() {
+      const dataList = document.getElementById('dataList');
+      const loadingMessage = document.getElementById('loadingMessage');
+      
+      try {
+        // Supabase에서 데이터 가져오기
+        const posts = await fetchData('posts');
+        
+        // 로딩 메시지 제거
+        loadingMessage.style.display = 'none';
+        
+        // 데이터가 없는 경우
+        if (posts.length === 0) {
+          dataList.innerHTML = '<p>저장된 데이터가 없습니다.</p>';
+          return;
+        }
+        
+        // 데이터 목록 렌더링
+        let html = '';
+        posts.forEach(post => {
+          const date = new Date(post.created_at).toLocaleString('ko-KR');
+          
+          html += `
+            <div class="data-item">
+              <h3>${post.title}</h3>
+              <p>${post.content}</p>
+              <p class="metadata">작성일: ${date}</p>
+            </div>
+          `;
+        });
+        
+        dataList.innerHTML = html;
+      } catch (error) {
+        loadingMessage.style.display = 'none';
+        dataList.innerHTML = `<p>데이터 로드 실패: ${error.message}</p>`;
+      }
+    }
+  </script>
+</body>
+</html> 

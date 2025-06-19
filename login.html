@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <title>로그인 | OTS</title>
+  <meta charset="UTF-8" />
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="viewport" content="initial-scale=1.0, minimum-scale=1.0, width=device-width, maximum-scale=1,user-scalable=no" />
+
+  <!-- 파비콘 -->
+  <link rel="apple-touch-icon" sizes="180x180" href="resources/assets/images/favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="resources/assets/images/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="resources/assets/images/favicon/favicon-16x16.png">
+  <link rel="manifest" href="resources/assets/images/favicon/site.webmanifest">
+
+  <!-- Supabase -->
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+  
+  <!--import script-->
+  <script src="resources/vendor/jquery-3.6.4.min.js" type="text/javascript"></script>
+  <script src="resources/js/supabase.js" type="text/javascript"></script>
+  <script src="resources/js/login.js" type="text/javascript"></script>
+  <link href="resources/styles/style.css" rel="stylesheet">
+  
+  <style>
+    .login-container {
+      max-width: 500px;
+      margin: 100px auto;
+      padding: 30px;
+      background-color: #fff;
+      border-radius: 10px;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    }
+    
+    .form-group {
+      margin-bottom: 20px;
+    }
+    
+    .form-group label {
+      display: block;
+      margin-bottom: 5px;
+      font-weight: bold;
+    }
+    
+    .form-group input {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+    }
+    
+    .btn-login {
+      background-color: #7C43F4;
+      color: white;
+      padding: 12px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-weight: bold;
+      width: 100%;
+    }
+    
+    .btn-login:hover {
+      background-color: #6A35D8;
+    }
+    
+    .toggle-form {
+      text-align: center;
+      margin-top: 20px;
+    }
+    
+    .toggle-form a {
+      color: #7C43F4;
+      text-decoration: none;
+    }
+    
+    .user-info {
+      text-align: center;
+      margin-bottom: 20px;
+      font-weight: bold;
+    }
+    
+    .signup-form {
+      display: none;
+    }
+    
+    .logged-in .login-form, .logged-in .signup-form {
+      display: none;
+    }
+    
+    .logout-container {
+      display: none;
+    }
+    
+    .logged-in .logout-container {
+      display: block;
+      text-align: center;
+    }
+  </style>
+</head>
+<body class="page">
+  <header class="header" id="header">
+    <div class="header-inner">
+      <h1 class="header__logo">
+        <a href="index.html" class="anchor">
+          <span class="span logo-text">OTS | 계측 솔루션 전문 기업</span>
+          <img src="resources/assets/images/logo.png" alt="OTS" class="logo-img">
+        </a>
+      </h1>
+    </div>
+  </header>
+
+  <div class="content" id="content">
+    <div class="login-container">
+      <div class="user-info" id="userInfo">로그인이 필요합니다</div>
+      
+      <div class="login-form">
+        <h2>로그인</h2>
+        <form id="loginForm">
+          <div class="form-group">
+            <label for="email">이메일</label>
+            <input type="email" id="email" required>
+          </div>
+          <div class="form-group">
+            <label for="password">비밀번호</label>
+            <input type="password" id="password" required>
+          </div>
+          <button type="submit" class="btn-login">로그인</button>
+        </form>
+        <div class="toggle-form">
+          <a href="#" id="showSignup">계정이 없으신가요? 회원가입</a>
+        </div>
+      </div>
+      
+      <div class="signup-form">
+        <h2>회원가입</h2>
+        <form id="signupForm">
+          <div class="form-group">
+            <label for="signupEmail">이메일</label>
+            <input type="email" id="signupEmail" required>
+          </div>
+          <div class="form-group">
+            <label for="signupPassword">비밀번호</label>
+            <input type="password" id="signupPassword" required>
+          </div>
+          <button type="submit" class="btn-login">회원가입</button>
+        </form>
+        <div class="toggle-form">
+          <a href="#" id="showLogin">이미 계정이 있으신가요? 로그인</a>
+        </div>
+      </div>
+      
+      <div class="logout-container">
+        <button id="logoutBtn" class="btn-login">로그아웃</button>
+      </div>
+    </div>
+  </div>
+  
+  <script>
+    document.getElementById('showSignup')?.addEventListener('click', function(e) {
+      e.preventDefault();
+      document.querySelector('.login-form').style.display = 'none';
+      document.querySelector('.signup-form').style.display = 'block';
+    });
+    
+    document.getElementById('showLogin')?.addEventListener('click', function(e) {
+      e.preventDefault();
+      document.querySelector('.login-form').style.display = 'block';
+      document.querySelector('.signup-form').style.display = 'none';
+    });
+  </script>
+</body>
+</html> 

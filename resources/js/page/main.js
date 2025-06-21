@@ -27,6 +27,8 @@ $(document).ready(function() {
 	    //if (todayDate > new Date()) {
 			//alert('introFn');
 			/*개발종료 후 다시 열기*/
+
+			alert('introFn');
 			introFn();
 	    //}
 	    
@@ -37,19 +39,6 @@ $(document).ready(function() {
     	$("#intro").hide();
     	//setCookie00('intro', 'done',1);    	
     }
-    
-    // 로고 애니메이션: 아래에서 위로 올라오는 효과
-    gsap.fromTo(".str-logo", 
-        {
-            y: 100,
-            opacity: 0
-        },
-        {
-            y: 0,
-            opacity: 1,
-            duration: 1.5,
-            ease: "power2.out"
-        }
-    );
+     
     
 });

@@ -1,5 +1,3 @@
-
-
 /**
  * FUNCTION :: 목록페이지 이동 공통 함수
  */
@@ -20,6 +18,24 @@ const moveList = () => {
     }
 }
 
+//언어 처리 부분 
+function fnLangChg(lang){
+
+	$.ajax({
+	    url: "/common/changeLocale",
+	    type: "POST",
+	    dataType: "json",
+	    data: {'lang' : lang},
+		success: function(data){
+			location.reload();
+		},
+		error : function() {
+			console.log('change locale error');
+        	return false ;				
+        }		
+	});
+	
+}
 
 function hpcheck(obj){
 	var chk = true;
@@ -118,6 +134,20 @@ function popUpAction(name) {
 
 function introFn(){
   $("#intro").show();
+
+  // 로고 애니메이션: 아래에서 위로 올라오는 효과
+  gsap.fromTo(".str-logo", 
+    {
+      y: 100,
+      opacity: 0
+    },
+    {
+      y: 0,
+      opacity: 1,
+      duration: 1.5,
+      ease: "power2.out"
+    }
+  );
 
   $(".graphic-round").each((idx, el) => {
     setTimeout(() => {

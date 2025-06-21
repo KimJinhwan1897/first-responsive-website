@@ -4,6 +4,9 @@ $(document).ready(function() {
     var intro = getCookie('intro');
     var noticeBar = getCookie('noticeBar');
     
+	alert('intro : ' + intro);
+	alert('noticeBar : ' + noticeBar);
+
     //false 인경우
     if (!noticeBar){
 	
@@ -16,7 +19,6 @@ $(document).ready(function() {
 	    
     }
 	
-    
     // 변수가 없을경우 인트로 출력 출력 
     if (!intro) {
 		
@@ -28,7 +30,7 @@ $(document).ready(function() {
 			//alert('introFn');
 			/*개발종료 후 다시 열기*/
 
-			alert('introFn');
+			//alert('introFn');
 			introFn();
 	    //}
 	    

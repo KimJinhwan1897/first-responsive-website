@@ -4,8 +4,8 @@ $(document).ready(function() {
     var intro = getCookie('intro');
     var noticeBar = getCookie('noticeBar');
     
-	alert('intro : ' + intro);
-	alert('noticeBar : ' + noticeBar);
+	//alert('intro : ' + intro);
+	//alert('noticeBar : ' + noticeBar);
 
     //false 인경우
     if (!noticeBar){

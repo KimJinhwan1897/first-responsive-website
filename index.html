@@ -58,7 +58,7 @@
   <script src="resources/js/module.js" type="text/javascript"></script>
   <script src="resources/js/page.js" type="text/javascript"></script>
   <script src="resources/js/ots.js" type="text/javascript"></script>
-  <script src="resources/js/supabase.js" type="text/javascript"></script>
+  <!-- <script src="resources/js/supabase.js" type="text/javascript"></script> -->
 
   <link rel="stylesheet" href="resources/vendor/swiper-bundle.min.css" />
   <link rel="stylesheet" href="resources/vendor/jquery.fullPage.css" />
@@ -79,16 +79,18 @@
     </h1>
     <!--헤더 메뉴-->
     <nav class="header__nav">
-      <a href="javascript:void(0);" class="anchor">제품 소개</a>
-      <a href="javascript:void(0);" class="anchor">고객지원</a>
-      <a href="javascript:void(0);" class="anchor">회사 소개</a>
-      <a href="login.html" class="anchor">로그인</a>
-      <a href="data-manager.html" class="anchor">데이터 관리</a>
+      <a href="javascript:void(0);" class="anchor">제품안내</a>
+      <a href="javascript:void(0);" class="anchor">고객문의</a>
+      <a href="customer/faq/list.html;" class="anchor">기업소개</a>
+      <a href="product/all.html" class="anchor nav-no-dropdown">자료실</a>
+      <a href="product/all.html" class="anchor nav-no-dropdown">중고제품</a>
+      <!-- <a href="login.html" class="anchor">로그인</a> -->
+      <!-- <a href="data-manager.html" class="anchor">데이터 관리</a> -->
     </nav>
 
     <div class="header__util">
       <button type="button" class="btn-drawer-menu">
-        <!--햄버거-->
+        <!--햄버거 SVG 코드-->
         <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
           <path
             fill-rule="evenodd"
@@ -100,7 +102,8 @@
       </button>
     </div>
   </div>
-<!-- PC GNB : start -->
+  
+  <!-- PC GNB : start -->
   <div class="gnb">
     <div class="gnb-wrapper">
       <ul class="gnb__list-wrap">
@@ -563,29 +566,6 @@
 
 </header>
     
-<script>
-	// (function(h,o,u,n,d) { 
-	// 	h=h[d]=h[d]||{q:[],onReady:function(c){h.q.push(c)}} 
-	// 	d=o.createElement(u);d.async=1;d.src=n 
-	// 	n=o.getElementsByTagName(u)[0];n.parentNode.insertBefore(d,n) 
-	// })(window,document,'script','https://watchtek.co.kr/resources/js/watchall-rum.js','WA_RUM') 
-	// WA_RUM.onReady(function() { 
-	// 	WA_RUM.init({ 
-	// 		applicationId: '196acf56-a651-4a20-8556-b2392ae36fe2', 
-	// 		clientToken: '14d0e5c6a0106ba9e554fc955ea97029', 
-	// 		site: 'https://watchtek.co.kr:8443', 
-	// 		service: 'Watchtek_Home', 
-	// 		trackInteractions: true,
-	// 		sampleRate: 100,
-	// 		--allowedTracingOrigins : [/http:\/\/.*.*/],
-	// 		beforeSend: function(event) {
-	// 			if (event.type === 'long_task') {
-	// 				return false
-	// 			}
-	// 		}
-	// 	})
-	// })
-</script>
     <script src="resources/js/home.js"></script>
     <script src="resources/js/page/main.js"></script>
 
@@ -609,7 +589,7 @@
       </div>
     </div>
 
-
+    <!--메인화면 상단 슬라이드 영역 -->
     <div class="content" id="content">
       <section class="section" id="section-main">
         <div class="pagination-area">
@@ -637,6 +617,7 @@
           </div>
           <div class="hero__swiper swiper">
             <div class="swiper-wrapper">
+              <!--개별 슬라이드 영역1 : start-->
               <div class="swiper-slide">
                 <div class="content content--slide" data-tilt>
                   <img
@@ -646,11 +627,11 @@
                   />
 
                   <div class="content__text">
-                    <p class="category">Product</p>
-                    <p class="thumb-title">클라우드</p>
-                    <p class="content__title">클라우드</p>
+                    <p class="category"><!--Product--></p>
+                    <p class="thumb-title">OTS Technology</p>
+                    <p class="content__title">OTS<br><span style="color: #ffffff; font-weight: 600;">Technology</span></p>
                     <p class="content__desc">
-                      멀티 클라우드 관리, 한곳에서 손쉽게!</p>
+                      전자·통신·반도체 분야의 정밀 계측 솔루션 전문 기업</p>
                     <a
                       href="product/cloud.html"
                       class="btn-ghost-round item__button hoverable"
@@ -668,11 +649,11 @@
                   />
 
                   <div class="content__text">
-                    <p class="category">Product</p>
-                    <p class="thumb-title">옵저버빌리티</p>
-                    <p class="content__title">옵저버빌리티</p>
+                    <p class="category"><!--Product--></p>
+                    <p class="thumb-title">Solution</p>
+                    <p class="content__title" style="opacity: 0.9;">Solution</p>
                     <p class="content__desc">
-                      모니터링을 뛰어넘는, 새로운 인사이트 확보</p>
+                      국책 연구소, 대학, 기업체 등 다양한 분야에 제품과 솔루션을 공급한 경험 보유</p>
                     <a
                       href="product/obs.html"
                       class="btn-ghost-round item__button hoverable"
@@ -692,7 +673,7 @@
                   <div class="content__text">
                     <p class="category">Product</p>
                     <p class="thumb-title">AI</p>
-                    <p class="content__title">AI</p>
+                    <p class="content__title" style="opacity: 0.9;">AI</p>
                     <p class="content__desc">예측 가능한 방식으로의 변화</p>
                     <!-- 240613 : 수정 : START -->
                     <a
@@ -715,7 +696,7 @@
                   <div class="content__text">
                     <p class="category">Product</p>
                     <p class="thumb-title">IT 인프라</p>
-                    <p class="content__title">IT 인프라</p>
+                    <p class="content__title" style="opacity: 0.9;">IT 인프라</p>
                     <p class="content__desc">현존하는 모든 인프라 관리</p>
                     <!-- 240613 : 수정 : START -->
                     <a
@@ -738,7 +719,7 @@
                   <div class="content__text">
                     <p class="category">Product</p>
                     <p class="thumb-title">IT 서비스</p>
-                    <p class="content__title">IT 서비스</p>
+                    <p class="content__title" style="opacity: 0.9;">IT 서비스</p>
                     <p class="content__desc">
                       IT 서비스/자산 관리<br />
                       이제, 맞춤형으로</p>
@@ -763,7 +744,7 @@
                   <div class="content__text">
                     <p class="category">Product</p>
                     <p class="thumb-title">시각화</p>
-                    <p class="content__title">시각화</p>
+                    <p class="content__title" style="opacity: 0.9;">시각화</p>
                     <p class="content__desc">
                       모든 데이터에 대한 완벽한 가시성 확보</p>
                     <!-- 240613 : 수정 : START -->
@@ -1186,40 +1167,18 @@
       </section>
 </div>
 
-  <footer class="footer" id="footer">
-	  <div class="layout-container">
-        <div class="footer-content-area">
-          <div class="footer-info-wrap">
-            <div class="footer__logo">
-              <img src="resources/assets/images/logo_2.png" alt="OTS" class="logo-img">
-            </div>
-            <div class="footer__info">
-              <p class="footer__ceo">(주)오티에스 테크놀러지</p>
-              <address class="footer__address">
-                서울특별시 강동구 고덕비즈밸리로 26, 강동U1센터 B동 607호<br><br>
-                사업자번호 : 414-86-02540<br><br>TEL : 02-2215-6171<br><br>FAX : 02-2215-6171<br><br>
-                이메일 : Kys6171@otstech.co.kr
-              </address>
-            </div>
-            
-          </div>
-<div class="footer__link-wrap">
-            <a href="script:alert('서비스 대기중 입니다.');" target="_blank" class="footer__sns-naver">네이버 블로그</a>
-            <button type="button" class="footer__sitemap btn" data-type="text">사이트맵</button>
-          </div>
-</div>
-        <div class="footer-bottom-area">
-          <div class="footer__term">
-            <a href="policy/policyEmail.html">이메일무단수집거부</a>
-            <a href="policy/policyPrivacy.html">개인정보처리방침</a>
-            <a href="policy/policyEmail.html">이용약관</a>
-          </div>
-          <p class="copyright">
-            Copyright © 2022 ㈜오티에스 테크놀러지. All Rights Reserved.</p>
-        </div>
-      </div>
-    
-  </footer>
+  <!-- Footer will be imported here -->
+<div id="footer-placeholder"></div> 
+  
+    <!-- Footer 임포트 스크립트 -->
+    <script>
+      fetch("footer.html")
+        .then(res => res.text())
+        .then(html => {
+          document.getElementById("footer-placeholder").innerHTML = html;
+        });
+        
+    </script>
 
     <div class="sitemap">
       <div class="sitemap__header">
@@ -1469,9 +1428,6 @@
     </div>
     <!-- 240618 : 수정 : END -->
 
-<button type="button" id="scroll-top"></button>
-    
-<!-- 기존 fetch 스크립트 제거 - HTML Import로 대체됨 -->
-    </body>
-    
+    <button type="button" id="scroll-top"></button>
+  </body>
 </html>

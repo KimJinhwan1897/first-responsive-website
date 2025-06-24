@@ -146,6 +146,14 @@ APP.header = $(function () {
 
   $(".header__nav > .anchor").each((idx, el) => {
     $(el).hover(function () {
+      if ($(el).hasClass('nav-no-dropdown')) {
+        $("#header").addClass("hover");
+        $(".header__nav > .anchor").removeClass("active");
+        $(".gnb").hide();
+        $(".gnb__list").removeClass("active");
+        return;
+      }
+      
       $("#header").addClass("hover");
       $(".header__nav > .anchor").removeClass("active");
       $(el).addClass("active");

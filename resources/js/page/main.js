@@ -19,7 +19,7 @@ $(document).ready(function() {
 	    
     }
 	
-	introFn();
+	//introFn();
     // 변수가 없을경우 인트로 출력 출력 
     // if (!intro) {
 		

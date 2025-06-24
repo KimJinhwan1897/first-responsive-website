@@ -251,8 +251,14 @@ APP.mainVisual = $(function () {
     if (!content) return;
 
     content.classList.remove("hero__content--hidden");
-    content.classList.add("hero__content--top");
+    content.classList.add("hero__content--top", "hero__content--grow");
     state.textTopContent = content;
+    
+    // 첫 화면 텍스트에 애니메이션 효과 추가
+    setTimeout(() => {
+      content.classList.remove("hero__content--grow");
+      content.classList.add("hero__content--show-text");
+    }, 100);
   }
 
   const swiperMain = new Swiper("#section-main .swiper", {
